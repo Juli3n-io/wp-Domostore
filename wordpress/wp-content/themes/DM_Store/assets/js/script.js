@@ -19,7 +19,6 @@ $(document).ready(function(){
 
 const fname = document.getElementById('f-name');
 const pname = document.getElementById('p-name');
-const nav = document.querySelector('menu')
 const r_cart = document.getElementById('responsive_cart');
 
 // window.addEventListener('scroll',() => {
@@ -33,13 +32,16 @@ const r_cart = document.getElementById('responsive_cart');
 
 const header = document.querySelector('.header');
 const responsive_bar = document.querySelector('responsive-bar');
+const hname = document.querySelector('.h-name');
+const cart = document.querySelector('.fas');
+const menu_cat = document.querySelector('.menu-item a');
 
 window.addEventListener('scroll', () => {
   if(window.scrollY > 100){
-    header.classList.add('scroll');
-    r_cart.classList.add('black');
+    header.classList.add('block');
+    
   }else{
-    header.classList.remove('scroll');
-    r_cart.classList.remove('black');  
+    header.classList.remove('block');
+    
   }
 });

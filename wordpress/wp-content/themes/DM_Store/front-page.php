@@ -1,19 +1,28 @@
 <?php get_header(); // appel du fichier header.php ?>
-
-<div class="main-image">
+<!-- En tête personalisé -->
+<div class="main-image" 
+style="
+background: url(<?php header_image(); ?>) no-repeat;
+width: 100%;
+height: 100vh;    
+top:0;
+background-size: cover;
+background-position: center;
+">
 
 <h1> <?php bloginfo( 'name' );?></h1>
 <span class="ligne"></span>
 <h3><?php bloginfo( 'description' ); ?></h3>
 </div>
 
-<div class="container">
-				<!-- Example row of columns -->
-				<div class="row">
+<!-- Titre de la page-->
+<div class="page_title">
+<h2><?php the_title(); ?></h2>
+<span class="ligne"></span>
+</div>
 
 <section>
-<?php //echo do_shortcode('[product_categories]')?>
-
+<!-- Récupération des catégories de produits-->
 <?php
 get_terms($args);
 
@@ -25,8 +34,7 @@ $args = array(
 $result = get_terms($args);
 ?>
 
-
-<div class="container-fluid">
+<div class="container-fluid"> <!--  affichage des différentes catégorie de produits-->
 	<div class="row">
 		<?php
 		foreach ( $result as $cat ) {
@@ -36,31 +44,33 @@ $result = get_terms($args);
 			$shop_catalog_img_arr = wp_get_attachment_image_src( $cat_thumb_id, 'shop_catalog' );
 			$cat_img = $shop_catalog_img_arr[0];
 				?>
-			<div class="col-sm">
-			<div>
+			<div class="col-sm front_cat_product" 
+			style="background: url(<?php echo $cat_img; ?>) no-repeat;
+			background-size: cover;
+			background-position: center;">
+				
 					<a href="<?php echo $term_link; ?>">
 						<?php echo $cat->name; ?>
-					</a>
-				</div>
-
-				<div>
-					<a href="<?php echo $term_link; ?>"><img src="<?php echo $cat_img; ?>" alt=""></a>
-				</div>
-				
+					</a>				
 			</div>
 		<?php
 			}
 		}
 		?>
-	</div>
-</div>
+	</div> <!-- /row -->
+</div> <!-- /container -->
 
 </section>
 			
+<section>
+<div class="container">
+				<!-- Example row of columns -->
+				<div class="row">
+				
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				
 				<div class="col-md-12">
-				<!-- <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2> -->
+				
 				<div class="contenu"><?php the_content(); ?></div>
 				</div>
 				<?php endwhile; else: ?>
@@ -68,9 +78,12 @@ $result = get_terms($args);
 				<p><?php _e('Sorry, no posts matched your criteria.','nouveau_theme'); ?></p>
 				</div>
 				<?php endif; ?>
-</div> <!-- /container -->
+			  </div> <!-- /container -->
+</section>
+				
 
 
-<div>
-<img alt="" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>"></div>
+
+
+
 			<?php get_footer(); // appel du fichier footer.php ?>

@@ -75,13 +75,30 @@ add_theme_support( 'custom-background', $defaults );
 	   }
 	   add_action( 'init', 'register_my_menus' );
 
-// function sunset_register_nav_menu(){
-// 	register_nav_menu(
-// 		'primary', 'Header Navigation Menu'
-// 	);
+// Change le texte 'Ajouter au panier' sur la page de produit unique
 
-// }
-// add_action('after_setup_theme','sunset_register_nav_menu')
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'bryce_add_to_cart_text' );
 
+function bryce_add_to_cart_text() {
+
+        return __( 'Acheter maintenant', 'woocommerce' );
+
+}
+
+// Change le texte 'Ajouter au panier' sur la page archive des produits
+
+add_filter( 'woocommerce_product_add_to_cart_text', 'bryce_archive_add_to_cart_text' );
+
+function bryce_archive_add_to_cart_text() {
+
+        return __( 'Acheter', 'your-slug' );
+
+}
+
+//feuille de style personnalisée pour la page login WordPress
+function login_stylesheet() {
+	wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/login.css' );
+}
+add_action( 'login_enqueue_scripts', 'login_stylesheet' );
 
 ?>

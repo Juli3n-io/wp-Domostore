@@ -8,6 +8,7 @@
 
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/assets/css/woocommerce.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	
@@ -38,7 +39,7 @@
               array( 
             'theme_location' => 'primary',
             'container'      => false,
-            'menu_class'     => 'menu'        
+            'menu_class'     => 'menu_cat'        
             ) ); 
           ?>    
         </nav> 

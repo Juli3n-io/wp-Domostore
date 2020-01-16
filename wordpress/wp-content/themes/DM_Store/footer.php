@@ -1,8 +1,29 @@
 </main>		
 	<?php wp_footer(); // intégre des éléments indispensable à WP. Comme les fichiers css, js, la barre d'administration côté FrontEnd, etc.. ?>
-	<footer class="container">
-	<?php dynamic_sidebar('region-footer'); ?>
-	  <p>&copy; Company 2017-2018</p>
+	<div class="back_to_top">
+		<a href="#top_from_page">Retour en haut</a>
+	</div>
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="nav_footer">
+		<?php
+             wp_nav_menu( 
+              array( 
+            'theme_location' => 'footer-menu',
+            'container'      => false,
+            'menu_class'     => 'footer_menu'        
+            ) ); 
+		  ?> 
+		  <span class="ligne"></span>
+		  </div>  
+		</div>
+	
+	<div class="last_footer">
+	<span class="custom_logo">
+            <?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo();}?>
+          </span>
+		<p>&copy; <?php bloginfo( 'name' );?> 2019-2020</p>
+	</div>
 	</footer>
 	
 	

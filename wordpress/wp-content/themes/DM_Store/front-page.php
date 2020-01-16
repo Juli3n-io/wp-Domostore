@@ -8,7 +8,9 @@ height: 100vh;
 top:0;
 background-size: cover;
 background-position: center;
-">
+" 
+id="top_from_page"
+>
 
 <h1> <?php bloginfo( 'name' );?></h1>
 <span class="ligne"></span>

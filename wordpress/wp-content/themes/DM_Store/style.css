@@ -306,6 +306,45 @@ padding-top: 30%;
     color: #000;
     
 }
+/* **** footer **** */
+.back_to_top{
+    text-align: center;
+    background-color: #FFC270;
+    height: 40px;
+    padding-top: 5px;
+}
+.back_to_top a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+}
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000;
+    bottom: 0;
+}
+.nav_footer{
+    width: 100%;
+    margin-top: 5%;  
+    text-align: center;
+    
+}
+.nav_footer .ligne{
+    background-color: #FFF;
+}
+.nav_footer a{
+    text-decoration: none;
+    color: #FFF;  
+}
+.last_footer{
+    background-color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+}
 
 /* **** Responsive **** */
 

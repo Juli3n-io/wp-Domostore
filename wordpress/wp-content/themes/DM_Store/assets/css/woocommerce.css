@@ -3,6 +3,23 @@
 
 /* ********** Front page *********** */
 
+/* **** Titres ***** */
+.contenu .front_titre{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Patua One', cursive;}
+
+    .contenu .front_titre:after{
+    content:'';
+    display: block;
+    height: 2px;
+    background-color: #000;
+    width: 20%;
+    margin: 20px auto;
+    }
+
 /* **** bouton achat **** */
 .wp-block-button__link {
     background-color: #FFC270 !important;
@@ -49,4 +66,23 @@
     width: auto;
     position: relative;
     text-align: center;
+}
+
+/* ****  Images de produit **** */
+
+.wc-block-grid__product-image {
+    text-decoration: none;
+    margin-bottom: 16px;
+    display: block;
+    padding-top: 10px;
+}
+
+/* **********  *********** */
+/* ***** Responsive ****** */
+/* **********  *********** */
+
+@media (min-width: 575.98px){
+.wc-block-grid__product-image{
+    padding-top: 20px;
+}
 }

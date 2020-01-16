@@ -2,7 +2,7 @@
 	<?php wp_footer(); // intégre des éléments indispensable à WP. Comme les fichiers css, js, la barre d'administration côté FrontEnd, etc.. ?>
 	<footer class="container">
 	<?php dynamic_sidebar('region-footer'); ?>
-	  <p>&copy; Company 2017-2018</p>
+	  <p>&copy; Domostore Tous droit réservé</p>
 	</footer>
 	
 	

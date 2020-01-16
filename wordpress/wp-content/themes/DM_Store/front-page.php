@@ -86,4 +86,4 @@ $result = get_terms($args);
 
 
 
-			<?php get_footer(); // appel du fichier footer.php ?>
+<?php get_footer(); // appel du fichier footer.php ?>

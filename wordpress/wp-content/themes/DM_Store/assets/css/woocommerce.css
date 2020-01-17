@@ -9,7 +9,10 @@
     margin: 0 auto;
     font-size: 40px;
     margin-bottom: 20px;
-    font-family: 'Patua One', cursive;}
+    font-family: 'Patua One', cursive;
+    padding-top: 60px ;
+}
+    
 
     .contenu .front_titre:after{
     content:'';
@@ -22,21 +25,27 @@
 
 /* **** bouton achat **** */
 .wp-block-button__link {
-    background-color: #FFC270 !important;
+    background-color: #32373c !important;
     border: none;
-    border-radius: 28px;
+    border-radius: 10px !important;
     box-shadow: none;
     color: inherit;
     cursor: pointer;
     display: inline-block;
-    font-size: 18px;
+    font-size: 20px !important;
     margin: 0;
-    padding: 12px 24px;
+    padding: 7px 14px! important;
     text-align: center;
     text-decoration: none;
-    overflow-wrap: break-word;
+    overflow-wrap: break-word;  
 }
-
+.wp-block-button__link:hover{
+    background-color: #FFC270 !important;
+    text-decoration: none !important;
+}
+.added_to_cart{
+    display: none !important;
+}
 /* **** titre du produit **** */
 .wc-block-grid__product-title {
     line-height: 1.2;
@@ -66,6 +75,7 @@
     width: auto;
     position: relative;
     text-align: center;
+    max-width: none !important;
 }
 
 /* ****  Images de produit **** */
@@ -85,4 +95,23 @@
 .wc-block-grid__product-image{
     padding-top: 20px;
 }
+}
+@media (min-width: 768px){
+    .front_cat_product a {
+        color: #FFF;
+        font-size: 30px !important;
+        font-family: 'Patua One', cursive;
+        text-align: center;
+}
+}
+
+@media (min-width: 1000px){
+    .front_cat_product {
+        height: 250px !important;
+        width: 250px !important;
+        max-width: 160px !important;
+        margin-top: 40px;
+        padding-top: 9% !important;
+        margin: 10px;
+    }
 }

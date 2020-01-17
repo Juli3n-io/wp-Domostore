@@ -18,7 +18,7 @@ Author: Julien QUENTIER
 }
 main .container{
     display: block;
-    padding: 90px 0;
+    padding: 20px 0;
 }
 .ligne
 {
@@ -40,7 +40,9 @@ main .container{
     background-color: rgba(220, 131, 29, 0.5); ;
 }
 .gray_background{
-    background-color: #F3ECEA;
+    background-color: #EEE;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
+    border-radius: .8rem;
 }
 a{
     text-decoration: none; 
@@ -111,7 +113,7 @@ header .menu ul li a {
 }
 
 header .menu ul li:hover {
-    background-color: goldenrod;
+    background-color: #FFC270;
     color: #FFF;
 }
 
@@ -261,6 +263,21 @@ color: #000;
         top: 0;
     }
 
+/* **** Scroll Option **** */
+
+.header.scroll{
+    background-color: #FFF !important;
+    color: #000;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+}
+
+.responsive-bar.scroll{
+    background-color: #FFF !important;
+    color: #000;
+    
+}
+
+
 /* **** front-page **** */
 
 .main-image h1{   
@@ -279,13 +296,29 @@ color: #000;
 .page_title h2{
     padding-top: 40px;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     font-family: 'Patua One', cursive;
 }
+
 .page_title .ligne{
    background-color: #000 !important;
 }
-
+.front_titre{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Patua One', cursive;
+    padding-top: 60px ;
+}
+.front_titre:after{
+    content:'';
+    display: block;
+    height: 2px;
+    background-color: #000;
+    width: 20%;
+    margin: 20px auto;
+    }
 .front_cat_product{
 height: 330px;
 width: 100%;
@@ -299,21 +332,98 @@ padding-top: 30%;
     text-align: center;
     
 }
-/* **** Scroll Option **** */
 
-.header.scroll{
-    background-color: #FFF !important;
-    color: #000;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+
+
+
+/* **** section Articles **** */
+
+.blog-post{
+    width: 100%;
+    max-width: 98rem;
+    padding-top: 20px;
+    padding: 5rem;
+    background-color: #FFF;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+} 
+
+.blog-post__img{
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    transform: translateX(-8rem) ;
+    position: relative;
+
+
+}
+.blog-post__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+
 }
 
-.responsive-bar.scroll{
-    background-color: #FFF !important;
-    color: #000;
-    
+.blog-post__img::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(to right,rgba(79,172,254, .8),
+                                            rgba(0,242, 254, .8)); */
+    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .5);
+    border-radius: .8rem;
 }
 
-/* **** Responsive **** */
+.blog-post__date span{
+    display: block;
+    color: rgba(0, 0, 0, .5);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+.blog-post__title{
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: #FFC270;
+}
+
+.blog-post__text{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.blog-post__cta{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    background-image: linear-gradient(to right, #32373c 10%, #FFC270 90%);
+    border-radius: .8rem;
+}
+
+.blog-post__cta:hover{
+    background-image: linear-gradient(to right, #FFC270 0%, #FFC270 100%);
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* **********  *********** */
+/* ***** Responsive ****** */
+/* **********  *********** */
 
 
 @media(max-width:568px){
@@ -326,6 +436,7 @@ padding-top: 30%;
 }
    
 }
+
 @media (min-width: 575.98px) {
     .main-image h1 {
         text-align: center;
@@ -347,7 +458,7 @@ padding-top: 30%;
         padding-top: 15%;
         margin: 10px;
     }
-    }
+ }
 
 
 
@@ -372,8 +483,19 @@ padding-top: 30%;
         left: 46%;
         text-align: center;
     }
+    .blog-post{
+        padding: 2.5rem;
+        padding-top: 10rem;
+        flex-direction: column;
+    }
+    .blog-post__img{
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0, -8rem); 
+    }
     
 }
+
 @media (min-width: 768px){
     .responsive-bar .responsive_container_logo .custom_logo {
         display: inline-block;
@@ -381,8 +503,14 @@ padding-top: 30%;
         left: 46%;
         text-align: center;
     }
-    
+     
 }
+
+@media screen and (max-width:868px){
+    .blog-post{
+        max-width: 70rem;
+    }
+
 @media (max-width: 995px){
     .responsive-bar{
         display: block;
@@ -418,10 +546,20 @@ padding-top: 30%;
 /* Medium devices (tablets, less than 992px)*/
 
 @media (min-width: 1000px) {
+    
  header nav{
      margin-right: 5px;
      float: right;
  }
+
+ .navbar{
+     display: none;
+ }
+
+ .responsive-bar{
+     display: block;
+ }
+
  .navbar .navbar_panier{
     float: none;
     text-align: center;
@@ -430,23 +568,28 @@ padding-top: 30%;
 .navbar .navbar_panier a{
    color: #000;
 }
+
 .navbar .navbar_panier {
     display: block;
     padding: 4px 12px;
 }
+
 header .navbar_panier .navbar_cart_total {
     font-size: 16px;
     font-weight: 900;
     line-height: 20px;
     margin: 4px 20px;
 }
+
 header .navbar .container_logo .h-name{
     color: #000;
     font-size: 30px;
 }
+
 header .navbar .menu ul li a{
     color: #000;
 }
+
 .main-image h1 {
     text-align: center;
     font-size: 110px;
@@ -454,13 +597,40 @@ header .navbar .menu ul li a{
     padding-top: 30%;
 
 }  
+
 .main-image h3 {
     color: white;
     font-size: 30px;
     text-align: center;
 }
+
+.blog-post{
+    max-width: 80rem;
+}
+
+.blog-post__img{
+    min-width: 30rem;
+    max-width: 30rem;
+}
+
 }
 
 /* Large devices (desktops, less than 1200px)*/
 
-@media (min-width: 1199.98px) {}
+@media (min-width: 1199.98px) {
+
+    .navbar{
+        display: block;
+    }
+
+    .responsive-bar{
+        display: none;
+    }
+
+    .main-image h1 {
+        text-align: center;
+        font-size: 110px;
+        color: #FFF;
+        padding-top: 20%;
+    }  
+}

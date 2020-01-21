@@ -55,6 +55,17 @@
 }
 
 /* ****  bloc de produit **** */
+.wc-block-grid{
+    width: 100%;
+    max-width: 98rem;
+    padding-top: 20px;
+    padding: 5rem;
+    background-color: #FFF;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+}
 .wc-block-grid__products {
     
     margin: 0 auto;

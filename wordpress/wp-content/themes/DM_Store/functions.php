@@ -6,23 +6,23 @@
 
 	
 	// --- REGION/WIDGET
-	add_action( 'widgets_init', 'nouveau_theme_init_sidebar' ); // j'exécute la fonction nommé "nouveau_theme_init_sidebar".
+	add_action( 'widgets_init', 'DM_Store_init_sidebar' ); // j'exécute la fonction nommé "nouveau_theme_init_sidebar".
 	function nouveau_theme_init_sidebar() // fonction qui contient la déclaration de mes régions.
 	{
 		if(function_exists('register_sidebar')) // si la fonction register_sidebar existe (c'est une fonction interne à wordpress), alors je déclare des régions.
 		{
 			register_sidebar( array(
-				'name'          => __( 'region-entete', 'nouveau_theme' ),
+				'name'          => __( 'region-entete', 'DM_Store' ),
 				'id'            => 'region-entete',
 				'description'   => __( 'Add widgets here to appear in your entete region.', 'nouveau_theme' )
 			) );
 			register_sidebar( array(
-				'name'          => __( 'colonne de droite', 'nouveau_theme' ),
+				'name'          => __( 'colonne de droite', 'DM_Store' ),
 				'id'            => 'colonne-droite',
 				'description'   => __( 'Add widgets here to appear in your colonne droite region.', 'nouveau_theme' )
 			) );
 			register_sidebar( array(
-				'name'          => __( 'region-footer', 'nouveau_theme' ),
+				'name'          => __( 'region-footer', 'DM_Store' ),
 				'id'            => 'region-footer',
 				'description'   => __( 'Add widgets here to appear in your region.', 'nouveau_theme' )
 			) );
@@ -100,5 +100,20 @@ function login_stylesheet() {
 	wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/login.css' );
 }
 add_action( 'login_enqueue_scripts', 'login_stylesheet' );
+
+function my_custom_sidebar() {
+    register_sidebar(
+        array (
+            'name' => __( 'Custom', 'DM_Store' ),
+            'id' => 'custom-side-bar',
+            'description' => __( 'Custom Sidebar', 'DM_Store' ),
+            'before_widget' => '<div class="widget-content">',
+            'after_widget' => "</div>",
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        )
+    );
+}
+add_action( 'widgets_init', 'my_custom_sidebar' );
 
 ?>

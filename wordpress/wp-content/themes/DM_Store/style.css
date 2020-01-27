@@ -284,7 +284,7 @@ color: #000;
     text-align: center;
     font-size: 70px;
     color: #FFF;
-    padding-top: 60%;
+    padding-top: 12rem;
     }
 
 .main-image h3{
@@ -442,7 +442,7 @@ padding-top: 30%;
         text-align: center;
         font-size: 90px;
         color: #FFF;
-        padding-top: 40%;
+        padding-top: 12rem;
     
     }  
     .main-image h3 {
@@ -464,7 +464,7 @@ padding-top: 30%;
 
 /* Small devices (landscape phones, less than 768px)*/
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     .responsive-bar{
         width: 100%;
         display: none;
@@ -485,7 +485,7 @@ padding-top: 30%;
     }
     .blog-post{
         padding: 2.5rem;
-        padding-top: 10rem;
+        /* padding-top: 10rem; */
         flex-direction: column;
     }
     .blog-post__img{
@@ -594,7 +594,7 @@ header .navbar .menu ul li a{
     text-align: center;
     font-size: 110px;
     color: #FFF;
-    padding-top: 30%;
+    padding-top: 12rem;
 
 }  
 

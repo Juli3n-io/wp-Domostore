@@ -1,0 +1,49 @@
+2020-01-17T09:59:17+00:00 CRITICAL Uncaught Error: Call to undefined function image() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php:94
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php à la ligne 94
+
+2020-01-17T09:59:38+00:00 CRITICAL Uncaught Error: Call to undefined function image() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php:95
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php à la ligne 95
+
+2020-01-17T09:59:57+00:00 CRITICAL Uncaught Error: Call to undefined function image() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php à la ligne 96
+
+2020-01-17T10:03:58+00:00 CRITICAL Uncaught Error: Call to undefined function image() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php à la ligne 96
+
+2020-01-17T10:09:58+00:00 CRITICAL Uncaught Error: Call to undefined function the_image() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php à la ligne 96
+
+2020-01-17T10:10:13+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_get_attachment_image(), 0 passed in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php on line 96 and at least 1 expected in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/media.php:983
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php(96): wp_get_attachment_image()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#4 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/media.php à la ligne 983
+

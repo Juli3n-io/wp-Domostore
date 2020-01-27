@@ -101,4 +101,28 @@ function login_stylesheet() {
 }
 add_action( 'login_enqueue_scripts', 'login_stylesheet' );
 
+// récupérer image article 
+function catch_that_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	$first_img = $matches [1] [0];
+	
+	if(empty($first_img)){ //Defines a default image
+	$first_img = "/images/default.jpg";
+	}
+	return $first_img;
+	}
+
+	add_theme_support( 'post-thumbnails' );
+
+	// Définir la taille des images mises en avant
+	set_post_thumbnail_size( 320, 240, true );
+	
+	// Définir d'autres tailles d'images
+	add_image_size( 'products', 800, 600, false );
+	add_image_size( 'square', 256, 256, false );
+
 ?>

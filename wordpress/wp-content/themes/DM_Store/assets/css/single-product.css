@@ -1,0 +1,72 @@
+#showcase{
+    margin-top: 12rem;
+}
+
+#showcase h1{
+    font-size: 50px;
+    margin-bottom: 2rem;  
+}
+
+#showcase img{
+    width: 90%;
+    margin-left:1rem;
+}
+
+#showcase .showcase-right{
+    margin-top: 3rem;
+}
+
+#showcase .btn_achat{
+
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #32373c;
+    border-radius: .8rem;
+}
+#showcase .btn_achat:hover{
+    background-color: #FFC270;
+    color: #FFF;
+    text-decoration: none;
+}
+#description{
+    background: #F1F1F1;
+    padding: 30px 0 30px 0;  
+    margin-top: 2rem;
+}
+
+#description p{
+    font-size: 32px;
+    color: #000;
+}
+
+#info1{
+    margin-top: 3rem;
+}
+#info2{
+    margin : 20px 0 60px 0;
+    background-color: #F1F1F1;
+}
+
+.price{
+    font-weight: bold;
+   color: #FFC270;
+}
+.regular_price{
+    text-decoration: line-through;;
+}
+
+.badge_promo{
+    font-weight: bold;
+    color: #FFF;
+    background-color: #FFC270;
+    padding: 1rem 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: .8rem;
+    margin-bottom: 1rem;
+}

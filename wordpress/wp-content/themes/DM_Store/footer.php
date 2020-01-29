@@ -1,6 +1,5 @@
 </main>		
 	<?php wp_footer(); // intégre des éléments indispensable à WP. Comme les fichiers css, js, la barre d'administration côté FrontEnd, etc.. ?>
-<<<<<<< HEAD
 	<div class="back_to_top">
 		<a href="#top_from_page">Retour en haut</a>
 	</div>
@@ -25,11 +24,6 @@
           </span>
 		<p>&copy; <?php bloginfo( 'name' );?> 2019-2020</p>
 	</div>
-=======
-	<footer class="container">
-	<?php dynamic_sidebar('region-footer'); ?>
-	  <p>&copy; Domostore Tous droit réservé</p>
->>>>>>> f745e8989435a6bdbe7d8cd31716d55ba69e0170
 	</footer>
 	
 	
@@ -37,6 +31,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>  
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/assets/js/single-product.js"></script>
+	 <!-- for single-product page-->
 	
 	</body>
 </html>

@@ -125,4 +125,20 @@ function catch_that_image() {
 	add_image_size( 'products', 800, 600, false );
 	add_image_size( 'square', 256, 256, false );
 
+
+	//WOOCOMMERCE
+
+	// Gérer les blocs de description produits
+
+add_filter( 'woocommerce_product_tabs', 'wpm_remove_product_tabs', 98 );
+
+function wpm_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['description'] );      	// Supprime le bloc "Description"
+    unset( $tabs['reviews'] ); 			// Supprime le bloc "Avis"
+    unset( $tabs['additional_information'] );  	// Supprime le bloc "Information complémentaires"
+
+    return $tabs;
+
+}
 ?>

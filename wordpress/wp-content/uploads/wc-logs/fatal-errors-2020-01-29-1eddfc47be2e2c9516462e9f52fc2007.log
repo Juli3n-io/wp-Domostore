@@ -1,0 +1,188 @@
+2020-01-29T09:24:22+00:00 CRITICAL Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:10
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 10
+
+2020-01-29T09:26:23+00:00 CRITICAL syntax error, unexpected end of file dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php à la ligne 129
+
+2020-01-29T09:27:29+00:00 CRITICAL syntax error, unexpected end of file dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php à la ligne 134
+
+2020-01-29T09:30:51+00:00 CRITICAL syntax error, unexpected end of file dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/front-page.php à la ligne 136
+
+2020-01-29T10:06:32+00:00 CRITICAL Uncaught Error: Call to undefined function get_short_description() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:18
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 18
+
+2020-01-29T12:27:54+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_reviews() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:80
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 80
+
+2020-01-29T12:40:40+00:00 CRITICAL Uncaught Error: Call to a member function get_upsell_ids() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:69
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 69
+
+2020-01-29T12:41:02+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_reviews() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:87
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 87
+
+2020-01-29T12:53:30+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_comments() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:87
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 87
+
+2020-01-29T17:33:54+00:00 CRITICAL Uncaught Exception: Produit non valide. in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:163
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product_Variable))
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product_Variable))
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php(30): WC_Product->__construct('12')
+#3 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include('/Applications/M...')
+#4 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#6  dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php à la ligne 163
+
+2020-01-29T17:34:15+00:00 CRITICAL Uncaught Exception: Produit non valide. in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:163
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product_Variable))
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product_Variable))
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php(30): WC_Product->__construct('12')
+#3 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include('/Applications/M...')
+#4 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#6  dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php à la ligne 163
+
+2020-01-29T17:43:40+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:83
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 83
+
+2020-01-29T17:44:01+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:83
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 83
+
+2020-01-29T17:44:04+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:83
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 83
+
+2020-01-29T17:45:55+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:84
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 84
+
+2020-01-29T17:48:04+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:85
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 85
+
+2020-01-29T17:48:27+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:85
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 85
+
+2020-01-29T17:48:31+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:85
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 85
+
+2020-01-29T17:48:59+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:85
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 85
+
+2020-01-29T17:49:23+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:85
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 85
+
+2020-01-29T17:50:20+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:86
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 86
+
+2020-01-29T17:51:53+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:86
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 86
+
+2020-01-29T17:52:16+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:86
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 86
+
+2020-01-29T17:52:59+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_related_products() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:86
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 86
+
+2020-01-29T18:16:22+00:00 CRITICAL syntax error, unexpected '<', expecting end of file dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 38
+
+2020-01-29T18:31:55+00:00 CRITICAL syntax error, unexpected '<' dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 21
+
+2020-01-29T21:37:31+00:00 CRITICAL syntax error, unexpected '}' dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 5
+
+2020-01-29T21:38:06+00:00 CRITICAL syntax error, unexpected '}' dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 5
+
+2020-01-29T21:38:10+00:00 CRITICAL syntax error, unexpected '}' dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 5
+

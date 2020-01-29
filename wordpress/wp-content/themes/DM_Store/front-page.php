@@ -12,7 +12,7 @@ background-position: center;
 id="top_from_page"
 >
 
-<h1> <?php bloginfo( 'name' );?></h1>
+<h1 class="f-name"> <?php bloginfo( 'name' );?></h1>
 <span class="ligne"></span>
 <h3><?php bloginfo( 'description' ); ?></h3>
 </div>

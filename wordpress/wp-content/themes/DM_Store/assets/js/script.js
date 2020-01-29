@@ -45,3 +45,9 @@ window.addEventListener('scroll', () => {
     
   }
 });
+
+window.sr = ScrollReveal();
+sr.reveal('.f-name', {
+  duration: 2000,
+  origin: 'bottom'
+});

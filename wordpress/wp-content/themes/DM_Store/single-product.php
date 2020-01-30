@@ -40,7 +40,15 @@
       
     </p>
       <br>
-      <a href="" class="btn_achat">Acheter</a>
+      <!-- Bouton Achat -->
+      <?php
+          echo '<span class="cart">';
+              $product_id = $product->get_id();
+              $link   = esc_url( $product->add_to_cart_url() );
+              $label  = apply_filters('add_to_cart_text', __('Add to cart', 'woocommerce'));
+          echo sprintf('<a href="%s" data-product_id="%s" class="btn_achat add_to_cart_button product_type_%s">Acheter</a>', $link,  $product_id->id,  $product_id->product_type, $label);
+          echo '</span>';
+      ?>
     </div>
 
     </div>

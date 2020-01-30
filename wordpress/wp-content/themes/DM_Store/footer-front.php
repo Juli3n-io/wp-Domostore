@@ -11,5 +11,6 @@
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>  
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/assets/js/front.js"></script>
 	</body>
 </html>

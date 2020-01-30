@@ -17,8 +17,8 @@
 
   <body id="body" <?php body_class(); // correspond plus ou moins au nom de la ressource en classe css. https://codex.wordpress.org/Function_Reference/body_class ?>>		
 	
-<header class="header block">
-  <div class="navbar ">
+<header class="header">
+  <div class="navbar">
     <ul>
       <li>
         <div class="container_logo">
@@ -74,7 +74,7 @@
 
   </div>
 
-  <div class="responsive-bar ">
+  <div class="responsive-bar">
     <ul>
       <li>
         <div class="responsive-btn ">

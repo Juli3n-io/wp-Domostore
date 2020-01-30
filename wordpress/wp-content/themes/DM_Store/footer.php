@@ -31,8 +31,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>  
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/assets/js/single-product.js"></script>
-	 <!-- for single-product page-->
-	
+	<script src="https://unpkg.com/scrollreveal"></script>
 	</body>
 </html>

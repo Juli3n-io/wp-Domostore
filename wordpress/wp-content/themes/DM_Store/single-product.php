@@ -101,20 +101,27 @@ $attachment_ids =$product->get_gallery_image_ids();
       </div>    
     </div>
 
+    <?php 
+        $related_products_ids = $product->get_related();
+        $product_1 = $related_products_ids[0];
+        $product_2 = $related_products_ids[1];
+        $product_3 = $related_products_ids[2];
+    ?>
+
     <div class="col-md-6 col-sm-6">
       <div class="rewiews">
         <h5>Avis Clients</h5>
-        <?php echo $product->get_average_rating();?>
+        <?php echo $product_1;?> 
+        <?php echo $product_2;?> 
+        <?php echo $product_3;?> 
+
+        <img src=<?php echo $product_1->get_image();?>
       </div>
     </div>
 
     </div>
   </div>
 </section>
-
-
-
-
 
 
 

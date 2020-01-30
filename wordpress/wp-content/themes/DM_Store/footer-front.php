@@ -31,6 +31,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>  
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
+<<<<<<< HEAD
 	
+=======
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/assets/js/front.js"></script>
+>>>>>>> 1a6abd3b724d5b41cf29b2bb73c9c5c943880a94
 	</body>
 </html>

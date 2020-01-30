@@ -1,4 +1,10 @@
-<?php get_header(); // appel du fichier header.php ?>
+<?php 
+if(is_page('front-page')){
+	get_header('front');
+}else{
+	get_header();
+}
+?>
 <!-- En tête personalisé -->
 <div class="main-image" 
 style="
@@ -13,8 +19,8 @@ id="top_from_page"
 >
 
 <h1 class="f-name"> <?php bloginfo( 'name' );?></h1>
-<span class="ligne"></span>
-<h3><?php bloginfo( 'description' ); ?></h3>
+<span class="ligne f-name"></span>
+<h3 class="f-name"><?php bloginfo( 'description' ); ?></h3>
 </div>
 
 <!-- Titre de la page-->
@@ -121,4 +127,10 @@ $result = get_terms($args);
 
 
 
-<?php get_footer(); // appel du fichier footer.php ?>
+<?php 
+if(is_page('front-page')){
+	get_footer('front');
+}else{
+	get_footer();
+}
+?>

@@ -54,7 +54,7 @@
     
 }
 
-#info2 h2{
+#info2 h4{
     margin-top: 3rem;
     text-align: center;
 }
@@ -76,7 +76,7 @@
     margin-top: 1rem !important;
     text-align: center;
 }
-#info2 .btn_achat{
+#info2 .related_btn_achat{
 
     display: inline-block;
     padding: 0rem 1rem;
@@ -111,4 +111,12 @@
     text-transform: uppercase;
     border-radius: .8rem;
     margin-bottom: 1rem;
+}
+
+.related_price{
+    font-weight: bold;
+   color: #FFC270;
+}
+.related_regular_price{
+    text-decoration: line-through;;
 }

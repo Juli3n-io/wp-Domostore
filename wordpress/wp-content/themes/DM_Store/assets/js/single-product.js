@@ -61,3 +61,11 @@ sr.reveal('.rewiews' , {
     viewFactor: 0.2
 
 });
+
+sr.reveal('.related_products' , {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '300px',
+    viewFactor: 0.2
+
+});

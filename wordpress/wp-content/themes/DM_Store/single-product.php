@@ -128,10 +128,10 @@ $attachment_ids =$product->get_gallery_image_ids();
           </a>
         </h6>
 
-        <p class="price">
+        <p class="related_price">
           <?php echo $product_1->get_regular_price();?> €
         </p>
-        <p class="regular_price">
+        <p class="related_regular_price">
           <?php if ( $product_1->is_on_sale() ) : ?>
             <?php echo $product_1->get_regular_price();?> €
           <?php endif;?>
@@ -142,7 +142,7 @@ $attachment_ids =$product->get_gallery_image_ids();
               $product_id = $product_1->get_id();
               $link   = esc_url( $product_1->add_to_cart_url() );
               $label  = apply_filters('add_to_cart_text', __('Add to cart', 'woocommerce'));
-          echo sprintf('<a href="%s" data-product_id="%s" class="btn_achat add_to_cart_button product_type_%s">Acheter</a>', $link,  $product_id->id,  $product_id->product_type, $label);
+          echo sprintf('<a href="%s" data-product_id="%s" class="related_btn_achat add_to_cart_button product_type_%s">Acheter</a>', $link,  $product_id->id,  $product_id->product_type, $label);
           echo '</span>';
       ?>
       </div> 
@@ -151,20 +151,20 @@ $attachment_ids =$product->get_gallery_image_ids();
     <div class="col-md-4 col-sm-4">
       <div class="related_products">
         <div>
-          <a href=""<?php echo get_permalink($product_2->get_id());?>">
+          <a href="<?php echo get_permalink($product_2->get_id());?>">
               <img src=<?php echo $product_2->get_image();?>
           </a>
         </div>
         <h6>
-          <a href=" "<?php echo get_permalink($product_2->get_id());?> " class="related_product_name">
+          <a href="<?php echo get_permalink($product_2->get_id());?> " class="related_product_name">
              <?php echo $product_2->get_name();?> 
           </a>
         </h6>
 
-        <p class="price">
+        <p class="related_price">
           <?php echo $product_2->get_regular_price();?> €
         </p>
-        <p class="regular_price">
+        <p class="related_regular_price">
           <?php if ( $product_2->is_on_sale() ) : ?>
             <?php echo $product_2->get_regular_price();?> €
           <?php endif;?>
@@ -175,7 +175,7 @@ $attachment_ids =$product->get_gallery_image_ids();
               $product_id = $product_2->get_id();
               $link   = esc_url( $product_2->add_to_cart_url() );
               $label  = apply_filters('add_to_cart_text', __('Add to cart', 'woocommerce'));
-          echo sprintf('<a href="%s" data-product_id="%s" class="btn_achat add_to_cart_button product_type_%s">Acheter</a>', $link,  $product_id->id,  $product_id->product_type, $label);
+          echo sprintf('<a href="%s" data-product_id="%s" class="related_btn_achat add_to_cart_button product_type_%s">Acheter</a>', $link,  $product_id->id,  $product_id->product_type, $label);
           echo '</span>';
       ?>
       </div> 
@@ -184,7 +184,7 @@ $attachment_ids =$product->get_gallery_image_ids();
     <div class="col-md-4 col-sm-4">
       <div class="related_products">
         <div>
-          <a href=""<?php echo get_permalink($product_3->get_id());?>">
+          <a href="<?php echo get_permalink($product_3->get_id());?>">
               <img src=<?php echo $product_3->get_image();?>
           </a>
         </div>
@@ -194,10 +194,10 @@ $attachment_ids =$product->get_gallery_image_ids();
           </a>
         </h6>
 
-        <p class="price">
+        <p class="related_price">
           <?php echo $product_3->get_price();?> €
         </p>
-        <p class="regular_price">
+        <p class="related_regular_price">
           <?php if ( $product_3->is_on_sale() ) : ?>
             <?php echo $product_3->get_regular_price();?> €
           <?php endif;?>
@@ -208,7 +208,7 @@ $attachment_ids =$product->get_gallery_image_ids();
               $product_id = $product_3->get_id();
               $link   = esc_url( $product_3->add_to_cart_url() );
               $label  = apply_filters('add_to_cart_text', __('Add to cart', 'woocommerce'));
-          echo sprintf('<a href="%s" data-product_id="%s" class="btn_achat add_to_cart_button product_type_%s">Acheter</a>', $link,  $product_id->id,  $product_id->product_type, $label);
+          echo sprintf('<a href="%s" data-product_id="%s" class="related_btn_achat add_to_cart_button product_type_%s">Acheter</a>', $link,  $product_id->id,  $product_id->product_type, $label);
           echo '</span>';
       ?>
       </div> 

@@ -392,3 +392,187 @@ Stack trace:
 #3 {main}
   thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 118
 
+2020-01-30T18:46:35+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:118
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 118
+
+2020-01-30T18:46:57+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:118
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 118
+
+2020-01-30T19:10:15+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:118
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 118
+
+2020-01-30T19:10:29+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:118
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 118
+
+2020-01-30T19:11:04+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:118
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 118
+
+2020-01-30T19:16:05+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:118
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 118
+
+2020-01-30T19:16:48+00:00 CRITICAL Uncaught Error: Call to undefined function add_to_cart() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:43
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 43
+
+2020-01-30T19:17:11+00:00 CRITICAL Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:43
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 43
+
+2020-01-30T19:17:16+00:00 CRITICAL Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:43
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 43
+
+2020-01-30T19:24:04+00:00 CRITICAL Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:43
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 43
+
+2020-01-30T19:24:18+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+
+2020-01-30T19:24:25+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+
+2020-01-30T19:26:45+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+
+2020-01-30T19:27:00+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+
+2020-01-30T19:29:00+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+
+2020-01-30T19:30:26+00:00 CRITICAL Uncaught Error: Call to undefined function get_id() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:43
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 43
+
+2020-01-30T19:31:34+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+
+2020-01-30T19:33:15+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+
+2020-01-30T19:33:35+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+
+2020-01-30T19:34:46+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+
+2020-01-30T19:35:09+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+
+2020-01-30T19:35:14+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+
+2020-01-30T19:37:01+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 124
+

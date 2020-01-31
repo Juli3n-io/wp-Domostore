@@ -70,14 +70,23 @@ $attachment_ids =$product->get_gallery_image_ids();
 <section id="info1">
   <div class="container">
     <div class="row">
-
+    
       <div class="col-md-6 col-sm-6">
         <div class="info-left">
-        <?php 
-          foreach( $attachment_ids as $attachment_id ) 
-          {
-            echo wp_get_attachment_image($attachment_id);
-        };?>  
+          <a href=<?php  echo wp_get_attachment_image($attachment_ids[0]);?>
+           <img src=<?php  echo wp_get_attachment_image($attachment_ids[0]);?>
+          </a>
+          <a href=<?php  echo wp_get_attachment_image($attachment_ids[1]);?>
+           <img src=<?php  echo wp_get_attachment_image($attachment_ids[1]);?>
+          </a>
+          <a href=<?php  echo wp_get_attachment_image($attachment_ids[2]);?>
+           <img src=<?php  echo wp_get_attachment_image($attachment_ids[2]);?>
+          </a>
+          <a href=<?php  echo wp_get_attachment_image($attachment_ids[3]);?>
+           <img src=<?php  echo wp_get_attachment_image($attachment_ids[3]);?>
+          </a>
+        
+          
         </div>
 
       </div>
@@ -217,7 +226,6 @@ $attachment_ids =$product->get_gallery_image_ids();
     </div>
   </div>
 </section>
-
 
 
 <?php get_footer();?>

@@ -73,19 +73,18 @@ $attachment_ids =$product->get_gallery_image_ids();
     
       <div class="col-md-6 col-sm-6">
         <div class="info-left">
-          <a class="showcase_pics" href="#">
-           <img src=<?php  echo wp_get_attachment_image($attachment_ids[0]);?>
+          <a href="#portfolio-item-0" class="portfolio__item">
+          <img src=<?php  echo wp_get_attachment_image($attachment_ids[0]);?>
           </a>
-          <a class="showcase_pics" href="#">
-           <img src=<?php  echo wp_get_attachment_image($attachment_ids[1]);?>
+          <a href="#portfolio-item-1" class="portfolio__item">
+          <img src=<?php  echo wp_get_attachment_image($attachment_ids[1]);?>
           </a>
-          <a  class="showcase_pics" href="#">
-           <img src=<?php  echo wp_get_attachment_image($attachment_ids[2]);?>
+          <a href="#portfolio-item-2" class="portfolio__item">
+          <img src=<?php  echo wp_get_attachment_image($attachment_ids[2]);?>
           </a>
-          <a class="showcase_pics" href="#">
-           <img src=<?php  echo wp_get_attachment_image($attachment_ids[3]);?>
+          <a href="#portfolio-item-3" class="portfolio__item">
+          <img src=<?php  echo wp_get_attachment_image($attachment_ids[3]);?>
           </a>
-        
           
         </div>
 
@@ -227,19 +226,47 @@ $attachment_ids =$product->get_gallery_image_ids();
   </div>
 </section>
 
- <section class="lightbox">
-        <button class="lightbox__close"></button>
-        <button class="lightbox__next"></button>
-        <button class="lightbox__prev"></button>
-        <div class="lightbox_container">
-          <img src=<?php  echo wp_get_attachment_image($attachment_ids[0]);?>
-          
-        </div>
+ <section class="portfolio-lightboxes">
 
+    <div class="portfolio-lightbox" id="portfolio-item-0">
+      <div class="portfolio-lightbox__content">
+        <a href="#" class="close"></a>
+        <a href="#portfolio-item-1" class="next"></a>
+        <a href="#portfolio-item-0" class="prev"></a>
+        <img width="300px" height="300px" src=<?php  echo wp_get_attachment_image($attachment_ids[0]);?>
+      </div>
+    </div>
+
+    <div class="portfolio-lightbox" id="portfolio-item-1">
+      <div class="portfolio-lightbox__content">
+        <a href="#" class="close"></a>
+        <a href="#portfolio-item-2" class="next"></a>
+        <a href="#portfolio-item-1" class="prev"></a>
+        <img width="300px" height="300px" src=<?php  echo wp_get_attachment_image($attachment_ids[1]);?>
+      </div>
+    </div>
+
+    <div class="portfolio-lightbox" id="portfolio-item-2">
+      <div class="portfolio-lightbox__content">
+        <a href="#" class="close"></a>
+        <a href="#portfolio-item-3" class="next"></a>
+        <a href="#portfolio-item-2" class="prev"></a>
+        <img  width="300px" height="300px"src=<?php  echo wp_get_attachment_image($attachment_ids[2]);?>
+      </div>
+    </div>
+
+    <div class="portfolio-lightbox" id="portfolio-item-3">
+      <div class="portfolio-lightbox__content">
+        <a href="#" class="close"></a>
+        <a href="#portfolio-item-0" class="next"></a>
+        <a href="#portfolio-item-2" class="prev"></a>
+        <img width="300px" height="300px"  src=<?php  echo wp_get_attachment_image($attachment_ids[3]);?>
+      </div>
+    </div>
  </section>
 
  <script>
  
  </script>
 
-<?php get_footer();?>
+<?php get_footer();?> 

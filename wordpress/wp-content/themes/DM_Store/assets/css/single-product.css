@@ -47,28 +47,33 @@
 #info1{
     padding-top: 3rem;
 }
-#info2{
+#review{
+    background: #F1F1F1;
+    padding: 30px 0 30px 0;  
+    margin-top: 2rem;
+}
+#related{
     background: #FFF;
     padding: 30px 0 30px 0;  
     margin-top: 2rem;
     
 }
 
-#info2 h4{
+#related h4{
     margin-top: 3rem;
     text-align: center;
 }
-#info2 .related_products{
+#related .related_products{
     margin: 0 auto;
     border-radius: 10px;
 }
-#info2 h6{
+#related h6{
     margin-top: 1rem !important;
 }
-#info2 p{
+#related p{
     margin-bottom: 0 !important;
 }
-#info2 .related_product_name{
+#related .related_product_name{
     text-decoration: none;
     font-weight: bold;
     padding: 30px 0 30px 0; 
@@ -76,7 +81,7 @@
     margin-top: 1rem !important;
     text-align: center;
 }
-#info2 .related_btn_achat{
+#related .related_btn_achat{
 
     display: inline-block;
     padding: 0rem 1rem;
@@ -89,7 +94,7 @@
     border-radius: .8rem;
     margin:1rem 1rem 1rem 3rem;
 }
-#info2 .btn_achat:hover{
+#related .btn_achat:hover{
     background-color: #FFC270;
     color: #FFF;
     text-decoration: none;

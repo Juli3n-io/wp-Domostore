@@ -126,6 +126,7 @@ $attachment_ids =$product->get_gallery_image_ids();
   </div>
 </section>
 
+  
 <!-- Récupération des produits liés-->
 <?php 
         $related_products_ids = $product->get_related();
@@ -137,7 +138,7 @@ $attachment_ids =$product->get_gallery_image_ids();
         $product_3 = wc_get_product($product_3_ids);
     ?>
 
-<section id=info2>
+<section id=related>
   <h4>Vous pourriez aimer également :</h4>
 
   <div class="container">

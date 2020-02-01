@@ -98,8 +98,8 @@ $attachment_ids =$product->get_gallery_image_ids();
           <p>Dimensions: <span><?php echo $product->get_dimensions();?></span></p>
           <p>sku : <span><?php echo $product->get_sku();?></span></p>
         </div>
+        <?php echo do_shortcode("[Sassy_Social_Share]");?>
       </div>
-
     </div>
   </div>
 </section>

@@ -118,7 +118,7 @@ $attachment_ids =$product->get_gallery_image_ids();
     <div class="col-md-6 col-sm-6">
     <div class="reviews-right">
     <h4>Dernier avis client:</h4>
-    <?php echo do_shortcode('[random_testimonial]');?>
+    <?php echo do_shortcode('[random_review]');?>
     </div>
     </div>
 

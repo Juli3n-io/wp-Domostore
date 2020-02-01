@@ -1,13 +1,4 @@
 
-.lightbox__loader{
-    height: 40px;
-    width: 40px;
-    opacity: .5;
-    background: url('../icons/loader.svg') center center no-repeat;
-}
-
-
-
 .portfolio-lightbox{
     display: none;
     align-items: center;

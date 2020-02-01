@@ -104,7 +104,26 @@ $attachment_ids =$product->get_gallery_image_ids();
   </div>
 </section>
 
+<section id="review">
+  <div class="container">
+    <div class="row">
 
+    <div class="col-md-6 col-sm-6">
+    <div class="reviews-left">
+       
+    </div>
+    </div>
+
+    <div class="col-md-6 col-sm-6">
+    <div class="reviews-right">
+    <h4>Dernier avis client:</h4>
+    <?php echo do_shortcode('[random_testimonial]');?>
+    </div>
+    </div>
+
+    </div>
+  </div>
+</section>
 <!-- Récupération des produits liés-->
 <?php 
         $related_products_ids = $product->get_related();
@@ -116,7 +135,7 @@ $attachment_ids =$product->get_gallery_image_ids();
         $product_3 = wc_get_product($product_3_ids);
     ?>
 
-<section id=info2>
+<section id=related>
   <h4>Vous pourriez aimer également :</h4>
 
   <div class="container">

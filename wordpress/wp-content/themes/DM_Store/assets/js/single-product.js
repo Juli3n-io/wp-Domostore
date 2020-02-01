@@ -54,9 +54,9 @@ sr.reveal('.rewiew_form' , {
 
 });
 
-sr.reveal('.rewiews' , {
+sr.reveal('.reviews-left' , {
     duration: 2000,
-    origin: 'right',
+    origin: 'left',
     distance: '300px',
     viewFactor: 0.2
 

@@ -73,16 +73,16 @@ $attachment_ids =$product->get_gallery_image_ids();
     
       <div class="col-md-6 col-sm-6">
         <div class="info-left">
-          <a href=<?php  echo wp_get_attachment_image($attachment_ids[0]);?>
+          <a class="showcase_pics" href="#">
            <img src=<?php  echo wp_get_attachment_image($attachment_ids[0]);?>
           </a>
-          <a href=<?php  echo wp_get_attachment_image($attachment_ids[1]);?>
+          <a class="showcase_pics" href="#">
            <img src=<?php  echo wp_get_attachment_image($attachment_ids[1]);?>
           </a>
-          <a href=<?php  echo wp_get_attachment_image($attachment_ids[2]);?>
+          <a  class="showcase_pics" href="#">
            <img src=<?php  echo wp_get_attachment_image($attachment_ids[2]);?>
           </a>
-          <a href=<?php  echo wp_get_attachment_image($attachment_ids[3]);?>
+          <a class="showcase_pics" href="#">
            <img src=<?php  echo wp_get_attachment_image($attachment_ids[3]);?>
           </a>
         
@@ -227,5 +227,19 @@ $attachment_ids =$product->get_gallery_image_ids();
   </div>
 </section>
 
+ <section class="lightbox">
+        <button class="lightbox__close"></button>
+        <button class="lightbox__next"></button>
+        <button class="lightbox__prev"></button>
+        <div class="lightbox_container">
+          <img src=<?php  echo wp_get_attachment_image($attachment_ids[0]);?>
+          
+        </div>
+
+ </section>
+
+ <script>
+ 
+ </script>
 
 <?php get_footer();?>

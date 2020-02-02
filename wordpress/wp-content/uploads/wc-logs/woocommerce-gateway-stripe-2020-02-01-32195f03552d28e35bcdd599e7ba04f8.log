@@ -1,0 +1,21 @@
+2020-02-01T18:56:44+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Domain association file updated.
+====End Log====
+
+
+2020-02-01T18:56:44+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: Impossible de vérifier la clé secrète manquante du domaine.
+====End Log====
+
+
+2020-02-01T18:57:06+00:00 DEBUG 
+====Stripe Version: 4.3.1====
+====Start Log====
+Error: Impossible de vérifier la clé secrète manquante du domaine.
+====End Log====
+
+

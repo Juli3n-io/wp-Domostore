@@ -1,0 +1,46 @@
+
+.portfolio-lightbox{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+    transform: scale(0,0);
+    transition: transform ease-in-out 200ms;
+}
+
+.portfolio-lightbox:target{
+    display: flex;
+    transform: scale(1,1);
+}
+.portfolio-lightbox__content{
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    width: 0.5em;
+    height: 0.5em;
+    background: url('../icons/close.svg')center center / 100% no-repeat transparent;
+    top: -1em;
+    right: -1em;
+} 
+.next{
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background: url('../icons/next.svg') center center / 100% no-repeat transparent;
+    right: -2em;
+    top: 50%;
+}
+
+.prev{
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background: url('../icons/prev.svg') center center / 100% no-repeat transparent;
+    left: -2em;
+    top: 50%;
+}

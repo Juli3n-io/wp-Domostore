@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Elementor Page Builder - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-01-01 19:48:17+0000\n"
+"PO-Revision-Date: 2020-01-27 17:40:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3753,7 +3753,7 @@ msgstr "Encadré"
 #: includes/widgets/icon.php:127 includes/widgets/text-editor.php:260
 #: includes/widgets/icon-box.php:111 includes/widgets/divider.php:768
 msgid "Stacked"
-msgstr "Empilé"
+msgstr "Rempli"
 
 #: includes/widgets/icon-list.php:498
 msgid "Text Indent"
@@ -4202,7 +4202,7 @@ msgstr "Couleur de bordure"
 #: includes/widgets/button.php:245 includes/widgets/heading.php:205
 #: includes/widgets/video.php:476
 msgid "View"
-msgstr "Voir"
+msgstr "Vue"
 
 #: includes/widgets/accordion.php:111
 msgid "Accordion Content"

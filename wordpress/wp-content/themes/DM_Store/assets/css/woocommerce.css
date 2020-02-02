@@ -50,7 +50,7 @@
 .wc-block-grid__product-title {
     line-height: 1.2;
     font-weight: 700;
-    color: #000;
+    color: #32373c; !important;
     font-family: 'Patua One', cursive;
 }
 
@@ -96,6 +96,29 @@
     margin-bottom: 16px;
     display: block;
     padding-top: 10px;
+}
+
+/* **** Single Page Product **** */
+
+.single_add_to_cart_button{
+    background-color: #32373c !important;
+    border: none;
+    border-radius: 10px !important;
+    box-shadow: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px !important;
+    margin: 0;
+    padding: 7px 14px! important;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: break-word; 
+}
+
+.single_add_to_cart_button:hover{
+    background-color: #FFC270 !important;
+    text-decoration: none !important;
 }
 
 /* **********  *********** */

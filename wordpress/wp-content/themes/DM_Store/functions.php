@@ -125,4 +125,66 @@ function catch_that_image() {
 	add_image_size( 'products', 800, 600, false );
 	add_image_size( 'square', 256, 256, false );
 
+
+	//WOOCOMMERCE
+
+	// Gérer les blocs de description produits
+
+add_filter( 'woocommerce_product_tabs', 'wpm_remove_product_tabs', 98 );
+
+function wpm_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['description'] );      	// Supprime le bloc "Description"
+    unset( $tabs['reviews'] ); 			// Supprime le bloc "Avis"
+    unset( $tabs['additional_information'] );  	// Supprime le bloc "Information complémentaires"
+
+    return $tabs;
+
+}
+
+function woocommerce_related_products( $args = array() ) {
+    global $product;
+
+    if ( ! $product ) {
+      return;
+    }
+
+    $defaults = array(
+      'posts_per_page' => 2,
+      'columns'        => 2,
+      'orderby'        => 'rand', // @codingStandardsIgnoreLine.
+      'order'          => 'desc',
+    );
+
+    $args = wp_parse_args( $args, $defaults );
+
+    // Get visible related products then sort them at random.
+    $args['related_products'] = array_filter( array_map( 'wc_get_product', wc_get_related_products( $product->get_id(), $args['posts_per_page'], $product->get_upsell_ids() ) ), 'wc_products_array_filter_visible' );
+
+    // Handle orderby.
+    $args['related_products'] = wc_products_array_orderby( $args['related_products'], $args['orderby'], $args['order'] );
+
+    // Set global loop values.
+    wc_set_loop_prop( 'name', 'related' );
+    wc_set_loop_prop( 'columns', apply_filters( 'woocommerce_related_products_columns', $args['columns'] ) );
+
+    wc_get_template( 'single-product/related.php', $args );
+  }
+  
+/**
+ * Change number of related products output
+ */ 
+function woo_related_products_limit() {
+	global $product;
+	  
+	  $args['posts_per_page'] = 6;
+	  return $args;
+  }
+  add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
+	function jk_related_products_args( $args ) {
+	  $args['posts_per_page'] = 3; // 4 related products
+	  $args['columns'] = 3; // arranged in 2 columns
+	  return $args;
+  }
+
 ?>

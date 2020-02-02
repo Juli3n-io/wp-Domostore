@@ -1,5 +1,6 @@
 </main>		
 	<?php wp_footer(); // intégre des éléments indispensable à WP. Comme les fichiers css, js, la barre d'administration côté FrontEnd, etc.. ?>
+
 	<div class="back_to_top">
 		<a href="#top_from_page">Retour en haut</a>
 	</div>
@@ -24,6 +25,7 @@
           </span>
 		<p>&copy; <?php bloginfo( 'name' );?> 2019-2020</p>
 	</div>
+
 	</footer>
 	
 	

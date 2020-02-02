@@ -28,7 +28,7 @@ define( 'DB_USER', 'swr60304' );
 
 /** Mot de passe de la base de données MySQL. */
 // define( 'DB_PASSWORD', 'root' );
-define( 'DB_PASSWORD', 'UcS3dsddhbMg' );
+define( 'DB_PASSWORD', 'Dm@Jvbtkf@3953891' );
 
 /** Adresse de l’hébergement MySQL. */
 // define( 'DB_HOST', 'localhost' );

@@ -1,0 +1,64 @@
+body{
+    background-color: #FFF !important;
+}
+
+a{
+    text-decoration: none;
+    color: #000
+}
+a:hover{
+    color: #FFC270;
+    text-decoration: none;
+}
+.page_title{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+h3{
+    text-align: center;
+}
+h3:after{
+    content:'';
+    display: block;
+    height: 2px;
+    background-color: #000;
+    width: 20%;
+    margin: 20px auto;
+    }
+.form-row label{
+    font-weight: bold !important;
+}
+.woocommerce-form-coupon-toggle, .woocommerce-additional-fields{
+    display: none;
+}
+.container{
+    
+    align-items: center;
+    border-radius: 2rem;
+    margin-bottom: 10rem;
+}
+
+.customer_details{
+    left: 1rem;
+}
+#ship-to-different-address{
+    font-size: 0.75rem;
+    text-align: left;
+}
+#ship-to-different-address::after{
+display: none;
+}
+.input-text{
+    background:none;
+    border: none;
+    border-bottom:1px solid #FFC270 ;
+}
+.button{
+    background-color: #000 !important;
+    border-radius: 10px !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #FFC270 !important;
+}

@@ -1,0 +1,55 @@
+html{
+    background-color: #EEE;
+}
+a{
+    text-decoration: none;
+    color: #000
+}
+a:hover{
+    color: #FFC270;
+    text-decoration: none;
+}
+.page_title{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.checkout-button{
+    background-color: #000 !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+a.checkout-button:hover{
+    background-color: #FFC270 !important;
+}
+.cart_totals h2{
+    display: none;
+}
+table{
+    border: none !important;
+    border-bottom: 2px solid #FFC270 !important;
+    text-align: center;
+}
+
+thead{
+    margin-bottom: 1rem !important;
+    border-bottom: 1px solid #FFC270 !important;
+}
+.woocommerce table.shop_table td{
+    border-top: none !important;
+}
+.woocommerce-shipping-totals th{
+    vertical-align: middle !important;
+}
+.cart-subtotal, .woocommerce-shipping-totals th{
+    text-align: center;
+}
+.order-total th{
+    
+    text-align: center;
+    font-size: 200%;
+}
+.order-total td{
+    text-align: center;
+    font-size: 200%;
+} 

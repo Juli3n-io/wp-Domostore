@@ -12,5 +12,5 @@ sr.reveal('.container' , {
 sr.reveal('.checkout-button' , {
     duration: 2000,
     origin: 'bottom',
-    delay:2000
+    delay:1000
 });

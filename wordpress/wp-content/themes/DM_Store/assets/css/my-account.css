@@ -1,0 +1,37 @@
+a{
+    text-decoration: none;
+    color: #000
+}
+a:hover{
+    color: #FFC270;
+    text-decoration: none;
+}
+.page_title{
+    padding-top: 4rem;
+    
+}
+
+/* ****************** */
+/* ****** Login ***** */
+/* ****************** */
+
+ h2{
+    text-align: center !important;
+}
+.woocommerce-form{
+    border: none !important;
+}
+
+.woocommerce-Input{
+    border: none;
+    border-bottom: 2px solid #FFC270;
+}
+.button{
+    background-color: #000 !important;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #FFF !important;
+}
+.button:hover{
+    background-color: #FFC270;
+}

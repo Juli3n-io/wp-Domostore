@@ -1,16 +1,11 @@
 window.sr = ScrollReveal();
-sr.reveal('.customer_details' , {
+sr.reveal('.login' , {
     duration: 2000,
     origin: 'left',
     distance: '300px'
 });
-sr.reveal('.order' , {
+sr.reveal('.register' , {
     duration: 2000,
     origin: 'right',
     distance: '300px'
-});
-sr.reveal('.checkout-button' , {
-    duration: 2000,
-    origin: 'bottom',
-    delay:500
 });

@@ -35,3 +35,39 @@ a:hover{
 .button:hover{
     background-color: #FFC270;
 }
+
+/* ************************* */
+/* ****** Account page ***** */
+/* ************************* */
+
+.woocommerce-MyAccount-navigation{
+    text-align: left;
+    
+}
+.woocommerce-MyAccount-navigation li{
+    padding: 1rem;
+    background-color: #000;
+    border: 1px solid #FFF;
+    
+}
+.woocommerce-MyAccount-navigation li a{
+    
+    color: #FFF;
+    
+    
+}
+.woocommerce-account .woocommerce-MyAccount-content{
+    width: 100%;
+}
+.woocommerce-MyAccount-navigation-link--customer-logout{
+    background-color: #FFC270 !important;
+    color: #000 !important;
+    text-align: center;
+}
+
+.woocommerce-info {
+    border-top-color: #FFC270 !important;
+}
+.woocommerce-info::before{
+    color: #FFC270 !important;
+}

@@ -9,7 +9,7 @@ sr.reveal('.showcase-right' , {
     origin: 'right',
     distance: '300px'
 });
-sr.reveal('.price' , {
+sr.reveal('.sp_price' , {
     duration: 2000,
     origin: 'right',
     distance: '300px'

@@ -111,7 +111,7 @@
 
     </div>
 
-	<?php get_sidebar('entete'); // appel au fichier sidebar-entete.php ?>
+
 </header>
   
 <div class="clear"></div>

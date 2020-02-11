@@ -28,7 +28,7 @@
 
       </div>
       <br>
-      <h4 class="price"><?php echo $product->get_price();?> € </h4>
+      <h4 class="sp_price"><?php echo $product->get_price();?> € </h4>
 
       <p class="regular_price">
 

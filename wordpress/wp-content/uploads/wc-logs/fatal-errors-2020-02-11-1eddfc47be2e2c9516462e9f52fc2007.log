@@ -1,2 +1,4 @@
 2020-02-11T10:28:18+00:00 CRITICAL syntax error, unexpected '<<' (T_SL), expecting end of file dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/functions.php à la ligne 104
 
+2020-02-11T10:41:39+00:00 CRITICAL syntax error, unexpected '<<' (T_SL), expecting ')' dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/functions.php à la ligne 21
+

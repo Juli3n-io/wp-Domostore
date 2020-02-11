@@ -113,8 +113,7 @@ header .menu ul li a {
 }
 
 header .menu ul li:hover {
-    background-color: #FFC270;
-    color: #FFF;
+    border-bottom: 2px solid #FFC270;
 }
 
 header .navbar_panier{
@@ -462,17 +461,120 @@ footer{
 /* **********  *********** */
 /* ******** Page ********* */
 /* **********  *********** */
-
+.sidebar{
+    background-color: #EEE;
+    padding-top: 4rem;
+}
 .title_page{
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
+    margin-left: -5rem;
+    margin-right: -5rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
     height: 20rem;
     
 }
-
-
+.title_page h2{
+	padding-top: 4rem;
+    padding-bottom: 4rem;
+    
+}
+.title_page h2:after{
+    background-color: #FFF !important;
+}
+.title_page h2 a{
+    color: #FFF !important;
+    font-size: 40px;
+}
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    border-radius: 1em;
+    background-color: #FFC270 !important;
+}
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 1em;
+    height: 1em;
+    background-color: #FFC270 !important;
+    border-radius: 1em;
+    cursor: ew-resize;
+    outline: 0;
+    top: -.3em;
+    margin-left: -.5em;
+}
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
+    border-radius: 1em;
+    background-color: #000 !important;
+    border: 0;
+}
+.button{
+    background-color: #000 !important;
+}
+.search-field{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #FFC270;
+    margin-bottom: 0.5rem;
+    width: 14rem;
+}
+#entete button{
+    background-color: #FFC270;
+    
+    color: #FFF;
+    text-transform: uppercase;
+    width: 8rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.product-categories{
+    text-align: center;
+}
+.product-categories li {
+    border-bottom: 0.5px solid rgba(186, 186, 186, 0.52);
+}
+.widgettitle{
+    font-size: 20px;
+}
+.woocommerce-result-count,.term-description{
+    display: none;
+}
+.woocommerce span.onsale {
+    min-height: 3.236em;
+    min-width: 3.236em;
+    padding: .202em;
+    font-size: 1em;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    line-height: 3.236;
+    top: -.5em;
+    left: -.5em;
+    margin: 0;
+    border-radius: 100%;
+    background-color: #FFC270 !important;
+    color: #fff;
+    font-size: .857em;
+    z-index: 0 !important;
+}
+.price{
+    text-align: center;
+    color: #FFC270 !important;
+    
+}
+.price span {
+    font-weight: bold;
+}
+.price del span{
+    text-decoration: line-through;
+    color: #000 !important;
+    font-weight: normal !important;
+}
 /* **********  *********** */
 /* ***** Responsive ****** */
 /* **********  *********** */
@@ -664,6 +766,7 @@ header .navbar .menu ul li a{
     min-width: 30rem;
     max-width: 30rem;
 }
+
 
 }
 

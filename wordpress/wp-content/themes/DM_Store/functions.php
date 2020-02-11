@@ -101,19 +101,90 @@ function login_stylesheet() {
 }
 add_action( 'login_enqueue_scripts', 'login_stylesheet' );
 
-function my_custom_sidebar() {
-    register_sidebar(
-        array (
-            'name' => __( 'Custom', 'DM_Store' ),
-            'id' => 'custom-side-bar',
-            'description' => __( 'Custom Sidebar', 'DM_Store' ),
-            'before_widget' => '<div class="widget-content">',
-            'after_widget' => "</div>",
-            'before_title' => '<h3 class="widget-title">',
-            'after_title' => '</h3>',
-        )
-    );
+// récupérer image article 
+function catch_that_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	$first_img = $matches [1] [0];
+	
+	if(empty($first_img)){ //Defines a default image
+	$first_img = "/images/default.jpg";
+	}
+	return $first_img;
+	}
+
+	add_theme_support( 'post-thumbnails' );
+
+	// Définir la taille des images mises en avant
+	set_post_thumbnail_size( 320, 240, true );
+	
+	// Définir d'autres tailles d'images
+	add_image_size( 'products', 800, 600, false );
+	add_image_size( 'square', 256, 256, false );
+
+
+	//WOOCOMMERCE
+
+	// Gérer les blocs de description produits
+
+add_filter( 'woocommerce_product_tabs', 'wpm_remove_product_tabs', 98 );
+
+function wpm_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['description'] );      	// Supprime le bloc "Description"
+    unset( $tabs['reviews'] ); 			// Supprime le bloc "Avis"
+    unset( $tabs['additional_information'] );  	// Supprime le bloc "Information complémentaires"
+
+    return $tabs;
+
 }
-add_action( 'widgets_init', 'my_custom_sidebar' );
+
+function woocommerce_related_products( $args = array() ) {
+    global $product;
+
+    if ( ! $product ) {
+      return;
+    }
+
+    $defaults = array(
+      'posts_per_page' => 2,
+      'columns'        => 2,
+      'orderby'        => 'rand', // @codingStandardsIgnoreLine.
+      'order'          => 'desc',
+    );
+
+    $args = wp_parse_args( $args, $defaults );
+
+    // Get visible related products then sort them at random.
+    $args['related_products'] = array_filter( array_map( 'wc_get_product', wc_get_related_products( $product->get_id(), $args['posts_per_page'], $product->get_upsell_ids() ) ), 'wc_products_array_filter_visible' );
+
+    // Handle orderby.
+    $args['related_products'] = wc_products_array_orderby( $args['related_products'], $args['orderby'], $args['order'] );
+
+    // Set global loop values.
+    wc_set_loop_prop( 'name', 'related' );
+    wc_set_loop_prop( 'columns', apply_filters( 'woocommerce_related_products_columns', $args['columns'] ) );
+
+    wc_get_template( 'single-product/related.php', $args );
+  }
+  
+/**
+ * Change number of related products output
+ */ 
+function woo_related_products_limit() {
+	global $product;
+	  
+	  $args['posts_per_page'] = 6;
+	  return $args;
+  }
+  add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
+	function jk_related_products_args( $args ) {
+	  $args['posts_per_page'] = 3; // 4 related products
+	  $args['columns'] = 3; // arranged in 2 columns
+	  return $args;
+  }
 
 ?>

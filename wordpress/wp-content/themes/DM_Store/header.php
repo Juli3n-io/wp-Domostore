@@ -9,6 +9,10 @@
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/woocommerce.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/assets/css/single-product.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/assets/css/light-box.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/assets/css/my-account.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script> <!-- for single-product page-->
     <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	
@@ -17,8 +21,8 @@
 
   <body id="body" <?php body_class(); // correspond plus ou moins au nom de la ressource en classe css. https://codex.wordpress.org/Function_Reference/body_class ?>>		
 	
-<header class="header">
-  <div class="navbar">
+<header class="header block">
+  <div class="navbar ">
     <ul>
       <li>
         <div class="container_logo">
@@ -74,7 +78,7 @@
 
   </div>
 
-  <div class="responsive-bar">
+  <div class="responsive-bar ">
     <ul>
       <li>
         <div class="responsive-btn ">

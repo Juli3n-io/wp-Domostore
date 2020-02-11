@@ -1,4 +1,10 @@
-<?php get_header(); // appel du fichier header.php ?>
+<?php 
+if(is_page('front-page')){
+	get_header('front');
+}else{
+	get_header();
+}
+?>
 <!-- En tête personalisé -->
 <div class="main-image" 
 style="
@@ -12,9 +18,9 @@ background-position: center;
 id="top_from_page"
 >
 
-<h1> <?php bloginfo( 'name' );?></h1>
-<span class="ligne"></span>
-<h3><?php bloginfo( 'description' ); ?></h3>
+<h1 class="f-name"> <?php bloginfo( 'name' );?></h1>
+<span class="ligne f-name"></span>
+<h3 class="f-name"><?php bloginfo( 'description' ); ?></h3>
 </div>
 
 <!-- Titre de la page-->
@@ -36,8 +42,11 @@ $args = array(
 $result = get_terms($args);
 ?>
 
-<div class="container-fluid"> <!--  affichage des différentes catégorie de produits-->
+<div class="container"> 
+<h3 class="front_titre">Choisir une Catégorie </h3>
+<!--  affichage des différentes catégorie de produits-->
 	<div class="row">
+	
 		<?php
 		foreach ( $result as $cat ) {
 			if ( 'Uncategorized' !== $cat->name ) {
@@ -46,6 +55,8 @@ $result = get_terms($args);
 			$shop_catalog_img_arr = wp_get_attachment_image_src( $cat_thumb_id, 'shop_catalog' );
 			$cat_img = $shop_catalog_img_arr[0];
 				?>
+				
+
 			<div class="col-sm front_cat_product" 
 			style="background: url(<?php echo $cat_img; ?>) no-repeat;
 			background-size: cover;
@@ -64,28 +75,62 @@ $result = get_terms($args);
 
 </section>
 			
-<section>
-<div class="container">
-				<!-- Example row of columns -->
-				<div class="row">
+<section> <!-- Affichage des contenu rajouté par l'utilisateur -->
+	<div class="container">
+		<div class="row">
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				
-				<div class="col-md-12">
+			<div class="col-md-12">
 				
 				<div class="contenu"><?php the_content(); ?></div>
 				</div>
 				<?php endwhile; else: ?>
 				<div class="col-md-12">
 				<p><?php _e('Sorry, no posts matched your criteria.','nouveau_theme'); ?></p>
-				</div>
-				<?php endif; ?>
-			  </div> <!-- /container -->
+		</div><!-- /row -->
+		<?php endif; ?>
+	</div> <!-- /container -->
 </section>
 				
+<section> <!-- Affichage des articles -->
+	<div class="container">
+	<h3 class="front_titre">Les derniers articles </h3>
+		<?php
+		$args = array( 'numberposts' => 5, 'order'=> 'ASC', 'orderby' => 'date' );
+		$postslist = get_posts( $args );
+		foreach ($postslist as $post) :  setup_postdata($post); ?> 
+
+<div class="blog-post">
+        <div class="blog-post__img">
+            <img src=<?php the_post_thumbnail(); ?>
+        </div>
+        <div class="blog-post__info">
+            <div class="blog-post__date">
+                <span><?php the_date(); ?></span>
+            </div>
+            <h2 class="blog-post__title"><?php the_title(); ?></h2>
+            <p class="blog-post__text"><?php the_excerpt(); ?></p>
+                <a href="<?php the_permalink() ?>" class="blog-post__cta">Voir l'article</a>
+        </div>
+
+    </div>
+
+
+
+		
+
+		<?php endforeach; ?>
+		
+	</div><!-- /container -->
+</section>
 
 
 
 
-
-			<?php get_footer(); // appel du fichier footer.php ?>
+<?php 
+if(is_page('front-page')){
+	get_footer('front');
+}else{
+	get_footer();
+}
+?>

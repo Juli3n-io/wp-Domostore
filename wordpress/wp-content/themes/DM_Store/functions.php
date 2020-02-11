@@ -7,24 +7,29 @@
 	
 	// --- REGION/WIDGET
 	add_action( 'widgets_init', 'DM_Store_init_sidebar' ); // j'exécute la fonction nommé "nouveau_theme_init_sidebar".
-	function nouveau_theme_init_sidebar() // fonction qui contient la déclaration de mes régions.
+	function DM_Store_init_sidebar() // fonction qui contient la déclaration de mes régions.
 	{
 		if(function_exists('register_sidebar')) // si la fonction register_sidebar existe (c'est une fonction interne à wordpress), alors je déclare des régions.
 		{
 			register_sidebar( array(
 				'name'          => __( 'region-entete', 'DM_Store' ),
 				'id'            => 'region-entete',
-				'description'   => __( 'Add widgets here to appear in your entete region.', 'nouveau_theme' )
+				'description'   => __( 'Add widgets here to appear in your entete region.', 'DM_Store' )
 			) );
 			register_sidebar( array(
 				'name'          => __( 'colonne de droite', 'DM_Store' ),
 				'id'            => 'colonne-droite',
-				'description'   => __( 'Add widgets here to appear in your colonne droite region.', 'nouveau_theme' )
+				'description'   => __( 'Add widgets here to appear in your colonne droite region.', 'DM_Store' )
 			) );
 			register_sidebar( array(
 				'name'          => __( 'region-footer', 'DM_Store' ),
 				'id'            => 'region-footer',
-				'description'   => __( 'Add widgets here to appear in your region.', 'nouveau_theme' )
+				'description'   => __( 'Add widgets here to appear in your region.', 'DM_Store' )
+			) );
+			register_sidebar( array(
+				'name'          => __( 'colonne de Gauche', 'DM_Store' ),
+				'id'            => 'colonne-gauche',
+				'description'   => __( 'Add widgets here to appear in your colonne gauche region.', 'DM_Store' )
 			) );
 		}
 	}

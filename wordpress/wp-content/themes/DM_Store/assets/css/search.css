@@ -1,0 +1,19 @@
+.search_title{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+
+}
+h1{
+    text-align: center;
+}
+h1:after{
+    content:'';
+    display: block;
+    height: 2px;
+    background-color: #000;
+    width: 20%;
+    margin: 20px auto;
+}
+.card{
+    border: none !important
+}

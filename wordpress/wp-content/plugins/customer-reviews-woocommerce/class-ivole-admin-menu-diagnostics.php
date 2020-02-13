@@ -154,7 +154,7 @@ class Ivole_Diagnostics_Admin_Menu {
                 </tr>
                 <tr>
                     <td data-export-label="WC Slider"><?php _e( 'WC Slider:', IVOLE_TEXT_DOMAIN ); ?></td>
-                    <td class="help"><?php echo Ivole_Admin::ivole_wc_help_tip( __( 'Displays whether or not WooCommerce Slider library is enabled.', IVOLE_TEXT_DOMAIN ) ); ?></td>
+                    <td class="help"><?php echo Ivole_Admin::ivole_wc_help_tip( __( 'Displays whether or not WooCommerce Slider library is enabled.', IVOLE_TEXT_DOMAIN ) . ' ' . __( 'This warning can be safely ignored, if your theme does not use the offical WooCommerce libraries.', IVOLE_TEXT_DOMAIN ) ); ?></td>
                     <td><?php if ( current_theme_supports( 'wc-product-gallery-slider' ) ) : ?>
                         <mark class="yes"><span class="dashicons dashicons-yes"></span></mark>
                     <?php else :
@@ -163,7 +163,7 @@ class Ivole_Diagnostics_Admin_Menu {
                 </tr>
                 <tr>
                     <td data-export-label="WC Zoom"><?php _e( 'WC Zoom:', IVOLE_TEXT_DOMAIN ); ?></td>
-                    <td class="help"><?php echo Ivole_Admin::ivole_wc_help_tip( __( 'Displays whether or not WooCommerce Zoom library is enabled.', IVOLE_TEXT_DOMAIN ) ); ?></td>
+                    <td class="help"><?php echo Ivole_Admin::ivole_wc_help_tip( __( 'Displays whether or not WooCommerce Zoom library is enabled.', IVOLE_TEXT_DOMAIN ) . ' ' . __( 'This warning can be safely ignored, if your theme does not use the offical WooCommerce libraries.', IVOLE_TEXT_DOMAIN ) ); ?></td>
                     <td><?php if ( current_theme_supports( 'wc-product-gallery-zoom' ) ) : ?>
                         <mark class="yes"><span class="dashicons dashicons-yes"></span></mark>
                     <?php else :
@@ -172,7 +172,7 @@ class Ivole_Diagnostics_Admin_Menu {
                 </tr>
                 <tr>
                     <td data-export-label="WC Lightbox"><?php _e( 'WC Lightbox:', IVOLE_TEXT_DOMAIN ); ?></td>
-                    <td class="help"><?php echo Ivole_Admin::ivole_wc_help_tip( __( 'Displays whether or not WooCommerce Lightbox library is enabled.', IVOLE_TEXT_DOMAIN ) ); ?></td>
+                    <td class="help"><?php echo Ivole_Admin::ivole_wc_help_tip( __( 'Displays whether or not WooCommerce Lightbox library is enabled.', IVOLE_TEXT_DOMAIN ) . ' ' . __( 'This warning can be safely ignored, if your theme does not use the offical WooCommerce libraries.', IVOLE_TEXT_DOMAIN ) ); ?></td>
                     <td><?php if ( current_theme_supports( 'wc-product-gallery-lightbox' ) ) : ?>
                         <mark class="yes"><span class="dashicons dashicons-yes"></span></mark>
                     <?php else :

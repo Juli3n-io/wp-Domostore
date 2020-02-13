@@ -159,14 +159,13 @@ if ( ! class_exists( 'CR_Custom_Questions' ) ) :
 			}
 			if( strlen( $output ) > 0 ) {
 				if( $f ) {
-					echo '<hr class="iv' . $fr . '-custom-question-hr">' . $output . '<hr class="iv' . $fr . '-custom-question-hr">';
+					$output = '<hr class="iv' . $fr . '-custom-question-hr">' . $output . '<hr class="iv' . $fr . '-custom-question-hr">';
 				} else {
 					if( $hr ) {
-						echo '<hr class="iv' . $fr . '-custom-question-hr">' . $output;
-					} else {
-						echo $output;
+						$output = '<hr class="iv' . $fr . '-custom-question-hr">' . $output;
 					}
 				}
+				echo apply_filters( 'cr_custom_questions', $output );
 			}
 		}
 

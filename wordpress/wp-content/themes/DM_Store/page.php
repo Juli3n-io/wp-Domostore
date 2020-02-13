@@ -23,13 +23,14 @@ if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_ob
 
 	<div class="row">
 		<div class="col-md-3 col-sm-12 sidebar">
-		<?php echo get_sidebar('entete');  ?>
+			
+		<?php echo get_sidebar('gauche');  ?>
 		</div>
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				
 		<div class="col-md-9 col-sm-12">
-					
+				
 			<div class="contenu"><?php the_content(); ?></div>
 		</div>
 

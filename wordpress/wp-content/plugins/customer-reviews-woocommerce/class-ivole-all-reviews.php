@@ -84,7 +84,7 @@ if (! class_exists('Ivole_All_Reviews')) :
 							$per_page = 10;
 						}
 
-            $return .= '<div class="ivole-all-reviews-shortcode">';
+            $return .= '<div id="ivole_all_reviews_shortcode" class="ivole-all-reviews-shortcode">';
 
             // show summary bar
             if ($this->shortcode_atts['show_summary_bar']) {

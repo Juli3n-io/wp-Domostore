@@ -40,7 +40,7 @@
 	flex: 0 0 50%;
 }
 
-.ivole-reviews-grid .ivole-review-card .top-row .rating .star-rating {
+.ivole-reviews-grid .ivole-review-card .top-row .rating .crstar-rating {
 	color: #6bba70;
 	font-size: 1em;
 }
@@ -158,7 +158,7 @@ img.ivole-verified-badge-ext-icon {
 	margin: 0px 0px 0px 5px;
 	display: inline;
   }
-.ivole-reviews-grid .ivole-review-card .star-rating {
+.ivole-reviews-grid .ivole-review-card .crstar-rating {
     overflow: hidden;
     position: relative;
     height: 1em;
@@ -169,7 +169,7 @@ img.ivole-verified-badge-ext-icon {
 		letter-spacing: normal;
 }
 
-.ivole-reviews-grid .ivole-review-card .star-rating::before {
+.ivole-reviews-grid .ivole-review-card .crstar-rating::before {
     content: '\73\73\73\73\73';
     float: left;
     top: 0;
@@ -178,7 +178,7 @@ img.ivole-verified-badge-ext-icon {
 		font-size: 1em;
 }
 
-.ivole-reviews-grid .ivole-review-card .star-rating span {
+.ivole-reviews-grid .ivole-review-card .crstar-rating span {
     overflow: hidden;
     float: left;
     top: 0;
@@ -188,7 +188,7 @@ img.ivole-verified-badge-ext-icon {
 		font-size: 1em;
 }
 
-.ivole-reviews-grid .ivole-review-card .star-rating span::before {
+.ivole-reviews-grid .ivole-review-card .crstar-rating span::before {
     content: '\53\53\53\53\53';
     top: 0;
     position: absolute;

@@ -37,7 +37,7 @@ if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_ob
 
 		<div class="col-md-8 col-sm-12">
 
-			<p><?php _e('Sorry, no posts matched your criteria.','nouveau_theme'); ?></p>
+			<p><?php _e('Sorry, no posts matched your criteria.','DM_Store'); ?></p>
 
 		</div>
 

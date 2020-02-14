@@ -7,8 +7,9 @@
     margin-bottom: 2rem;  
 }
 
-#showcase img{
-    width: 90%;
+#showcase .img{
+    width: 100%;
+    height: 30%;
     margin-left:1rem;
 }
 

@@ -8,7 +8,7 @@
     
     <div class="col-md-6 col-sm-6">
       <div class="showcase-left">
-        <img src=<?php echo $product->get_image();?>
+        <div class="img"><?php echo $product->get_image();?></div>
       </div>
     </div>
 

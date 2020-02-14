@@ -1,5 +1,7 @@
 <?php get_header(); 
 
+ $product =wc_get_product();
+
 $args =array(
     'post_type'=>'product',
 );
@@ -22,12 +24,15 @@ $result = new wp_query($args);
  ?>
     
  <div class="card" style="width: 18rem;">
-  <img src=<?php the_post_thumbnail(); ?>
+  <a href="<?php the_permalink();?>">
+    <img src=<?php the_post_thumbnail(); ?>
+  </a>
   <div class="card-body">
+  <a href="<?php the_permalink();?>">
     <h5 class="card-title"><?php the_title();?></h5>
-    <p class="card-text"></p>
-    <a href="<?php the_permalink();?>" class="btn btn-primary">voir</a>
-    <div class=""><?php echo do_shortcode('[add_to_cart id="'.$id.'"]');?></div>
+  </a>
+    <p class="card-text card_price"><?php echo $product->get_price();?> € </p>
+    <div class="btn_achat"><?php echo do_shortcode('[add_to_cart id="'.$id.'"]');?></div>
   </div>
 </div>
     

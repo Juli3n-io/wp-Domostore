@@ -17,3 +17,24 @@ h1:after{
 .card{
     border: none !important
 }
+.add_to_cart_inline {
+    border: none !important;
+}
+.woocommerce-Price-amount{
+    display: none;
+}
+.card_price{
+    font-weight: bolder;
+    color: #FFC270;
+}
+.btn_buy .button{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #32373c !important;
+    border-radius: .8rem;
+}

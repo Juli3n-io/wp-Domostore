@@ -1,6 +1,8 @@
 <?php get_header();?>
 
-<?php $product =wc_get_product();?>
+<?php $product =wc_get_product();
+$id= $product->get_id()
+?>
 
 <section id="showcase">
   <div class="container">
@@ -8,7 +10,7 @@
     
     <div class="col-md-6 col-sm-6">
       <div class="showcase-left">
-        <img src=<?php echo $product->get_image();?>
+        <div class="img"><?php echo $product->get_image();?></div>
       </div>
     </div>
 
@@ -97,6 +99,9 @@ $attachment_ids =$product->get_gallery_image_ids();
           <p>Poids: <span><?php echo $product->get_weight();?> g.</span></p>
           <p>Dimensions: <span><?php echo $product->get_dimensions();?></span></p>
           <p>sku : <span><?php echo $product->get_sku();?></span></p>
+          <br>
+          <h4>Partager:</h4>
+    <?php echo do_shortcode("[Sassy_Social_Share]");?>
         </div>
         
       </div>
@@ -104,27 +109,109 @@ $attachment_ids =$product->get_gallery_image_ids();
   </div>
 </section>
 
-<section id="review">
+<section id="review" class="review">
   <div class="container">
+    <h4>Les derniers avis clients :</h4>
     <div class="row">
-
-    <div class="col-md-6 col-sm-6">
-    <div class="reviews-left">
-    <h4>Partager:</h4>
-    <?php echo do_shortcode("[Sassy_Social_Share]");?>
+      <?php echo do_shortcode('[woocommerce_reviews id="'.$id.'" no_of_reviews="2"]');?>
     </div>
-    </div>
-
-    <div class="col-md-6 col-sm-6">
-    <div class="reviews-right">
-    <h4>Dernier avis client:</h4>
-    <?php echo do_shortcode('[random_review]');?>
-    </div>
-    </div>
-
     </div>
   </div>
 </section>
+
+<!-- Formulaire d'avis client-->
+
+<section id="formulaire" class="form">
+<h4>Laisser votre avis</h4>
+  <div class="container">
+      <div class="row">
+        
+        <div class="col-12">
+        <?php if ( get_option( 'woocommerce_review_rating_verification_required' ) === 'no' || wc_customer_bought_product( '', get_current_user_id(), $product->get_id() ) ) : ?>
+		<div id="review_form_wrapper">
+			<div id="review_form">
+				<?php
+				$commenter    = wp_get_current_commenter();
+				$comment_form = array(
+					/* translators: %s is product title */
+					'title_reply'         => have_comments() ? esc_html__( 'Add a review', 'woocommerce' ) : sprintf( esc_html__( 'Be the first to review &ldquo;%s&rdquo;', 'woocommerce' ), get_the_title() ),
+					/* translators: %s is product title */
+					'title_reply_to'      => esc_html__( 'Leave a Reply to %s', 'woocommerce' ),
+					'title_reply_before'  => '<span id="reply-title" class="comment-reply-title">',
+					'title_reply_after'   => '</span>',
+					'comment_notes_after' => '',
+					'label_submit'        => esc_html__( 'Submit', 'woocommerce' ),
+					'logged_in_as'        => '',
+					'comment_field'       => '',
+				);
+
+				$name_email_required = (bool) get_option( 'require_name_email', 1 );
+				$fields              = array(
+					'author' => array(
+						'label'    => __( 'Name', 'woocommerce' ),
+						'type'     => 'text',
+						'value'    => $commenter['comment_author'],
+						'required' => $name_email_required,
+					),
+					'email' => array(
+						'label'    => __( 'Email', 'woocommerce' ),
+						'type'     => 'email',
+						'value'    => $commenter['comment_author_email'],
+						'required' => $name_email_required,
+					),
+				);
+
+				$comment_form['fields'] = array();
+
+				foreach ( $fields as $key => $field ) {
+					$field_html  = '<p class="comment-form-' . esc_attr( $key ) . '">';
+					$field_html .= '<label for="' . esc_attr( $key ) . '">' . esc_html( $field['label'] );
+
+					if ( $field['required'] ) {
+						$field_html .= '&nbsp;<span class="required">*</span>';
+					}
+
+					$field_html .= '</label><input id="' . esc_attr( $key ) . '" name="' . esc_attr( $key ) . '" type="' . esc_attr( $field['type'] ) . '" value="' . esc_attr( $field['value'] ) . '" size="30" ' . ( $field['required'] ? 'required' : '' ) . ' /></p>';
+
+					$comment_form['fields'][ $key ] = $field_html;
+				}
+
+				$account_page_url = wc_get_page_permalink( 'myaccount' );
+				if ( $account_page_url ) {
+					/* translators: %s opening and closing link tags respectively */
+					$comment_form['must_log_in'] = '<p class="must-log-in">' . sprintf( esc_html__( 'You must be %1$slogged in%2$s to post a review.', 'woocommerce' ), '<a href="' . esc_url( $account_page_url ) . '">', '</a>' ) . '</p>';
+				}
+
+				if ( wc_review_ratings_enabled() ) {
+					$comment_form['comment_field'] = '<div class="comment-form-rating"><label for="rating">' . esc_html__( 'Your rating', 'woocommerce' ) . '</label><select name="rating" id="rating" required>
+						<option value="">' . esc_html__( 'Rate&hellip;', 'woocommerce' ) . '</option>
+						<option value="5">' . esc_html__( 'Perfect', 'woocommerce' ) . '</option>
+						<option value="4">' . esc_html__( 'Good', 'woocommerce' ) . '</option>
+						<option value="3">' . esc_html__( 'Average', 'woocommerce' ) . '</option>
+						<option value="2">' . esc_html__( 'Not that bad', 'woocommerce' ) . '</option>
+						<option value="1">' . esc_html__( 'Very poor', 'woocommerce' ) . '</option>
+					</select></div>';
+				}
+
+				$comment_form['comment_field'] .= '<p class="comment-form-comment"><label for="comment">' . esc_html__( 'Your review', 'woocommerce' ) . '&nbsp;<span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" required></textarea></p>';
+
+				comment_form( apply_filters( 'woocommerce_product_review_comment_form_args', $comment_form ) );
+				?>
+			</div>
+		</div>
+	<?php else : ?>
+		<p class="woocommerce-verification-required"><?php esc_html_e( 'Only logged in customers who have purchased this product may leave a review.', 'woocommerce' ); ?></p>
+	<?php endif; ?>
+
+	<div class="clear"></div>
+</div>
+
+
+        </div>
+      </div>
+  </div>
+</section>
+
 
   
 <!-- Récupération des produits liés-->
@@ -148,7 +235,7 @@ $attachment_ids =$product->get_gallery_image_ids();
       <div class="related_products">
         <div>
           <a href="<?php echo get_permalink($product_1->get_id());?>">
-              <img src=<?php echo $product_1->get_image();?>
+              <div class="img_related"><?php echo $product_1->get_image();?></div>
           </a>
           
         </div>
@@ -182,7 +269,7 @@ $attachment_ids =$product->get_gallery_image_ids();
       <div class="related_products">
         <div>
           <a href="<?php echo get_permalink($product_2->get_id());?>">
-              <img src=<?php echo $product_2->get_image();?>
+          <div class="img_related"><?php echo $product_2->get_image();?></div>
           </a>
         </div>
         <h6>
@@ -215,7 +302,7 @@ $attachment_ids =$product->get_gallery_image_ids();
       <div class="related_products">
         <div>
           <a href="<?php echo get_permalink($product_3->get_id());?>">
-              <img src=<?php echo $product_3->get_image();?>
+          <div class="img_related"><?php echo $product_3->get_image();?></div>
           </a>
         </div>
         <h6>

@@ -46,29 +46,23 @@ sr.reveal('.info-right' , {
 
 });
 
-sr.reveal('.rewiew_form' , {
+sr.reveal('.review' , {
     duration: 2000,
-    origin: 'left',
+    origin: 'bottom',
     distance: '300px',
     viewFactor: 0.2
 
 });
 
-sr.reveal('.reviews-left' , {
+sr.reveal('.form' , {
     duration: 2000,
-    origin: 'left',
+    origin: 'bottom',
     distance: '300px',
     viewFactor: 0.2
 
 });
 
-sr.reveal('.reviews-right' , {
-    duration: 2000,
-    origin: 'right',
-    distance: '300px',
-    viewFactor: 0.2
 
-});
 
 sr.reveal('.related_products' , {
     duration: 2000,

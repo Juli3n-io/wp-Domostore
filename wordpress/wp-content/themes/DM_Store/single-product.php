@@ -1,6 +1,8 @@
 <?php get_header();?>
 
-<?php $product =wc_get_product();?>
+<?php $product =wc_get_product();
+$id= $product->get_id()
+?>
 
 <section id="showcase">
   <div class="container">
@@ -97,6 +99,9 @@ $attachment_ids =$product->get_gallery_image_ids();
           <p>Poids: <span><?php echo $product->get_weight();?> g.</span></p>
           <p>Dimensions: <span><?php echo $product->get_dimensions();?></span></p>
           <p>sku : <span><?php echo $product->get_sku();?></span></p>
+          <br>
+          <h4>Partager:</h4>
+    <?php echo do_shortcode("[Sassy_Social_Share]");?>
         </div>
         
       </div>
@@ -104,61 +109,19 @@ $attachment_ids =$product->get_gallery_image_ids();
   </div>
 </section>
 
-<section id="review">
+<section id="review" class="review">
   <div class="container">
+    <h4>Les derniers avis clients :</h4>
     <div class="row">
-
-    <div class="col-md-6 col-sm-6">
-    <div class="reviews-left">
-    <h4>Partager:</h4>
-    <?php echo do_shortcode("[Sassy_Social_Share]");?>
+      <?php echo do_shortcode('[woocommerce_reviews id="'.$id.'" no_of_reviews="2"]');?>
     </div>
-    </div>
-
-<?php 
-if ( ! comments_open() ) {
-	return;
-}
-;?>
-
-    <div class="col-md-6 col-sm-6">
-    <div class="reviews-right">
-    <h4>Dernier avis client:</h4>
-    <?php if ( have_comments() ) : ?>
-			<ol class="commentlist">
-				<?php wp_list_comments( apply_filters( 'woocommerce_product_review_list_args', array( 'callback' => 'woocommerce_comments' ) ) ); ?>
-			</ol>
-
-			<?php
-			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
-				echo '<nav class="woocommerce-pagination">';
-				paginate_comments_links(
-					apply_filters(
-						'woocommerce_comment_pagination_args',
-						array(
-							'prev_text' => '&larr;',
-							'next_text' => '&rarr;',
-							'type'      => 'list',
-						)
-					)
-				);
-				echo '</nav>';
-			endif;
-			?>
-		<?php else : ?>
-			<p class="woocommerce-noreviews"><?php esc_html_e( 'There are no reviews yet.', 'woocommerce' ); ?></p>
-		<?php endif; ?>
-	</div>
-    </div>
-    </div>
-
     </div>
   </div>
 </section>
 
 <!-- Formulaire d'avis client-->
 
-<section id="formulaire">
+<section id="formulaire" class="form">
 <h4>Laisser votre avis</h4>
   <div class="container">
       <div class="row">
@@ -272,7 +235,7 @@ if ( ! comments_open() ) {
       <div class="related_products">
         <div>
           <a href="<?php echo get_permalink($product_1->get_id());?>">
-              <img src=<?php echo $product_1->get_image();?>
+              <div class="img_related"><?php echo $product_1->get_image();?></div>
           </a>
           
         </div>
@@ -306,7 +269,7 @@ if ( ! comments_open() ) {
       <div class="related_products">
         <div>
           <a href="<?php echo get_permalink($product_2->get_id());?>">
-              <img src=<?php echo $product_2->get_image();?>
+          <div class="img_related"><?php echo $product_2->get_image();?></div>
           </a>
         </div>
         <h6>
@@ -339,7 +302,7 @@ if ( ! comments_open() ) {
       <div class="related_products">
         <div>
           <a href="<?php echo get_permalink($product_3->get_id());?>">
-              <img src=<?php echo $product_3->get_image();?>
+          <div class="img_related"><?php echo $product_3->get_image();?></div>
           </a>
         </div>
         <h6>

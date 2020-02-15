@@ -1,4 +1,4 @@
-<?php get_header(); 
+<?php get_header('search'); 
 
  $product =wc_get_product();
 
@@ -50,4 +50,4 @@ $result = new wp_query($args);
 </div>  <!-- FIN container -->
 
 
-<?php get_footer(); ?>
+<?php get_footer('search'); ?>

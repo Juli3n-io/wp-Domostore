@@ -171,6 +171,7 @@ class Ivole_Review_Reminder_Settings {
             'NL'  => __( 'Dutch', IVOLE_TEXT_DOMAIN ),
             'EN'  => __( 'English', IVOLE_TEXT_DOMAIN ),
             'ET'  => __( 'Estonian', IVOLE_TEXT_DOMAIN ),
+            'FA'  => __( 'Persian', IVOLE_TEXT_DOMAIN ),
             'FI'  => __( 'Finnish', IVOLE_TEXT_DOMAIN ),
             'FR'  => __( 'French', IVOLE_TEXT_DOMAIN ),
             'DE'  => __( 'German', IVOLE_TEXT_DOMAIN ),
@@ -531,7 +532,7 @@ class Ivole_Review_Reminder_Settings {
                 'type'    => 'checkbox',
                 'id'      => 'ivole_form_attach_media',
                 'default' => 'no',
-                'desc'    => __( 'Enable attachment of pictures and videos on aggregated review forms. Uploaded media files are stored on Amazon S3 and delivered using Amazon CloudFront CDN. Storage is free and sponsored by professional licenses. This option applies only to aggregated review forms. If you would like to enable attachment of pictures to reviews submitted on WooCommerce product pages, this can be done <a href="' . admin_url( 'admin.php?page=ivole-reviews-settings&tab=review_extensions' ) . '">here</a>.', IVOLE_TEXT_DOMAIN )
+                'desc'    => __( 'Enable attachment of pictures and videos on aggregated review forms. Uploaded media files are stored on Amazon S3. The storage is free and sponsored by professional licenses. This option applies only to aggregated review forms. If you would like to enable attachment of pictures to reviews submitted on WooCommerce product pages, this can be done <a href="' . admin_url( 'admin.php?page=ivole-reviews-settings&tab=review_extensions' ) . '">here</a>.', IVOLE_TEXT_DOMAIN )
             ),
             array(
                 'title'   => __( 'Rating Bar', IVOLE_TEXT_DOMAIN ),

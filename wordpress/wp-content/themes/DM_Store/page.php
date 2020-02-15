@@ -1,4 +1,12 @@
-<?php get_header(); // appel du fichier header.php 
+<?php get_header(); 
+
+$product =wc_get_product();
+
+$args =array(
+    'post_type'=>'product',
+);
+$result = new wp_query($args);
+
 
 
 if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_object();
@@ -8,7 +16,17 @@ if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_ob
 	// 	echo '<img class="classtopright" src="' . $image . '" alt="" width="280"/>';
 	// }
 }
+
+
 ?>
+
+<?php 
+	
+	
+	?>
+
+
+
 <div class="container">
 <!-- Example row of columns -->
 	<div class="title_page" style="background: url(<?php echo $image;?>) no-repeat; 
@@ -16,23 +34,30 @@ if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_ob
 	background-position: center">
 
 		<h2>
-			<a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
+			<?php the_title(); ?>
 		</h2>
 						
 	</div> <!-- fin div title_page-->
 
+	
+	
+
+
 	<div class="row">
 		<div class="col-md-3 col-sm-12 sidebar">
-		<?php echo get_sidebar('entete');  ?>
+		<?php echo get_sidebar('gauche');  ?>
 		</div>
 
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+		$id = get_the_id();
+		?>
 				
 		<div class="col-md-9 col-sm-12">
 					
 			<div class="contenu"><?php the_content(); ?></div>
 		</div>
-
+		
+		
 		<?php endwhile; else: ?>
 
 		<div class="col-md-8 col-sm-12">
@@ -46,5 +71,7 @@ if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_ob
 
 		<?php endif; ?>
 </div> <!-- /container -->
+
+
 				 
 <?php get_footer(); // appel du fichier footer.php ?>

@@ -137,15 +137,15 @@ function catch_that_image() {
 
 add_filter( 'woocommerce_product_tabs', 'wpm_remove_product_tabs', 98 );
 
-function wpm_remove_product_tabs( $tabs ) {
+// function wpm_remove_product_tabs( $tabs ) {
 
-    unset( $tabs['description'] );      	// Supprime le bloc "Description"
-    unset( $tabs['reviews'] ); 			// Supprime le bloc "Avis"
-    unset( $tabs['additional_information'] );  	// Supprime le bloc "Information complémentaires"
+//     unset( $tabs['description'] );      	// Supprime le bloc "Description"
+//     unset( $tabs['reviews'] ); 			// Supprime le bloc "Avis"
+//     unset( $tabs['additional_information'] );  	// Supprime le bloc "Information complémentaires"
 
-    return $tabs;
+//     return $tabs;
 
-}
+// }
 
 function woocommerce_related_products( $args = array() ) {
     global $product;
@@ -191,5 +191,20 @@ function woo_related_products_limit() {
 	  $args['columns'] = 3; // arranged in 2 columns
 	  return $args;
   }
+
+  function update_woocommerce_version() {
+	if(class_exists('WooCommerce')) {
+		global $woocommerce;
+		
+		if(version_compare(get_option('woocommerce_db_version', null), $woocommerce->version, '!=')) {
+			update_option('woocommerce_db_version', $woocommerce->version);
+			
+			if(! wc_update_product_lookup_tables_is_running()) {
+				wc_update_product_lookup_tables();
+			}
+		}			
+	}		
+}
+add_action('init', 'update_woocommerce_version');
 
 ?>

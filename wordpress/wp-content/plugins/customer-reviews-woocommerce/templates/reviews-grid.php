@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="ivole-review-card" style="<?php echo $card_style; ?>">
 			<div class="top-row">
 				<div class="rating">
-					<div class="star-rating"><span style="width:<?php echo ($rating / 5) * 100; ?>%;"></span></div>
+					<div class="crstar-rating"><span style="width:<?php echo ($rating / 5) * 100; ?>%;"></span></div>
 					<div class="datetime">
 						<?php printf( _x( '%s ago', '%s = human-readable time difference', IVOLE_TEXT_DOMAIN ), human_time_diff( mysql2date( 'U', $review->comment_date, true ), current_time( 'timestamp' ) ) ); ?>
 					</div>

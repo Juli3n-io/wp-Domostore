@@ -271,7 +271,7 @@ p.ivole-verified-badge span.ivole-review-country-text, p.ivole-verified-badge sp
   vertical-align:middle;
 }
 
-p.ivole-verified-badge img.ivole-review-country-icon {
+#ivole_all_reviews_shortcode p.ivole-verified-badge img.ivole-review-country-icon {
 	float: none;
 	height: 12px;
 	vertical-align:middle;

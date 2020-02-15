@@ -46,3 +46,5 @@ Stack trace:
 
 2020-02-15T13:37:12+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/class-wp-query.php à la ligne 3567
 
+2020-02-15T15:45:53+00:00 CRITICAL syntax error, unexpected ''depth'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/header.php à la ligne 48
+

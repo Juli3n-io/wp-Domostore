@@ -45,6 +45,9 @@
             'theme_location' => 'primary',
             'container'      => false,
             'menu_class'     => 'menu_cat' ,
+            
+            'container_class' => 'collapse navbar-collapse',
+			      'menu_id'         => false,
             'depth'           => 2,
 			      'fallback_cb'     => 'bs4navwalker::fallback',
 			      'walker'          => new bs4navwalker()       

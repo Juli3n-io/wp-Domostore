@@ -44,7 +44,11 @@
               array( 
             'theme_location' => 'primary',
             'container'      => false,
-            'menu_class'     => 'menu_cat'        
+            'menu_class'     => 'menu_cat',
+            'menu_class'     => 'menu_cat' ,
+            'depth'           => 2,
+			      'fallback_cb'     => 'bs4navwalker::fallback',
+			      'walker'          => new bs4navwalker()         
             ) ); 
           ?>    
         </nav> 

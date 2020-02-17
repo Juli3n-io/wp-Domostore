@@ -84,7 +84,8 @@ header{
 }
 header .container_logo{
     margin: 0;
-    padding: 15px 20px;
+    /* margin-top: 10px; */
+    padding: 0;
     float: left;
 }
  header .container_logo a
@@ -94,6 +95,7 @@ header .container_logo{
      font-size: 20px;
      font-family: 'Patua One', cursive;
  }
+ 
 
 header .menu ul {
     margin: 0;
@@ -104,7 +106,7 @@ header .menu ul {
 
 header .menu ul li {
     display: inline-block;
-    padding: 20px 15px;
+    padding: 0;
     transition: .5s;
 }
 header .menu ul li a {
@@ -121,7 +123,7 @@ header .navbar_panier{
     position: absolute;
     right: -10px;
     padding: 5px 20px;
-    margin-top: 15px;
+    margin-top: 8px;
     font-size: 24px;
     
 }
@@ -134,8 +136,8 @@ header .navbar_panier .navbar_cart_total{
     z-index: 2;
     top: -5px;
     right: -20px;
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 16px;
+    font-weight: 700;
     background:#FFC270;
     color: #fff;
     text-align: center;

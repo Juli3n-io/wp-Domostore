@@ -3,7 +3,7 @@ Contributors: ivole
 Tags: woocommerce, review plugin, review reminder, customer reviews, review for discount
 Requires at least: 4.5
 Tested up to: 5.3
-Stable tag: 3.95
+Stable tag: 3.96
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -218,6 +218,8 @@ If you would like to change how reviews are sorted on product pages, it is possi
 
 == Changelog ==
 
+= 3.96 =
+* Bug fixes and minor improvements
 = 3.95 =
 * A new filter 'cr_custom_questions' to customize output for custom questions
 * New translation: Persian

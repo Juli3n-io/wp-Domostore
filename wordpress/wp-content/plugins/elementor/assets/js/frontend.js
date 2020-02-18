@@ -1,4 +1,4 @@
-/*! elementor - v2.9.1 - 13-02-2020 */
+/*! elementor - v2.9.2 - 16-02-2020 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -6597,16 +6597,17 @@ function () {
           elementorBreakpointValues = (0, _values.default)(elementorBreakpoints);
       (0, _keys.default)(this.config.breakpoints).forEach(function (configBPKey) {
         var configBPKeyInt = (0, _parseInt2.default)(configBPKey);
-        var breakpointToUpdate;
+        var breakpointToUpdate; // The `configBPKeyInt + 1` is a BC Fix for Elementor Pro Carousels from 2.8.0-2.8.3 used with Elementor >= 2.9.0
 
-        if (configBPKeyInt === elementorBreakpoints.md) {
+        if (configBPKeyInt === elementorBreakpoints.md || configBPKeyInt + 1 === elementorBreakpoints.md) {
           // This handles the mobile breakpoint. Elementor's default sm breakpoint is never actually used,
           // so the mobile breakpoint (md) needs to be handled separately and set to the 0 breakpoint (xs)
           breakpointToUpdate = elementorBreakpoints.xs;
         } else {
           // Find the index of the current config breakpoint in the Elementor Breakpoints array
           var currentBPIndexInElementorBPs = elementorBreakpointValues.findIndex(function (elementorBP) {
-            return configBPKeyInt === elementorBP;
+            // BC Fix for Elementor Pro Carousels from 2.8.0-2.8.3 used with Elementor >= 2.9.0
+            return configBPKeyInt === elementorBP || configBPKeyInt + 1 === elementorBP;
           }); // For all other Swiper config breakpoints, move them one breakpoint down on the breakpoint list,
           // according to the array of Elementor's global breakpoints
 
@@ -9143,6 +9144,10 @@ module.exports = elementorModules.ViewModule.extend({
     return jQuery(this.swiper.slides).filter(this.getSettings('selectors.slideshow.' + slideState + 'Slide'));
   },
   updateFooterText: function updateFooterText() {
+    if (!this.elements.$footer) {
+      return;
+    }
+
     var classes = this.getSettings('classes'),
         $activeSlide = this.getSlide('active'),
         $image = $activeSlide.find('.elementor-lightbox-image'),

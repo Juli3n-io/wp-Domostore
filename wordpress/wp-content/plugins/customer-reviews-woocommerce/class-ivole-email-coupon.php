@@ -264,7 +264,7 @@ class Ivole_Email_Coupon {
 	 * @access public
 	 * @return id of generated coupon | false
 	 */
-	public function generate_coupon($to,$review_id=0) {
+	public function generate_coupon( $to, $review_id = 0 ) {
 		$unique_code = (!empty( $to)) ? strtoupper( uniqid( substr( preg_replace('/[^a-z0-9]/i', '', sanitize_title( $to ) ), 0, 5 ) ) ) : strtoupper( uniqid() );
 		$coupon_args = array(
 			'post_title' 	=> $unique_code,
@@ -321,13 +321,13 @@ class Ivole_Email_Coupon {
 				update_post_meta( $coupon_id, 'minimum_amount', '' );
 			}
 
-			$maximum_amount=floatval(get_option('ivole_coupon__maximum_amount',0));
-			if($maximum_amount>0){
+			$maximum_amount = floatval( get_option( 'ivole_coupon__maximum_amount', 0 ) );
+			if( $maximum_amount > 0 ) {
 				update_post_meta( $coupon_id, 'maximum_amount', $maximum_amount );
-			}else{
+			} else {
 				update_post_meta( $coupon_id, 'maximum_amount', '' );
 			}
-
+			update_post_meta( $coupon_id, 'usage_count', 0 );
 			update_post_meta( $coupon_id, 'generated_from_review_id', $review_id );
 			update_post_meta( $coupon_id, '_ivole_auto_generated', 1 );
 		}

@@ -287,6 +287,7 @@ color: #000;
 }
 
 .page_title h2{
+    display: none;
     padding-top: 40px;
     text-align: center;
     font-size: 60px;
@@ -294,7 +295,8 @@ color: #000;
 }
 
 .page_title .ligne{
-   background-color: #000 !important;
+    display: none;
+   background-color: var(--light-black) !important;
 }
 .front_titre{
     text-align: center;
@@ -304,9 +306,7 @@ color: #000;
     font-family: var(--sriracha);
     padding-top: 60px ;
 }
-.front_titre h3{
-    font-family: var(--sriracha);
-}
+
 .front_titre:after{
     content:'';
     display: block;
@@ -314,19 +314,25 @@ color: #000;
     background-color: #000;
     width: 20%;
     margin: 20px auto;
-    }
-.front_cat_product{
-height: 330px;
+}
+.contenu .front_titre{
+    font-family: var(--sriracha);
+}
+a .front_cat_product{
+height: 600px;
 width: 100%;
 margin-top: 40px;
 padding-top: 30%;
+text-decoration: none;
+border-radius: .8rem;
 }
-.front_cat_product a{
+
+.front_cat_product h4{
     color: #FFF;
-    font-size: 40px;
+    font-size: 25px;
     font-family: var(--sriracha);
     text-align: center;
-    
+    text-decoration: none; 
 }
 
 

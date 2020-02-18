@@ -34,3 +34,31 @@ sr.reveal('.f-name',{
     origin : 'bottom',
     distance : '50px'
 })
+
+sr.reveal('.page_title',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+
+sr.reveal('.front_titre',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+
+sr.reveal('.front_cat_product',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+sr.reveal('.wc-block-grid',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+sr.reveal('.blog-post',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})

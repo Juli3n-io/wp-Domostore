@@ -17,7 +17,7 @@
 
   <body id="body" <?php body_class(); // correspond plus ou moins au nom de la ressource en classe css. https://codex.wordpress.org/Function_Reference/body_class ?>>		
 	
-  <header>
+  <header class="header none">
 
 <!-- container top-->
 <div class="container-fluid party_1">
@@ -75,11 +75,11 @@
 </div>
       
 <!-- deuxieme container-->
-<div class="container-fluid p-0">
-<div class="row justify-content-md-center party_2">
+<div class="container-fluid p-0 ">
+<div class="row justify-content-md-center party_2 ">
 
   <div class="col-md-auto">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg ">
       
       <div class=mx-auto>
        <?php wp_nav_menu([

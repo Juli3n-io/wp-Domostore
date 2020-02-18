@@ -22,7 +22,7 @@
 
   <body id="body" <?php body_class(); // correspond plus ou moins au nom de la ressource en classe css. https://codex.wordpress.org/Function_Reference/body_class ?>>		
 	
-<header>
+<header class="header">
 
   <!-- container top-->
   <div class="container-fluid party_1">

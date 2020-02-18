@@ -11,6 +11,7 @@ Author: Julien QUENTIER
 --primary-color:#FFC270;
 --light-gray:#eee;
 --light-black:rgba(0,0,0,.7);
+--light-white:rgba(255,255,255,.7);
 --roboto:"Roboto",sans-serif;
 --oswald:"Oswald",sans-serif;
 --sriracha:"Sriracha",sans-serif;
@@ -39,17 +40,17 @@ main .container{
 
 }
 .white{
-    background-color: #FFF !important;
-    color: #000 !important;
+    background-color: var(--light-white)!important;
+    color: var(--light-black) !important;
 }
 .black{
-    color: #000 !important;
+    color: var(--light-black)!important;
 }
 .yellow_background{
     background-color: rgba(220, 131, 29, 0.5); ;
 }
 .gray_background{
-    background-color: #EEE;
+    background-color: var(--light-gray);
     box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
     border-radius: .8rem;
 }
@@ -60,9 +61,15 @@ a{
 li{
     list-style: none;
 }
-/* .none{
+.none{
     display: none !important;
-} */
+}
+.transparent{
+    background: transparent !important;
+}
+.black{
+    color: var(--light-black) !important;
+}
 .block{
     display: block !important;
 }
@@ -137,7 +144,7 @@ header .container_logo{
 }
 
 .party_2{
-    background-color: var(--light-gray)!important;
+    background-color: var(--light-gray);
 }
 .navbar-light .navbar-toggler{
     /* border: none; */
@@ -283,7 +290,7 @@ color: #000;
     padding-top: 40px;
     text-align: center;
     font-size: 60px;
-    font-family: 'Patua One', cursive;
+    font-family: var(--sriracha);
 }
 
 .page_title .ligne{
@@ -294,8 +301,11 @@ color: #000;
     margin: 0 auto;
     font-size: 40px;
     margin-bottom: 20px;
-    font-family: 'Patua One', cursive;
+    font-family: var(--sriracha);
     padding-top: 60px ;
+}
+.front_titre h3{
+    font-family: var(--sriracha);
 }
 .front_titre:after{
     content:'';
@@ -314,7 +324,7 @@ padding-top: 30%;
 .front_cat_product a{
     color: #FFF;
     font-size: 40px;
-    font-family: 'Patua One', cursive;
+    font-family: var(--sriracha);
     text-align: center;
     
 }

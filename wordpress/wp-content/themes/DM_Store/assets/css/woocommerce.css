@@ -17,7 +17,7 @@
     margin: 0 auto;
     font-size: 40px;
     margin-bottom: 20px;
-    font-family: 'Patua One', cursive;
+    font-family: var(--roboto);
     padding-top: 60px ;
 }
     
@@ -59,7 +59,7 @@
     line-height: 1.2;
     font-weight: 700;
     color: #32373c !important;
-    font-family: 'Patua One', cursive;
+    font-family: var(--roboto);
 }
 
 /* ****  bloc de produit **** */
@@ -142,7 +142,7 @@
     .front_cat_product a {
         color: #FFF;
         font-size: 30px !important;
-        font-family: 'Patua One', cursive;
+        font-family: var(--roboto);
         text-align: center;
 }
 }

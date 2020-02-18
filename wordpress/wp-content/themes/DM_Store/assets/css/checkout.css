@@ -27,6 +27,8 @@ a:hover{
 }
 h3{
     text-align: center;
+    font-family: var(--oswald)!important;
+    color: var(--light-black);
 }
 h3:after{
     content:'';

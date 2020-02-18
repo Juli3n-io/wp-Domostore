@@ -16,6 +16,7 @@
 #showcase h1{
     font-size: 50px;
     margin-bottom: 2rem;  
+    font-family: var(--oswald);
 }
 
 #showcase .img{
@@ -67,6 +68,8 @@
 #review h4{
     margin-top: 3rem;
     text-align: center;
+    font-family: var(--oswald)!important;
+    color: var(--light-black);
 }
 #review .share-wrap .share-right{
     margin-top: 3rem;
@@ -87,6 +90,8 @@
 #formulaire h4{
     margin-top: 3rem;
     text-align: center;
+    font-family: var(--oswald)!important;
+    color: var(--light-black);
 }
 
 #formulaire #reply-title{
@@ -120,6 +125,8 @@ border-bottom: 2px solid var(--primary-color);
 #related h4{
     margin-top: 3rem;
     text-align: center;
+    font-family: var(--oswald)!important;
+    color: var(--light-black);
 }
 #related .related_products{
     margin: 0 auto;
@@ -127,6 +134,8 @@ border-bottom: 2px solid var(--primary-color);
 }
 #related h6{
     margin-top: 1rem !important;
+    font-family: var(--oswald)!important;
+    color: var(--light-black);
 }
 #related p{
     margin-bottom: 0 !important;

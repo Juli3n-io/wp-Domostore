@@ -183,7 +183,11 @@ header .navbar_panier{
 header .navbar_panier a{
 color: #000;
 }
-
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--light-black) !important;
+    text-decoration: none;
+    background-color: var(--light-gray)!important;
+}
 /* **** Menu Hamburger **** */
 
 .responsive-btn .menu-btn{

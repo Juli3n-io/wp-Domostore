@@ -20,11 +20,14 @@ a:hover{
 }
 .page_title{
     padding-top: 10rem;
-    
+    ;
     color: var(--light-black);
     height: 20rem;
-    border-radius: 0 0 40% 40%;
-    
+    border-radius: 0 0 40% 40%;   
+}
+.page_title h2{
+
+    font-family: var(--oswald)!important;
 }
 h2:after{
     content:'';
@@ -41,6 +44,8 @@ h2:after{
 
  h2{
     text-align: center !important;
+    font-family: var(--oswald)!important;
+    color: var(--light-black);
 }
 .woocommerce-form{
     border: none !important;

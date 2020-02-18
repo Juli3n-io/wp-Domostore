@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Sriracha&display=swap');
+
+:root{
+--primary-color:#ffc270;
+--light-gray:#eee;
+--light-black:rgba(0,0,0,.7);
+--roboto:"Roboto",sans-serif;
+--oswald:"Oswald",sans-serif;
+--sriracha:"Sriracha",sans-serif;
+}
+
 #showcase{
     margin-top: 12rem;
 }
@@ -30,7 +41,7 @@
     border-radius: .8rem;
 }
 #showcase .btn_achat:hover{
-    background-color: #FFC270;
+    background-color: var(--primary-color);
     color: #FFF;
     text-decoration: none;
 }
@@ -67,7 +78,7 @@
     display: none;
 }
 #review .button.sip-rswc-more{
-    background-color: #FFC270 !important;
+    background-color: var(--primary-color) !important;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
@@ -90,10 +101,10 @@
 }
 #formulaire .comment-form-author input, #formulaire .comment-form-email input{
 border: none;
-border-bottom: 2px solid #FFC270;
+border-bottom: 2px solid var(--primary-color);
 }
 .woocommerce #respond input#submit{
-    background-color: #FFC270 !important;
+    background-color: var(--primary-color) !important;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
@@ -142,13 +153,13 @@ border-bottom: 2px solid #FFC270;
     margin:1rem 1rem 1rem 3rem;
 }
 #related .btn_achat:hover{
-    background-color: #FFC270;
+    background-color: var(--primary-color);
     color: #FFF;
     text-decoration: none;
 }
 .price{
     font-weight: bold;
-   color: #FFC270;
+   color: var(--primary-color);
 }
 .regular_price{
     text-decoration: line-through;
@@ -157,7 +168,7 @@ border-bottom: 2px solid #FFC270;
 .badge_promo{
     font-weight: bold;
     color: #FFF;
-    background-color: #FFC270;
+    background-color: var(--primary-color);
     padding: 1rem 1.5rem;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -167,7 +178,7 @@ border-bottom: 2px solid #FFC270;
 
 .related_price{
     font-weight: bold;
-   color: #FFC270;
+   color: var(--primary-color);
 }
 .related_regular_price{
     text-decoration: line-through;;

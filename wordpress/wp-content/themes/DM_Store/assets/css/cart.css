@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Sriracha&display=swap');
+
+:root{
+--primary-color:#ffc270;
+--light-gray:#eee;
+--light-black:rgba(0,0,0,.7);
+--roboto:"Roboto",sans-serif;
+--oswald:"Oswald",sans-serif;
+--sriracha:"Sriracha",sans-serif;
+}
+
 html{
     background-color: #EEE;
 }
 a{
     text-decoration: none;
-    color: #000
+    color: var(--light-black)
 }
 a:hover{
-    color: #FFC270;
+    color: var(--primary-color);
     text-decoration: none;
 }
 .page_title{
@@ -15,25 +26,25 @@ a:hover{
 }
 
 .checkout-button{
-    background-color: #000 !important;
+    background-color: var(--light-black) !important;
     text-transform: uppercase;
     cursor: pointer;
 }
 a.checkout-button:hover{
-    background-color: #FFC270 !important;
+    background-color: var(--primary-color) !important;
 }
 .cart_totals h2{
     display: none;
 }
 table{
     border: none !important;
-    border-bottom: 2px solid #FFC270 !important;
+    border-bottom: 2px solid var(--primary-color) !important;
     text-align: center;
 }
 
 thead{
     margin-bottom: 1rem !important;
-    border-bottom: 1px solid #FFC270 !important;
+    border-bottom: 1px solid var(--primary-color) !important;
 }
 .woocommerce table.shop_table td{
     border-top: none !important;

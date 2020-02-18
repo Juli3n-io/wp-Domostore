@@ -1,3 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Sriracha&display=swap');
+
+:root{
+--primary-color:#FFC270;
+--light-gray:#eee;
+--light-black:rgba(0,0,0,.7);
+--roboto:"Roboto",sans-serif;
+--oswald:"Oswald",sans-serif;
+--sriracha:"Sriracha",sans-serif;
+}
+
 .search_title{
     padding-top: 6rem;
     padding-bottom: 4rem;

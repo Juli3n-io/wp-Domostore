@@ -1,16 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Sriracha&display=swap');
+
+:root{
+--primary-color:#FFC270;
+--light-gray:#eee;
+--light-black:rgba(0,0,0,.7);
+--roboto:"Roboto",sans-serif;
+--oswald:"Oswald",sans-serif;
+--sriracha:"Sriracha",sans-serif;
+}
+
 a{
     text-decoration: none;
-    color: #000
+    color:var(--light-black)
 }
 a:hover{
-    color: #FFC270;
+    color: var(--primary-color);
     text-decoration: none;
 }
 .page_title{
-    padding-top: 4rem;
-    background-color: #EEE;
-    color: #000F;
-    height: 15rem;
+    padding-top: 10rem;
+    
+    color: var(--light-black);
+    height: 20rem;
     border-radius: 0 0 40% 40%;
     
 }
@@ -18,7 +30,7 @@ h2:after{
     content:'';
     display: block;
     height: 2px;
-    background-color: #000;
+    background-color: var(--light-black);
     width: 20%;
     margin: 20px auto;
     }
@@ -36,16 +48,16 @@ h2:after{
 
 .woocommerce-Input{
     border: none;
-    border-bottom: 2px solid #FFC270;
+    border-bottom: 2px solid var(--primary-color);
 }
 .button{
-    background-color: #000 !important;
+    background-color: var(--light-black) !important;
     text-transform: uppercase;
     cursor: pointer;
     color: #FFF !important;
 }
 .button:hover{
-    background-color: #FFC270;
+    background-color: var(--primary-color);
 }
 
 /* ************************* */
@@ -58,14 +70,14 @@ h2:after{
 }
 .woocommerce-MyAccount-navigation li{
     padding: 1rem;
-    background-color: #EEE;
+    background-color: var(--light-gray);
     border: 1px solid #FFF;
     
     
 }
 .woocommerce-MyAccount-navigation li a{
     
-    color: #000;
+    color: var(--light-black);
     
     
 }
@@ -73,16 +85,16 @@ h2:after{
     width: 100%;
 }
 .woocommerce-MyAccount-navigation-link--customer-logout{
-    background-color: #FFC270 !important;
-    color: #000 !important;
+    background-color: var(--primary-color) !important;
+    color: var(--light-black) !important;
     text-align: center;
 }
 
 .woocommerce-info {
-    border-top-color: #FFC270 !important;
+    border-top-color: var(--primary-color) !important;
 }
 .woocommerce-info::before{
-    color: #FFC270 !important;
+    color: var(--primary-color) !important;
 }
 
 @media (min-width: 768px){

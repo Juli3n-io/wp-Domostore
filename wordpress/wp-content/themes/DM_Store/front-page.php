@@ -56,16 +56,19 @@ $result = get_terms($args);
 			$cat_img = $shop_catalog_img_arr[0];
 				?>
 				
-
-			<div class="col-sm front_cat_product" 
+			<a href="<?php echo $term_link; ?>">
+				<div class="col-sm front_cat_product" 
 			style="background: url(<?php echo $cat_img; ?>) no-repeat;
 			background-size: cover;
 			background-position: center;">
 				
-					<a href="<?php echo $term_link; ?>">
+					
+						<h4>
 						<?php echo $cat->name; ?>
-					</a>				
-			</div>
+						</h4>
+							
+				</div>
+			</a>				
 		<?php
 			}
 		}

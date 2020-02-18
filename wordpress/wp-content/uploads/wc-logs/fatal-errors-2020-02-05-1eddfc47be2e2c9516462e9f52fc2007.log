@@ -1,0 +1,24 @@
+2020-02-05T08:17:46+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/header.php:104
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template.php(722): require_once()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template.php(671): load_template('/Applications/M...', true)
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php(1): get_header()
+#4 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#7 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/header.php à la ligne 104
+
+2020-02-05T08:17:53+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/header.php:104
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template.php(722): require_once()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template.php(671): load_template('/Applications/M...', true)
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php(1): get_header()
+#4 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#7 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/header.php à la ligne 104
+

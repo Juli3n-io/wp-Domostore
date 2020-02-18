@@ -1,0 +1,24 @@
+2020-02-14T12:39:54+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_comments() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:123
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 123
+
+2020-02-14T12:40:34+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_comment() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:123
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 123
+
+2020-02-14T13:25:12+00:00 CRITICAL Uncaught Error: Call to a member function get_reviews_allowed() on string in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php:122
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 122
+

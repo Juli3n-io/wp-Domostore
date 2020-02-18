@@ -36,6 +36,7 @@
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>  
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/script.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/single-product.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/assets/js/my-account.js"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
 	</body>
 </html>

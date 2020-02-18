@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Sriracha&display=swap');
+
+:root{
+--primary-color:#ffc270;
+--light-gray:#eee;
+--light-black:rgba(0,0,0,.7);
+--roboto:"Roboto",sans-serif;
+--oswald:"Oswald",sans-serif;
+--sriracha:"Sriracha",sans-serif;
+}
 
 /* ********** Front page *********** */
 
@@ -9,7 +17,7 @@
     margin: 0 auto;
     font-size: 40px;
     margin-bottom: 20px;
-    font-family: 'Patua One', cursive;
+    font-family: var(--roboto);
     padding-top: 60px ;
 }
     
@@ -18,7 +26,7 @@
     content:'';
     display: block;
     height: 2px;
-    background-color: #000;
+    background-color: var(--light-black);
     width: 20%;
     margin: 20px auto;
     }
@@ -40,7 +48,7 @@
     overflow-wrap: break-word;  
 }
 .wp-block-button__link:hover{
-    background-color: #FFC270 !important;
+    background-color: var(--primary-color) !important;
     text-decoration: none !important;
 }
 .added_to_cart{
@@ -50,8 +58,8 @@
 .wc-block-grid__product-title {
     line-height: 1.2;
     font-weight: 700;
-    color: #32373c; !important;
-    font-family: 'Patua One', cursive;
+    color: #32373c !important;
+    font-family: var(--roboto);
 }
 
 /* ****  bloc de produit **** */
@@ -117,7 +125,7 @@
 }
 
 .single_add_to_cart_button:hover{
-    background-color: #FFC270 !important;
+    background-color: var(--primary-color) !important;
     text-decoration: none !important;
 }
 
@@ -134,7 +142,7 @@
     .front_cat_product a {
         color: #FFF;
         font-size: 30px !important;
-        font-family: 'Patua One', cursive;
+        font-family: var(--roboto);
         text-align: center;
 }
 }

@@ -1,0 +1,48 @@
+2020-02-15T10:02:58+00:00 CRITICAL syntax error, unexpected '<<' (T_SL), expecting ']' dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/plugins/elementor/core/base/document.php à la ligne 77
+
+2020-02-15T10:03:06+00:00 CRITICAL syntax error, unexpected '<<' (T_SL), expecting ']' dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/plugins/elementor/core/base/document.php à la ligne 77
+
+2020-02-15T10:14:59+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php:44
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php à la ligne 44
+
+2020-02-15T10:23:01+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php:39
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php à la ligne 39
+
+2020-02-15T10:23:23+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php:37
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php à la ligne 37
+
+2020-02-15T10:23:29+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php:37
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php à la ligne 37
+
+2020-02-15T12:53:04+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting end of file dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php à la ligne 49
+
+2020-02-15T12:54:58+00:00 CRITICAL syntax error, unexpected '}' dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php à la ligne 39
+
+2020-02-15T12:55:14+00:00 CRITICAL syntax error, unexpected ':' dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php à la ligne 50
+
+2020-02-15T12:55:18+00:00 CRITICAL syntax error, unexpected ':' dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php à la ligne 50
+
+2020-02-15T13:07:01+00:00 CRITICAL syntax error, unexpected 'print_r' (T_STRING) dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/page.php à la ligne 49
+
+2020-02-15T13:37:12+00:00 CRITICAL Maximum execution time of 30 seconds exceeded dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-includes/class-wp-query.php à la ligne 3567
+

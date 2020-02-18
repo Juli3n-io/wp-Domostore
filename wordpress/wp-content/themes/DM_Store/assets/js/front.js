@@ -1,15 +1,29 @@
 const header = document.querySelector('.header');
-const responsive_bar = document.querySelector('responsive-bar');
 const hname = document.querySelector('.h-name');
-const cart = document.querySelector('.fas');
-const menu_cat = document.querySelector('.menu-item a');
+const hlinks = document.querySelector('.header-links');
+const hcard = document.querySelector('.navbar-nav a');
+const part2 = document.querySelector('.party_2');
+const part2_link = document.querySelector('.navbar .nav-link')
+const part2_a = document.querySelector('.navbar a');
 
 window.addEventListener('scroll', () => {
   if(window.scrollY > 100){
-    header.classList.add('block');
+    header.classList.remove('none');
+    // part2.classList.remove('transparent');
+    // hname.classList.add('black');
+    // hlinks.classList.add('black');
+    // hcard.classList.add('black');
+    // part2_link.classList.add('black');
+    // part2_a.classList.add('black');
     
   }else{
-    header.classList.remove('block');
+    header.classList.add('none');
+    // part2.classList.add('transparent');
+    // hname.classList.remove('black');
+    // hlinks.classList.remove('black');
+    // hcard.classList.remove('black');
+    // part2_link.classList.remove('black');
+    // part2_a.classList.remove('black');
     
   }
 });
@@ -19,4 +33,32 @@ sr.reveal('.f-name',{
     duration : 3000,
     origin : 'bottom',
     distance : '50px'
+})
+
+sr.reveal('.page_title',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+
+sr.reveal('.front_titre',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+
+sr.reveal('.front_cat_product',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+sr.reveal('.wc-block-grid',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+sr.reveal('.blog-post',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
 })

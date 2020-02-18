@@ -3,7 +3,7 @@ Contributors: ivole
 Tags: woocommerce, review plugin, review reminder, customer reviews, review for discount
 Requires at least: 4.5
 Tested up to: 5.3
-Stable tag: 3.94
+Stable tag: 3.95
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -134,6 +134,7 @@ The recommended way of using the plugin is as follows:
 * Lithuanian
 * Macedonian
 * Norwegian
+* Persian
 * Polish
 * Portuguese
 * Romanian
@@ -161,7 +162,7 @@ To use this plugin, you should first do the following:
 
 === Pro Version ===
 
-CR service has two plans: free and pro. The professional plan offers additional features and dedicated support by email. You can purchase a license for the pro plan here: [official Customer Reviews (CR) website](https://www.cusrev.com).
+CR service has two plans: Free and Pro. The professional plan offers additional features and dedicated support by email. You can purchase a license for the Pro plan here: [official Customer Reviews (CR) website](https://www.cusrev.com).
 
 == Installation ==
 
@@ -217,6 +218,10 @@ If you would like to change how reviews are sorted on product pages, it is possi
 
 == Changelog ==
 
+= 3.95 =
+* A new filter 'cr_custom_questions' to customize output for custom questions
+* New translation: Persian
+* Bug fixes and minor improvements
 = 3.94 =
 * Enhancement: reCaptcha is rendered using the site's language
 * Bug fixes and minor improvements

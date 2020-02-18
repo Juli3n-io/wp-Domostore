@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Sriracha&display=swap');
+
+:root{
+--primary-color:#FFC270;
+--light-gray:#eee;
+--light-black:rgba(0,0,0,.7);
+--roboto:"Roboto",sans-serif;
+--oswald:"Oswald",sans-serif;
+--sriracha:"Sriracha",sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:var(--light-black)
+}
+a:hover{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.page_title{
+    padding-top: 10rem;
+    ;
+    color: var(--light-black);
+    height: 20rem;
+    border-radius: 0 0 40% 40%;   
+}
+.page_title h2{
+
+    font-family: var(--oswald)!important;
+}
+h2:after{
+    content:'';
+    display: block;
+    height: 2px;
+    background-color: var(--light-black);
+    width: 20%;
+    margin: 20px auto;
+    }
+
+/* ****************** */
+/* ****** Login ***** */
+/* ****************** */
+
+ h2{
+    text-align: center !important;
+    font-family: var(--oswald)!important;
+    color: var(--light-black);
+}
+.woocommerce-form{
+    border: none !important;
+}
+
+.woocommerce-Input{
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+.button{
+    background-color: var(--light-black) !important;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #FFF !important;
+}
+.button:hover{
+    background-color: var(--primary-color);
+}
+
+/* ************************* */
+/* ****** Account page ***** */
+/* ************************* */
+
+.woocommerce-MyAccount-navigation{
+    text-align: left;
+    
+}
+.woocommerce-MyAccount-navigation li{
+    padding: 1rem;
+    background-color: var(--light-gray);
+    border: 1px solid #FFF;
+    
+    
+}
+.woocommerce-MyAccount-navigation li a{
+    
+    color: var(--light-black);
+    
+    
+}
+.woocommerce-account .woocommerce-MyAccount-content{
+    width: 100%;
+}
+.woocommerce-MyAccount-navigation-link--customer-logout{
+    background-color: var(--primary-color) !important;
+    color: var(--light-black) !important;
+    text-align: center;
+}
+
+.woocommerce-info {
+    border-top-color: var(--primary-color) !important;
+}
+.woocommerce-info::before{
+    color: var(--primary-color) !important;
+}
+
+@media (min-width: 768px){
+    .woocommerce-MyAccount-navigation ul{
+        display: inline-flex;
+    }
+    .woocommerce-account .woocommerce-MyAccount-content {
+       float: none !important;
+        width: 80% !important;
+    }
+}
+
+@media (min-width: 1000px){
+    .woocommerce-account .woocommerce-MyAccount-navigation {
+       float: none !important;
+        width: 100% !important;
+    }
+    }
+

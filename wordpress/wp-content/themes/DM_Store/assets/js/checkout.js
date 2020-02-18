@@ -9,8 +9,8 @@ sr.reveal('.order' , {
     origin: 'right',
     distance: '300px'
 });
-sr.reveal('.button' , {
+sr.reveal('.checkout-button' , {
     duration: 2000,
     origin: 'bottom',
-    delay:2000
+    delay:500
 });

@@ -287,7 +287,7 @@ color: var(--light-black);
 }
 
 .page_title h2{
-    display: none;
+    /* display: none; */
     padding-top: 40px;
     text-align: center;
     font-size: 60px;
@@ -648,11 +648,7 @@ footer{
     }
 }
 @media (min-width: 995px){
-    header .container_logo{
-        
-        padding: 15px 30%;
-        
-    }
+    
     header .h-name{
         display: block;
     }

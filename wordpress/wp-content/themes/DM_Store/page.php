@@ -27,7 +27,7 @@ if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_ob
 
 
 
-<div class="container">
+<div class="container-fluid">
 <!-- Example row of columns -->
 	<div class="title_page" style="background: url(<?php echo $image;?>) no-repeat; 
 	background-size: cover;

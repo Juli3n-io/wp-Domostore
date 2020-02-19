@@ -92,7 +92,7 @@ header{
 }
 header .container_logo{
     margin: 0;
-    padding: 15px 35px;
+    padding: 15px 15%;
     float: left;
     display: flex;
 }
@@ -121,7 +121,7 @@ header .container_logo{
     z-index: 2;
     top: 5px;
     /* top: 10px; */
-    right: 14px;
+    right: -7px;
     /* right: -20px; */
     font-size: 16px;
     font-weight: 700;
@@ -647,7 +647,11 @@ footer{
     }
 }
 @media (min-width: 995px){
-    
+    header .container_logo{
+        
+        padding: 15px 30%;
+        
+    }
     header .h-name{
         display: block;
     }

@@ -647,11 +647,7 @@ footer{
     }
 }
 @media (min-width: 995px){
-    header .container_logo{
-        
-        padding: 15px 30%;
-        
-    }
+    
     header .h-name{
         display: block;
     }

@@ -709,6 +709,13 @@ footer{
     header .h-name{
         display: block;
     }
+
+    .title_page h2 {
+        padding-top: 10rem;
+        padding-bottom: 4rem;
+        color: #FFF !important;
+        font-size: 10rem;
+    }
        
 }
 

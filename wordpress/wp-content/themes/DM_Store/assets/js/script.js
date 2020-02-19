@@ -20,8 +20,28 @@ $('.menu-icon').click(function(){
   $('.nav-icon-3').toggleClass('active')
 });
 
-const nav_icon = document.querySelector('.nav-icon');
-const nav_icon_2 = document.querySelector('.nav-icon:after')
+window.sr = ScrollReveal();
+sr.reveal('.title_404',{
+    duration : 3000,
+    origin : 'bottom',
+    distance : '50px'
+})
+sr.reveal('.text_404',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+sr.reveal('.ligne_404',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+sr.reveal('.back_to_home_404',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+
 
 
 

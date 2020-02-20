@@ -467,6 +467,7 @@ footer{
 /* **********  *********** */
 /* ******** Page ********* */
 /* **********  *********** */
+
 .sidebar{
     background-color: #EEE;
     padding-top: 4rem;
@@ -550,6 +551,16 @@ footer{
 }
 .widgettitle{
     font-size: 20px;
+}
+.woocommerce ul.products li.product a{
+    margin: 1rem 1rem 1rem 3rem;
+    background-color: var(--light-black);
+}
+.woocommerce ul.products li.product .price {
+    margin: 1rem 1rem 1rem 3rem;
+}
+.woocommerce ul.products li.product .star-rating{
+    margin: 1rem 1rem 1rem 3rem;
 }
 .woocommerce-result-count,.term-description{
     display: none;

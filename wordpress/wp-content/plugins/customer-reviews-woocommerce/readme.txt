@@ -3,7 +3,7 @@ Contributors: ivole
 Tags: woocommerce, review plugin, review reminder, customer reviews, review for discount
 Requires at least: 4.5
 Tested up to: 5.3
-Stable tag: 3.96
+Stable tag: 3.97
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -137,6 +137,7 @@ The recommended way of using the plugin is as follows:
 * Persian
 * Polish
 * Portuguese
+* Portuguese (Brazil)
 * Romanian
 * Russian
 * Serbian
@@ -218,6 +219,9 @@ If you would like to change how reviews are sorted on product pages, it is possi
 
 == Changelog ==
 
+= 3.97 =
+* New translation: Portuguese (Brazil)
+* Bug fixes and minor improvements
 = 3.96 =
 * Bug fixes and minor improvements
 = 3.95 =

@@ -200,7 +200,8 @@ if ( ! class_exists( 'Ivole_Endpoint' ) ) :
 										'comment_content' => $shop_comment_text,
 										'comment_post_ID' =>  $shop_page_id,
 										'comment_type' => 'review',
-										'comment_approved' => $comment_approved );
+										'comment_approved' => $comment_approved,
+										'comment_meta' => array( 'rating' => intval( $body2->order->shop_rating ) ) );
 									$review_id = wp_insert_comment( $commentdata );
 									if( !$review_id ) {
 										//adding a new review may fail, if review fields include characters that are not supported by DB
@@ -215,7 +216,7 @@ if ( ! class_exists( 'Ivole_Endpoint' ) ) :
 										$review_id = wp_insert_comment( $commentdata );
 									}
 									if( $review_id ) {
-										add_comment_meta( $review_id, 'rating', intval( $body2->order->shop_rating ), true );
+										//add_comment_meta( $review_id, 'rating', intval( $body2->order->shop_rating ), true );
 										add_comment_meta( $review_id, 'ivole_order', $order_id, true );
 										if( $country ) {
 											update_comment_meta( $review_id, 'ivole_country', $country );
@@ -355,7 +356,8 @@ if ( ! class_exists( 'Ivole_Endpoint' ) ) :
 										 	'comment_content' => $comment_text,
 										 	'comment_post_ID' =>  $order_item_product_id,
 										 	'comment_type' => 'review',
-										 	'comment_approved' => $comment_approved );
+										 	'comment_approved' => $comment_approved,
+										 	'comment_meta' => array( 'rating' => intval( $body2->order->items[$i]->rating ) ) );
 										$review_id = wp_insert_comment( $commentdata );
 										if( !$review_id ) {
 											//adding a new review may fail, if review fields include characters that are not supported by DB
@@ -370,7 +372,7 @@ if ( ! class_exists( 'Ivole_Endpoint' ) ) :
 											$review_id = wp_insert_comment( $commentdata );
 										}
 										if( $review_id ) {
-											add_comment_meta( $review_id, 'rating', intval( $body2->order->items[$i]->rating ), true );
+											//add_comment_meta( $review_id, 'rating', intval( $body2->order->items[$i]->rating ), true );
 											add_comment_meta( $review_id, 'ivole_order', $order_id, true );
 											if( $country ) {
 												update_comment_meta( $review_id, 'ivole_country', $country );

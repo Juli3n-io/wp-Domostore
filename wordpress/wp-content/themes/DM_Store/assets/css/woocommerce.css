@@ -129,6 +129,13 @@
     text-decoration: none !important;
 }
 
+/* **** woocommerce notification  **** */
+
+.woocommerce-store-notice{
+    background-color: var(--primary-color)!important;
+}
+
+
 /* **********  *********** */
 /* ***** Responsive ****** */
 /* **********  *********** */

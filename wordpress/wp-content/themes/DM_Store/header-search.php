@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo( 'charset' ); //charset du site ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title><?php bloginfo( 'name' ); wp_title('-', true, 'right'); ?></title>
+    <title><?php bloginfo( 'name' ); wp_title('-', true, 'left'); ?></title>
 
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap-grid.min.css" rel="stylesheet">

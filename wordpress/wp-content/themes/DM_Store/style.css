@@ -174,7 +174,7 @@ header .menu ul li {
 }
 header .menu ul li a {
     text-decoration: none;
-    color: #000;
+    color: var(--light-black);
 }
 
 .party_2 .navbar ul li a:hover {
@@ -191,7 +191,7 @@ header .navbar_panier{
     
 }
 header .navbar_panier a{
-color: #000;
+color: var(--light-black);
 }
 .dropdown-item.active, .dropdown-item:active {
     color: var(--light-black) !important;
@@ -263,13 +263,13 @@ color: #000;
 
 .header.scroll{
     background-color: #FFF !important;
-    color: #000;
+    color: var(--light-black);
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
 }
 
 .responsive-bar.scroll{
     background-color: #FFF !important;
-    color: #000;
+    color: var(--light-black);
     
 }
 
@@ -314,7 +314,7 @@ color: #000;
     content:'';
     display: block;
     height: 2px;
-    background-color: #000;
+    background-color: var(--light-black);
     width: 20%;
     margin: 20px auto;
 }
@@ -443,7 +443,7 @@ footer{
 .blog-post__text{
     margin-bottom: 3rem;
     font-size: 1.4rem;
-    color: rgba(0, 0, 0, .7);
+    color: var(--light-black);
 }
 
 .blog-post__cta{
@@ -476,16 +476,17 @@ footer{
     margin-bottom: 4rem;
     margin-left: -5rem;
     margin-right: -5rem;
-    padding-top: 10rem;
+    
     padding-bottom: 4rem;
     height: 100vh;
     
 }
 .title_page h2{
-	padding-top: 4rem;
+	padding-top: 20rem;
     padding-bottom: 4rem;
     color: #FFF !important;
-    font-size: 40px;
+    font-size: 10rem;
+    font-family: var(--sriracha);
     
 }
 .title_page h2:after{
@@ -515,11 +516,11 @@ footer{
 }
 .woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
     border-radius: 1em;
-    background-color: #000 !important;
+    background-color: var(--light-black) !important;
     border: 0;
 }
 .button{
-    background-color: #000 !important;
+    background-color: var(--light-black) !important;
 }
 .search-field{
     background: none;
@@ -540,8 +541,12 @@ footer{
 .product-categories{
     text-align: center;
 }
-.product-categories li {
+.product-categories li,
+.woocommerce-widget-layered-nav-list li {
     border-bottom: 0.5px solid rgba(186, 186, 186, 0.52);
+}
+.woocommerce-widget-layered-nav-list{
+    text-align: center;
 }
 .widgettitle{
     font-size: 20px;
@@ -577,7 +582,7 @@ footer{
 }
 .price del span{
     text-decoration: line-through;
-    color: #000 !important;
+    color: var(--light-black) !important;
     font-weight: normal !important;
 }
 
@@ -746,7 +751,10 @@ footer{
     min-width: 30rem;
     max-width: 30rem;
     }
-
+    .title_page h2{
+      margin-top: 2rem;
+      font-size: 10rem;
+    }
 }
 
 /* Large devices (desktops, less than 1200px)*/

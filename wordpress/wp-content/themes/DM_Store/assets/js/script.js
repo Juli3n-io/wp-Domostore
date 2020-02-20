@@ -21,6 +21,21 @@ $('.menu-icon').click(function(){
 });
 
 window.sr = ScrollReveal();
+sr.reveal('.title_page h2',{
+  duration : 2000,
+  origin : 'bottom',
+  distance : '50px'
+})
+sr.reveal('.sidebar',{
+  duration : 2000,
+  origin : 'left',
+  distance : '50px'
+})
+sr.reveal('.type-product',{
+  duration : 2000,
+  origin : 'bottom',
+  distance : '50px'
+})
 sr.reveal('.title_404',{
     duration : 3000,
     origin : 'bottom',

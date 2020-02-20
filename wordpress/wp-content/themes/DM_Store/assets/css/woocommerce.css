@@ -97,6 +97,18 @@
     max-width: none !important;
 }
 
+/* ****  page boutique **** */
+
+.woocommerce ul.products li.product a img {
+    width: 100%;
+    max-width: 14rem;
+    height: auto;
+    max-height: 22rem;
+    display: block;
+    margin: 0 0 1em;
+    box-shadow: none;
+}
+
 /* ****  Images de produit **** */
 
 .wc-block-grid__product-image {

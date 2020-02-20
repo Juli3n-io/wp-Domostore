@@ -476,16 +476,16 @@ footer{
     margin-bottom: 4rem;
     margin-left: -5rem;
     margin-right: -5rem;
-    padding-top: 10rem;
+    
     padding-bottom: 4rem;
     height: 100vh;
     
 }
 .title_page h2{
-	padding-top: 4rem;
+	padding-top: 20rem;
     padding-bottom: 4rem;
     color: #FFF !important;
-    font-size: 40px;
+    font-size: 10rem;
     font-family: var(--sriracha);
     
 }
@@ -541,8 +541,12 @@ footer{
 .product-categories{
     text-align: center;
 }
-.product-categories li {
+.product-categories li,
+.woocommerce-widget-layered-nav-list li {
     border-bottom: 0.5px solid rgba(186, 186, 186, 0.52);
+}
+.woocommerce-widget-layered-nav-list{
+    text-align: center;
 }
 .widgettitle{
     font-size: 20px;
@@ -748,7 +752,7 @@ footer{
     max-width: 30rem;
     }
     .title_page h2{
-      margin-top: 10%;
+      margin-top: 2rem;
       font-size: 10rem;
     }
 }

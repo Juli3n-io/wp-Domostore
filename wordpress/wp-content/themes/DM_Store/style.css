@@ -23,9 +23,9 @@ Author: Julien QUENTIER
   text-decoration: none;
   list-style-type: none;
 }
-html{
+/* html{
     background-color: var(--light-gray);
-}
+} */
 .body{
     background: none !important;
 }

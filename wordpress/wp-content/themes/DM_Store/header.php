@@ -12,6 +12,7 @@
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/single-product.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/light-box.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/my-account.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/assets/css/contact.css" rel="stylesheet">
 
     <script src="https://unpkg.com/scrollreveal"></script> <!-- for single-product page-->
     <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">

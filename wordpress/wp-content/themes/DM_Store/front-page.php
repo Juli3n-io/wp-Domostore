@@ -15,7 +15,7 @@ top:0;
 background-size: cover;
 background-position: center;
 " 
-id="top_from_page"
+
 >
 
 <h1 class="f-name"> <?php bloginfo( 'name' );?></h1>

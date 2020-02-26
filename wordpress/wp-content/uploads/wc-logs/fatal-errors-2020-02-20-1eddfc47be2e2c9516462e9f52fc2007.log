@@ -8,3 +8,5 @@ Stack trace:
 
 2020-02-20T16:47:20+00:00 CRITICAL syntax error, unexpected end of file dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/single-product.php à la ligne 395
 
+2020-02-20T17:49:59+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) dans /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/contact-page.php à la ligne 22
+

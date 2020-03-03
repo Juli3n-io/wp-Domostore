@@ -1,0 +1,10 @@
+2020-03-03T16:33:01+00:00 CRITICAL Uncaught Error: Call to undefined function current_role() in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/functions.php:226
+Stack trace:
+#0 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-settings.php(497): include()
+#1 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-config.php(94): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-load.php(37): require_once('/Applications/M...')
+#3 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-admin/admin.php(34): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-admin/user-edit.php(10): require_once('/Applications/M...')
+#5 {main}
+  thrown in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/functions.php on line 226
+

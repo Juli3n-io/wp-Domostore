@@ -45,7 +45,7 @@ $result = get_terms($args);
 <div class="container"> 
 <h3 class="front_titre">Choisir une Catégorie </h3>
 <!--  affichage des différentes catégorie de produits-->
-	<div class="row">
+	<div class="row row-cols-2">
 	
 		<?php
 		foreach ( $result as $cat ) {
@@ -57,7 +57,7 @@ $result = get_terms($args);
 				?>
 				
 			<a href="<?php echo $term_link; ?>">
-				<div class="col-sm front_cat_product" 
+				<div class="col front_cat_product" 
 			style="background: url(<?php echo $cat_img; ?>) no-repeat;
 			background-size: cover;
 			background-position: center;">

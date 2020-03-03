@@ -1,4 +1,0 @@
-2020-01-13T21:45:41+00:00 CRITICAL syntax error, unexpected 'add_theme_support' (T_STRING) in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/functions.php on line 63
-
-2020-01-13T21:45:42+00:00 CRITICAL syntax error, unexpected 'add_theme_support' (T_STRING) in /Applications/MAMP/htdocs/wp-DomoStore/wordpress/wp-content/themes/DM_Store/functions.php on line 63
-

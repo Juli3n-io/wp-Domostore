@@ -31,6 +31,11 @@
 				'id'            => 'colonne-gauche',
 				'description'   => __( 'Add widgets here to appear in your colonne gauche region.', 'DM_Store' )
 			) );
+			register_sidebar( array(
+				'name'          => __( 'responsive', 'DM_Store' ),
+				'id'            => 'responsive',
+				'description'   => __( 'Add widgets here to appear in your colonne responsive.', 'DM_Store' )
+			) );
 		}
 	}
 

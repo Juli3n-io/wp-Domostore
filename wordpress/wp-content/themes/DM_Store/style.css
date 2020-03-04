@@ -152,9 +152,7 @@ header .container_logo{
 .party_2{
     background-color: var(--light-gray);
 }
-.navbar-light .navbar-toggler{
-    /* border: none; */
-}
+
 
 .navbar{
     padding: 0;
@@ -213,7 +211,7 @@ color: var(--light-black);
     position: relative;
     float: left;
     cursor: pointer;
-    margin-top: 3px;
+    margin-top: 0;
 }
 
 .responsive-btn .menu-icon .nav-icon-1{
@@ -472,12 +470,61 @@ footer{
 /* **********  *********** */
 
 .sidebar{
-    background-color: #EEE;
+    background-color: var(--light-gray);
     padding-top: 4rem;
+    display: none;
+}
+.menu_filter_open{
+    padding: 0.5rem;
+    padding-left:2rem ;
+    margin: 0;
+    margin-right: -2rem;
+    margin-left: -2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    left: 0;
+    font-size: 1rem;
+    background-color: var(--light-gray);
+    color: var(--light-black);
+    cursor: pointer;
+    
+}
+.menu_filter_open p:hover{
+    color: #FFC270;
+}
+
+.responsive_sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: var(--light-gray);
+    position: fixed;
+    top: 0;
+    left: -60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+    text-align: center;
+    
+}
+.responsive_sidebar.active{
+    left: 0;
+}
+.responsive_sidebar .responsive_close{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.responsive_sidebar .responsive_close i{
+    color: var(--light-black);
 }
 .title_page{
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
     margin-left: -5rem;
     margin-right: -5rem;
     
@@ -489,7 +536,7 @@ footer{
 	padding-top: 20rem;
     padding-bottom: 4rem;
     color: #FFF !important;
-    font-size: 10rem;
+    font-size: 6rem;
     font-family: var(--sriracha);
     
 }
@@ -533,9 +580,9 @@ footer{
     margin-bottom: 0.5rem;
     width: 14rem;
 }
-#gauche button{
-    background-color: var(--primary-color);
-    
+#gauche button,
+#responsive button{
+    background-color: var(--primary-color);    
     color: #FFF;
     text-transform: uppercase;
     width: 8rem;
@@ -668,7 +715,7 @@ footer{
         z-index: 2;
         top: 1px;
         /* top: 10px; */
-        right: -17px;
+        right: 0px;
         /* right: -20px; */
         font-size: 16px;
         font-weight: 700;
@@ -681,6 +728,29 @@ footer{
         line-height: 20px;
         margin: 5px 20px;
     }
+}
+
+@media only screen and (max-device-width: 414px){
+    .navbar_cart_total {
+        display: inline-block;
+        position: absolute;
+        z-index: 2;
+        top: 1px;
+        /* top: 10px; */
+        right: 10px;
+        /* right: -20px; */
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--primary-color);
+        color: #fff;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        line-height: 20px;
+        margin: 5px 20px;
+    }
+}
 }
 
 @media(max-width:568px){
@@ -738,6 +808,12 @@ footer{
     .navbar_cart_total{
         right: -20px;
         top:12px
+    }
+    .sidebar{
+        display: block;
+    }
+    .menu_filter_open{
+        display: none;
     }
     
 }

@@ -20,6 +20,15 @@ $('.menu-icon').click(function(){
   $('.nav-icon-3').toggleClass('active')
 });
 
+
+ document.querySelector('.menu_filter_open').addEventListener('click',()=>{
+    document.querySelector('.responsive_sidebar').classList.add('active');
+ });
+
+ document.querySelector('.responsive_close').addEventListener('click',()=>{
+  document.querySelector('.responsive_sidebar').classList.remove('active');
+ });
+
 window.sr = ScrollReveal();
 sr.reveal('.title_page h2',{
   duration : 2000,

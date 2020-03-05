@@ -31,6 +31,11 @@
     margin: 20px auto;
     }
 
+/* **** Img content **** */
+#description img{
+    display: none;
+}
+
 /* **** bouton achat **** */
 .wp-block-button__link {
     background-color: #32373c !important;

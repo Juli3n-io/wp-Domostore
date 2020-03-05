@@ -25,9 +25,7 @@
 .contact_container{
     text-align: center;
 }
-textarea, input{
-    border-radius: 10px;
-}
+
 .wpcf7-submit{
     background-color: var(--primary-color);
     padding: 7px 14px! important;

@@ -53,7 +53,7 @@
               <i class="fas fa-search search_click px-2"></i>
            
               <?php global $woocommerce ; ?>
-            <a class= "" href= "<?php echo $woocommerce-> cart-> get_cart_url ();?> "
+            <a class="panier" href= "<?php echo $woocommerce-> cart-> get_cart_url ();?> "
             title = "<?php _e ('Cart View', 'woothemes');?>" > <i class="fas fa-shopping-cart"></i></a>
             <span class="navbar_cart_total">
             <?php echo sprintf ( _n ( '% d item' , '% d ' , $woocommerce-> cart-> cart_contents_count, 'woothemes' ) ,

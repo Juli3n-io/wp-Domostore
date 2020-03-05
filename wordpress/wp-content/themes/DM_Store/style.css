@@ -132,7 +132,7 @@ header .container_logo{
     font-size: 16px;
     font-weight: 700;
     background-color: var(--primary-color);
-    color: #fff;
+    color: #FFF;
     text-align: center;
     width: 20px;
     height: 20px;
@@ -547,7 +547,7 @@ footer{
 	padding-top: 20rem;
     padding-bottom: 4rem;
     color: #FFF !important;
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: var(--sriracha);
     
 }
@@ -717,27 +717,16 @@ footer{
 /* **********  *********** */
 
 @media only screen and (max-device-width: 375px){
+    .navbar-nav{
+        padding-top: 1.2rem;
+        /* padding-right: 10px; */
+    }
     .navbar-nav .panier{
         position: absolute;
     }
     .navbar_cart_total {
-        display: inline-block;
-        position: absolute;
-        z-index: 2;
-        top: 1px;
-        /* top: 10px; */
-        right: 0px;
-        /* right: -20px; */
-        font-size: 16px;
-        font-weight: 700;
-        background-color: var(--primary-color);
-        color: #fff;
-        text-align: center;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        line-height: 20px;
-        margin: 5px 20px;
+        top: 0;
+        right: 0;   
     }
     .img_car_product{
         width: 100%;
@@ -749,9 +738,9 @@ footer{
         display: inline-block;
         position: absolute;
         z-index: 2;
-        top: 1px;
+        top: 5px;
         /* top: 10px; */
-        right: -10px;
+        right: -15px;
         /* right: -20px; */
         font-size: 16px;
         font-weight: 700;
@@ -776,6 +765,17 @@ footer{
 }
 
 @media (min-width: 575.98px) {
+
+    .navbar-nav{
+        float: right !important;
+        padding: 0;
+        padding-top: 15px;
+    }
+    .navbar_cart_total { 
+        top: 2px;
+        right: -15px;
+        
+    }
     .main-image h1 {
         text-align: center;
         font-size: 90px;
@@ -817,7 +817,16 @@ footer{
 }
 
 @media (min-width: 768px){
+    .title_page h2{
+        padding-top: 10%;
+    }
+    .main-image h1 {
+        text-align: center;
+        font-size: 90px;
+        color: #FFF;
+        padding-top: 15%;
     
+    }  
     .navbar-nav{
         float: right !important;
         padding: 0;
@@ -831,8 +840,13 @@ footer{
     }
     .menu_filter_open{
         display: none;
+    }  
+}
+
+@media screen and (min-width : 768px){
+    .title_page h2{
+        padding-top: 15%;
     }
-    
 }
 
 @media screen and (max-width:868px){
@@ -858,6 +872,10 @@ footer{
 /* Medium devices (tablets, less than 992px)*/
 
 @media (min-width: 1000px) {
+    .title_page h2{
+        padding-top: 30%;
+        font-size: 8rem;
+    }
     .responsive-btn{
         display: none;
     }

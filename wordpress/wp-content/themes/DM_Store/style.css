@@ -290,6 +290,17 @@ color: var(--light-black);
         text-align: center;
 }
 
+.page_front_title{
+color:var(--light-black);
+text-align: center;
+}
+.page_front_title h2{
+    font-size: 60px;
+    font-family: var(--sriracha);
+}
+.page_front_title .ligne{
+    color:var(--light-black);
+}
 .page_title h2{
     /* display: none; */
     padding-top: 40px;

@@ -15,16 +15,11 @@ if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_ob
 	// if ( $image ) {
 	// 	echo '<img class="classtopright" src="' . $image . '" alt="" width="280"/>';
 	// }
+	
 }
 
 
 ?>
-
-<?php 
-	
-	
-	?>
-
 
 
 <div class="container-fluid">
@@ -35,8 +30,9 @@ if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_ob
 
 		<h2>
 			<?php the_title(); ?>
+			
 		</h2>
-						
+			
 	</div> <!-- fin div title_page-->
 
 	<div class="menu_filter_open">

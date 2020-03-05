@@ -1,9 +1,5 @@
 <?php 
-if(is_page('front-page')){
-	get_header('front');
-}else{
-	get_header();
-}
+get_header('front');
 ?>
 <!-- En tête personalisé -->
 <div class="main-image" 
@@ -24,10 +20,10 @@ background-position: center;
 </div>
 
 <!-- Titre de la page-->
-<div class="page_title">
+<!-- <div class="page_front_title">
 <h2><?php the_title(); ?></h2>
 <span class="ligne"></span>
-</div>
+</div> -->
 
 <section>
 <!-- Récupération des catégories de produits-->
@@ -131,9 +127,5 @@ $result = get_terms($args);
 
 
 <?php 
-if(is_page('front-page')){
 	get_footer('front');
-}else{
-	get_footer();
-}
 ?>

@@ -501,7 +501,7 @@ footer{
     
 }
 .menu_filter_open p:hover{
-    color: #FFC270;
+    color: var(--primary-color);
 }
 
 .responsive_sidebar{
@@ -717,7 +717,7 @@ footer{
 /* **********  *********** */
 
 @media only screen and (max-device-width: 375px){
-    .navbar-nav a{
+    .navbar-nav .panier{
         position: absolute;
     }
     .navbar_cart_total {
@@ -739,6 +739,9 @@ footer{
         line-height: 20px;
         margin: 5px 20px;
     }
+    .img_car_product{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-device-width: 414px){
@@ -748,7 +751,7 @@ footer{
         z-index: 2;
         top: 1px;
         /* top: 10px; */
-        right: 10px;
+        right: -10px;
         /* right: -20px; */
         font-size: 16px;
         font-weight: 700;
@@ -761,8 +764,11 @@ footer{
         line-height: 20px;
         margin: 5px 20px;
     }
+    .img_car_product{
+        width: 100%;
+    }
 }
-}
+
 
 @media(max-width:568px){
   
@@ -774,7 +780,7 @@ footer{
         text-align: center;
         font-size: 90px;
         color: #FFF;
-        padding-top: 12rem;
+        padding-top: 10%;
     
     }  
     .main-image h3 {

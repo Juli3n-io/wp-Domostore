@@ -52,7 +52,7 @@ $result = get_terms($args);
 			$cat_img = $shop_catalog_img_arr[0];
 				?>
 				
-			<a href="<?php echo $term_link; ?>">
+			<a class="img_car_product" href="<?php echo $term_link; ?>">
 				<div class="col front_cat_product" 
 			style="background: url(<?php echo $cat_img; ?>) no-repeat;
 			background-size: cover;

@@ -56,7 +56,7 @@
             <a class="panier" href= "<?php echo $woocommerce-> cart-> get_cart_url ();?> "
             title = "<?php _e ('Cart View', 'woothemes');?>" > <i class="fas fa-shopping-cart"></i></a>
             <span class="navbar_cart_total">
-            <?php echo sprintf ( _n ( '% d item' , '% d ' , $woocommerce-> cart-> cart_contents_count, 'woothemes' ) ,
+            <?php echo sprintf ( _n ( '% d ' , '% d ' , $woocommerce-> cart-> cart_contents_count, 'woothemes' ) ,
             $woocommerce-> cart-> cart_contents_count ) ;?>
             </span>
           </p>

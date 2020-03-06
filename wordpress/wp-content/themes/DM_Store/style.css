@@ -817,9 +817,7 @@ footer{
 }
 
 @media (min-width: 768px){
-    .title_page h2{
-        padding-top: 10%;
-    }
+    
     .main-image h1 {
         text-align: center;
         font-size: 90px;
@@ -845,7 +843,13 @@ footer{
 
 @media screen and (min-width : 768px){
     .title_page h2{
-        padding-top: 15%;
+        padding-top: 30%;
+    }
+}
+
+@media (orientation: landscape) and (max-device-width : 900px) {
+    .title_page h2{
+        padding-top: 10%;
     }
 }
 
@@ -861,7 +865,7 @@ footer{
     }
 
     .title_page h2 {
-        padding-top: 10rem;
+        padding-top: 10%;
         padding-bottom: 4rem;
         color: #FFF !important;
         font-size: 10rem;
@@ -873,7 +877,7 @@ footer{
 
 @media (min-width: 1000px) {
     .title_page h2{
-        padding-top: 30%;
+        padding-top: 20%;
         font-size: 8rem;
     }
     .responsive-btn{

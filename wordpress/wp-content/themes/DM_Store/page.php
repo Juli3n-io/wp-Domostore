@@ -36,7 +36,7 @@ if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_ob
 	</div> <!-- fin div title_page-->
 
 	<div class="menu_filter_open">
-	<p><i class="fas fa-arrow-circle-right"></i> Filtres</p>
+	<p class="filter"><i class="fas fa-arrow-circle-right"></i> Filtres</p>
     </div>
 	
 	<div class="responsive_sidebar">

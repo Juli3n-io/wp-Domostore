@@ -65,6 +65,12 @@ sr.reveal('.back_to_home_404',{
   origin : 'bottom',
   distance : '50px'
 })
+sr.reveal('.filter',{
+  duration : 2000,
+  origin : 'left',
+  distance : '50px'
+})
+
 
 
 

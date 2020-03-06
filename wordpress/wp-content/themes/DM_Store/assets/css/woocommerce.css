@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Sriracha&display=swap');
 
 :root{
---primary-color:#ffc270;
---light-gray:#eee;
---light-black:rgba(0,0,0,.7);
---roboto:"Roboto",sans-serif;
---oswald:"Oswald",sans-serif;
---sriracha:"Sriracha",sans-serif;
+    --primary-color:#FFC270;
+    --light-gray:#eee;
+    --light-black:rgba(0,0,0,.7);
+    --light-white:rgba(255,255,255,.7);
+    --roboto:"Roboto",sans-serif;
+    --oswald:"Oswald",sans-serif;
+    --sriracha:"Sriracha",sans-serif;
 }
 
 /* ********** Front page *********** */
@@ -51,6 +52,15 @@
     text-align: center;
     text-decoration: none;
     overflow-wrap: break-word;  
+}
+.woocommerce a.button{
+    color: #fff !important;
+}
+.woocommerce-mini-cart-item a{
+    color: var(--primary-color) !important;
+}
+.woocommerce button.button{
+    color: #FFF !important;
 }
 .wp-block-button__link:hover{
     background-color: var(--primary-color) !important;

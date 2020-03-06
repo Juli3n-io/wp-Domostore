@@ -36,6 +36,11 @@
 				'id'            => 'responsive',
 				'description'   => __( 'Add widgets here to appear in your colonne responsive.', 'DM_Store' )
 			) );
+			register_sidebar( array(
+				'name'          => __( 'panier', 'DM_Store' ),
+				'id'            => 'panier',
+				'description'   => __( 'Add widgets here to appear in your colonne panier.', 'DM_Store' )
+			) );
 		}
 	}
 

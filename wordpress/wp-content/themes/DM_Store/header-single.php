@@ -54,18 +54,30 @@
               <i class="fas fa-search search_click px-2"></i>
            
               <?php global $woocommerce ; ?>
-            <a class="panier" href= "<?php echo $woocommerce-> cart-> get_cart_url ();?> "
-            title = "<?php _e ('Cart View', 'woothemes');?>" > <i class="fas fa-shopping-cart"></i></a>
-            <span class="navbar_cart_total">
-            <?php echo sprintf ( _n ( '% d ' , '% d ' , $woocommerce-> cart-> cart_contents_count, 'woothemes' ) ,
-            $woocommerce-> cart-> cart_contents_count ) ;?>
-            </span>
-          </p>
-        </div>
-      </div> <!-- fin div partie droite -->
- 
-  </div> <!-- fin row -->
-</div><!-- fin container -->
+              <a class="panier"> <i class="fas fa-shopping-cart"></i></a>
+              <span class="navbar_cart_total">
+              <?php echo sprintf ( _n ( '% d ' , '% d ' , $woocommerce-> cart-> cart_contents_count, 'woothemes' ) ,
+              $woocommerce-> cart-> cart_contents_count ) ;?>
+              </span>
+            </p>
+          </div>
+        </div> <!-- fin div partie droite -->
+   
+    </div> <!-- fin row -->
+  </div><!-- fin container -->
+
+  <div class="panier_sidebar"> <!-- panier -->
+		<div class="panier_close">
+			<i class="fas fa-times"></i>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player
+    src="https://assets5.lottiefiles.com/datafiles/cOXmnq9aSqiXLCu/data.json" mode="bounce" background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay >
+</lottie-player>
+    <h4>Votre Panier</h4>
+    <span class="ligne"></span>
+	    <?php echo get_sidebar('panier');  ?>
+	</div>
 
 <!-- search container-->
 <div class="container search_container" style="display:none;">

@@ -258,7 +258,57 @@ color: var(--light-black);
         top: 0;
 }
 
+/* **** Panier **** */
 
+#main.active{
+    margin-right: 100px;
+}
+
+.panier{
+    cursor: pointer;
+}
+
+.panier_sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: var(--light-gray);
+    position: fixed;
+    top: 0;
+    right:-60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    /* transition: all 650ms ease-in-out; */
+    text-align: center;
+    
+}
+.panier_sidebar.active{
+    right: 0;
+}
+.panier_sidebar .panier_close{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.panier_sidebar .panier_close i{
+    color: var(--light-black);
+}
+
+.panier_sidebar .panier_logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background-color: var(--light-white);
+    padding: 1.5rem;
+}
+.panier_sidebar .ligne{
+    background-color: var(--light-black);
+}
 
 /* **** Scroll Option **** */
 
@@ -303,7 +353,7 @@ text-align: center;
 }
 .page_title h2{
     /* display: none; */
-    padding-top: 40px;
+    padding-top: 10rem;
     text-align: center;
     font-size: 60px;
     font-family: var(--sriracha);

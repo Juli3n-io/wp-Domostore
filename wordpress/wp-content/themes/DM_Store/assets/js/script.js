@@ -20,6 +20,20 @@ $('.menu-icon').click(function(){
   $('.nav-icon-3').toggleClass('active')
 });
 
+document.querySelector('.panier').addEventListener('click',()=>{
+  document.querySelector('.panier_sidebar').classList.add('active');
+  document.getElementById('main').classList.add('active');
+});
+
+document.querySelector('.panier_close').addEventListener('click',()=>{
+document.querySelector('.panier_sidebar').classList.remove('active');
+document.getElementById('main').classList.remove('active');
+});
+
+document.getElementById('main').addEventListener('click',()=>{
+  document.querySelector('.panier_sidebar').classList.remove('active');
+  document.getElementById('main').classList.remove('active');
+  });
 
  document.querySelector('.menu_filter_open').addEventListener('click',()=>{
     document.querySelector('.responsive_sidebar').classList.add('active');
@@ -28,6 +42,8 @@ $('.menu-icon').click(function(){
  document.querySelector('.responsive_close').addEventListener('click',()=>{
   document.querySelector('.responsive_sidebar').classList.remove('active');
  });
+
+ 
 
 window.sr = ScrollReveal();
 sr.reveal('.title_page h2',{

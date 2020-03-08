@@ -69,7 +69,7 @@
     </div>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player
-    src="https://assets5.lottiefiles.com/datafiles/cOXmnq9aSqiXLCu/data.json" mode="bounce" background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay >
+    src="https://assets5.lottiefiles.com/datafiles/cOXmnq9aSqiXLCu/data.json" mode="bounce" background="transparent"  speed="1"  style="width: 100px; height: 100px;"  autoplay >
 </lottie-player>
     <h4>Votre Panier</h4>
     <span class="ligne"></span>

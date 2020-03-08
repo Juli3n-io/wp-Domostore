@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo( 'charset' ); //charset du site ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title><?php bloginfo( 'name' ); wp_title('-', true, 'left'); ?></title>
+    <title><?php bloginfo( 'name' ); wp_title('-', true, 'right'); ?></title>
 
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap-grid.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
     </div>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player
-    src="https://assets5.lottiefiles.com/datafiles/cOXmnq9aSqiXLCu/data.json" mode="bounce" background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay >
+    src="https://assets5.lottiefiles.com/datafiles/cOXmnq9aSqiXLCu/data.json" mode="bounce" background="transparent"  speed="1"  style="width: 100px; height: 100px;"  autoplay >
 </lottie-player>
     <h4>Votre Panier</h4>
     <span class="ligne"></span>
@@ -121,4 +121,4 @@
   
 <div class="clear"></div>
 <div id="top_from_page"></div>
-<main role="main">
+<main role="main" id="main">

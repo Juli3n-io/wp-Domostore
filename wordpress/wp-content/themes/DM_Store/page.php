@@ -24,14 +24,19 @@ if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_ob
 
 <div class="container-fluid">
 <!-- Example row of columns -->
-	<div class="title_page" style="background: url(<?php echo $image;?>) no-repeat; 
+	<div class="title_page_bg" style="background: url(<?php echo $image;?>) center center no-repeat; 
 	background-size: cover;
-	background-position: center;">
-
-		<h2>
-			<?php the_title(); ?>
+	background-position: fixed;
+	align-content:center;
+	margin-left: -5rem;
+    margin-right: -5rem;">
+		<div class="title_page">
+			<h2>
+				<?php the_title(); ?>
 			
-		</h2>
+			</h2>
+		</div>
+		
 			
 	</div> <!-- fin div title_page-->
 

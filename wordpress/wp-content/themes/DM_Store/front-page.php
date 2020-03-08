@@ -25,54 +25,7 @@ background-position: center;
 <span class="ligne"></span>
 </div> -->
 
-<section>
-<!-- Récupération des catégories de produits-->
-<?php
-get_terms($args);
 
-$args = array(
-	'taxonomy' => 'product_cat',
-	'hide_empty' => false,
-	'parent' => 0,
-);
-$result = get_terms($args);
-?>
-
-<div class="container"> 
-<h3 class="front_titre">Choisir une Catégorie </h3>
-<!--  affichage des différentes catégorie de produits-->
-	<div class="row row-cols-2">
-	
-		<?php
-		foreach ( $result as $cat ) {
-			if ( 'Uncategorized' !== $cat->name ) {
-			$term_link = get_term_link( $cat, 'product_cat' );
-			$cat_thumb_id =	get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
-			$shop_catalog_img_arr = wp_get_attachment_image_src( $cat_thumb_id, 'shop_catalog' );
-			$cat_img = $shop_catalog_img_arr[0];
-				?>
-				
-			<a class="img_car_product" href="<?php echo $term_link; ?>">
-				<div class="col front_cat_product" 
-			style="background: url(<?php echo $cat_img; ?>) no-repeat;
-			background-size: cover;
-			background-position: center;">
-				
-					
-						<h4>
-						<?php echo $cat->name; ?>
-						</h4>
-							
-				</div>
-			</a>				
-		<?php
-			}
-		}
-		?>
-	</div> <!-- /row -->
-</div> <!-- /container -->
-
-</section>
 			
 <section> <!-- Affichage des contenu rajouté par l'utilisateur -->
 	<div class="container">
@@ -93,15 +46,17 @@ $result = get_terms($args);
 				
 <section> <!-- Affichage des articles -->
 	<div class="container">
-	<h3 class="front_titre">Les derniers articles </h3>
+	<h3 class="front_titre article_front_title">Les derniers articles </h3>
 		<?php
 		$args = array( 'numberposts' => 5, 'order'=> 'ASC', 'orderby' => 'date' );
 		$postslist = get_posts( $args );
-		foreach ($postslist as $post) :  setup_postdata($post); ?> 
+		foreach ($postslist as $post) :  setup_postdata($post);
+		$id = get_the_id();
+ 		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->$id )); ?> 
 
 <div class="blog-post">
         <div class="blog-post__img">
-            <img src=<?php the_post_thumbnail(); ?>
+			<img src="<?php echo esc_url( $image[0] ); ?>" alt="View more info" />
         </div>
         <div class="blog-post__info">
             <div class="blog-post__date">

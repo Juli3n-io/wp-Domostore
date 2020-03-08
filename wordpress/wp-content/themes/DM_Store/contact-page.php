@@ -9,6 +9,7 @@ background: url(<?php header_image(); ?>) no-repeat;
 width: 100%;
 height: 100%;    
 background-size: cover;
+background-attachment: fixed;
 background-position: center;">
 
 <div class="contact_titre">

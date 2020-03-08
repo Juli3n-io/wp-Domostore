@@ -262,7 +262,7 @@ $attachment_ids =$product->get_gallery_image_ids();
         </h6>
 
         <p class="related_price">
-          <?php echo $product_1->get_regular_price();?> €
+          <?php echo $product_1->get_price();?> €
         </p>
         <p class="related_regular_price">
           <?php if ( $product_1->is_on_sale() ) : ?>
@@ -295,7 +295,7 @@ $attachment_ids =$product->get_gallery_image_ids();
         </h6>
 
         <p class="related_price">
-          <?php echo $product_2->get_regular_price();?> €
+          <?php echo $product_2->get_price();?> €
         </p>
         <p class="related_regular_price">
           <?php if ( $product_2->is_on_sale() ) : ?>

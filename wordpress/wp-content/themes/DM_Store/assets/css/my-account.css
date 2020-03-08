@@ -18,7 +18,7 @@ a:hover{
     color: var(--primary-color);
     text-decoration: none;
 }
-.page_title{
+.page_title_account{
     padding-top: 10rem;
     ;
     color: var(--light-black);
@@ -65,6 +65,13 @@ h2:after{
     background-color: var(--primary-color);
 }
 
+.woocommerce a.button{
+    margin: 5px !important;
+}
+
+.woocommerce table.my_account_orders .button {
+    margin: 5px !important;
+}
 /* ************************* */
 /* ****** Account page ***** */
 /* ************************* */

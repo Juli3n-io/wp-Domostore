@@ -8,10 +8,10 @@ $args =array(
 $result = new wp_query($args);
 ?>
 
-<div class="container">
+<div class="container-fluid">
 
     <div class="search_title" id="cart-title">
-        <h1>Résultats de la recherche :</h1>
+        <h2>Votre Recherche</h2>
         <span class="ligne"></span>
     </div>
 

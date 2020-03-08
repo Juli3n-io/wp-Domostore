@@ -20,6 +20,17 @@ $('.menu-icon').click(function(){
   $('.nav-icon-3').toggleClass('active')
 });
 
+$('.back_to_top a').on('click', function(e){
+  if(this.hash !== ''){ 
+    e.preventDefault();
+    const hash = this.hash;
+
+    $('html, body').animate({
+      scrollTop : $(hash).offset().top
+    }, 800);
+  }
+});
+
 document.querySelector('.panier').addEventListener('click',()=>{
   document.querySelector('.panier_sidebar').classList.add('active');
   document.getElementById('main').classList.add('active');
@@ -33,6 +44,7 @@ document.getElementById('main').classList.remove('active');
 document.getElementById('main').addEventListener('click',()=>{
   document.querySelector('.panier_sidebar').classList.remove('active');
   document.getElementById('main').classList.remove('active');
+
   });
 
  document.querySelector('.menu_filter_open').addEventListener('click',()=>{

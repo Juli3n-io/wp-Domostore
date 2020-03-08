@@ -56,11 +56,18 @@
 .woocommerce a.button{
     color: #fff !important;
 }
-.woocommerce-mini-cart-item a{
+.woocommerce-mini-cart-item a,.woocommerce ul.product_list_widget li a{
     color: var(--primary-color) !important;
 }
-.woocommerce button.button{
+.woocommerce ul.product_list_widget li a:hover{
+    text-decoration: none;
+    color: var(--light-black);
+}
+.woocommerce button.button, .woocommerce.widget_shopping_cart .buttons a{
     color: #FFF !important;
+}
+.woocommerce.widget_shopping_cart .buttons a:hover{
+    background-color: var(--primary-color);
 }
 .wp-block-button__link:hover{
     background-color: var(--primary-color) !important;

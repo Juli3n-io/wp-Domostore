@@ -75,3 +75,11 @@ display: none;
 .button:hover{
     background-color: var(--primary-color) !important;
 }
+
+.woocommerce-column--billing-address{
+margin-bottom: 1rem;
+}
+.woocommerce .woocommerce-customer-details address{
+    border: 0px !important;
+
+}

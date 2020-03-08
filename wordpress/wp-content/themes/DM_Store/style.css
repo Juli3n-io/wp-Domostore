@@ -60,6 +60,9 @@ main .container{
 a{
     text-decoration: none; 
 }
+a:hover{
+    text-decoration: none;
+}
 
 li{
     list-style: none;
@@ -91,7 +94,7 @@ header{
     padding: 0 10px;
     box-sizing: border-box;
     position: fixed;
-    z-index: 3;
+    z-index: 10;
     top: 0;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
     transition: .5s;
@@ -280,7 +283,7 @@ color: var(--light-black);
     align-items: center;
     justify-content: center;
     z-index: 1500;
-    /* transition: all 650ms ease-in-out; */
+    transition: all 650ms ease-in-out;
     text-align: center;
     
 }
@@ -353,7 +356,7 @@ text-align: center;
 }
 .page_title h2{
     /* display: none; */
-    padding-top: 10rem;
+    padding-top: 5rem;
     text-align: center;
     font-size: 60px;
     font-family: var(--sriracha);
@@ -400,6 +403,14 @@ a .front_cat_product{
     text-decoration: none; 
 }
 
+.front_cat_product:hover,
+a .front_cat_product:hover,
+.front_cat_product h4,
+.img_car_product
+{
+    text-decoration: none;
+}
+
 
 
 
@@ -435,6 +446,10 @@ a .front_cat_product{
 
 }
 /* **** footer **** */
+
+.article_front_title{
+    margin-bottom: 10rem;
+}
 .back_to_top{
     text-align: center;
     background-color: var(--primary-color);
@@ -545,18 +560,18 @@ footer{
     display: flex;
     left: 0;
     font-size: 1rem;
-    background-color: var(--light-gray);
     color: var(--light-black);
     cursor: pointer;
     
 }
 .menu_filter_open p:hover{
     color: var(--primary-color);
+    
 }
 
 .responsive_sidebar{
     width: 20rem;
-    height: 100vh;
+    height: 100%;
     background-color: var(--light-gray);
     position: fixed;
     top: 0;
@@ -586,18 +601,16 @@ footer{
 .title_page{
     margin-top: 2rem;
     /* margin-bottom: 4rem; */
-    margin-left: -5rem;
-    margin-right: -5rem;
     
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
     height: 100vh;
+    background-color: rgba(0,0,0,.3);
     
 }
 .title_page h2{
-	padding-top: 20rem;
-    padding-bottom: 4rem;
+    padding-top: 15rem;
     color: #FFF !important;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: var(--sriracha);
     
 }
@@ -806,6 +819,7 @@ footer{
     .img_car_product{
         width: 100%;
     }
+    
 }
 
 
@@ -893,7 +907,7 @@ footer{
 
 @media screen and (min-width : 768px){
     .title_page h2{
-        padding-top: 30%;
+        padding-top: 40%;
     }
 }
 
@@ -920,12 +934,17 @@ footer{
         color: #FFF !important;
         font-size: 10rem;
     }
+    .article_front_title{
+        margin-bottom: 0;
+    }
        
 }
 
 /* Medium devices (tablets, less than 992px)*/
 
 @media (min-width: 1000px) {
+
+    
     .title_page h2{
         padding-top: 20%;
         font-size: 8rem;
@@ -954,10 +973,7 @@ footer{
     min-width: 30rem;
     max-width: 30rem;
     }
-    .title_page h2{
-      margin-top: 2rem;
-      font-size: 10rem;
-    }
+    
 }
 
 /* Large devices (desktops, less than 1200px)*/

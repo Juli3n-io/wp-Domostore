@@ -5,7 +5,7 @@
 get_header();
 ?>
 
-<div class="page_title" id="cart-title">
+<div class="page_title_account" id="cart-title">
 <h2><?php the_title(); ?></h2>
 
 </div>

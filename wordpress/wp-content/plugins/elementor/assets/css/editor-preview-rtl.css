@@ -1,4 +1,4 @@
-/*! elementor - v2.9.1 - 13-02-2020 */
+/*! elementor - v2.9.4 - 04-03-2020 */
 @charset "UTF-8";
 .elementor-control-unit-1 {
   width: 27px; }
@@ -2725,9 +2725,6 @@ html.elementor-html {
   margin: 60px auto; }
   #elementor-add-new-section[data-view="choose-action"] .elementor-add-section-close {
     display: none; }
-
-.elementor-embedded-editor .elementor-section-wrap:not(:empty) + #elementor-add-new-section {
-  display: none; }
 
 .elementor-add-section-inline {
   margin: 10px auto; }

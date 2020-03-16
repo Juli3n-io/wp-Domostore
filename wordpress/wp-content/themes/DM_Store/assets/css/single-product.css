@@ -16,7 +16,7 @@
 #showcase h1{
     font-size: 50px;
     margin-bottom: 2rem;  
-    font-family: var(--oswald);
+    font-family: var(--roboto);
 }
 
 #showcase .img{
@@ -68,7 +68,7 @@
 #review h4{
     margin-top: 3rem;
     text-align: center;
-    font-family: var(--oswald)!important;
+    font-family: var(--roboto)!important;
     color: var(--light-black);
 }
 #review .share-wrap .share-right{
@@ -90,7 +90,7 @@
 #formulaire h4{
     margin-top: 3rem;
     text-align: center;
-    font-family: var(--oswald)!important;
+    font-family: var(--roboto)!important;
     color: var(--light-black);
 }
 
@@ -125,7 +125,7 @@ border-bottom: 2px solid var(--primary-color);
 #related h4{
     margin-top: 3rem;
     text-align: center;
-    font-family: var(--oswald)!important;
+    font-family: var(--roboto)!important;
     color: var(--light-black);
 }
 #related .related_products{
@@ -133,11 +133,13 @@ border-bottom: 2px solid var(--primary-color);
     border-radius: 10px;
 }
 #related h6{
-    margin-top: 1rem !important;
-    font-family: var(--oswald)!important;
+    margin: 1rem 1rem 1rem 3rem;
+    font-family: var(--roboto)!important;
     color: var(--light-black);
 }
+
 #related p{
+    margin: 1rem 1rem 1rem 3rem;
     margin-bottom: 0 !important;
 }
 #related .related_product_name{

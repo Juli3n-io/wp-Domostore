@@ -57,6 +57,21 @@ sr.reveal('.wc-block-grid',{
   origin : 'bottom',
   distance : '50px'
 })
+sr.reveal('.wc-block-featured-category-block-grid',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+sr.reveal('.wc-block-featured-category',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
+sr.reveal('.has-background-dim',{
+  duration : 3000,
+  origin : 'bottom',
+  distance : '50px'
+})
 sr.reveal('.blog-post',{
   duration : 3000,
   origin : 'bottom',

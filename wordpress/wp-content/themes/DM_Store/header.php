@@ -12,6 +12,7 @@
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/single-product.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/light-box.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/my-account.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/assets/css/contact.css" rel="stylesheet">
 
     <script src="https://unpkg.com/scrollreveal"></script> <!-- for single-product page-->
     <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
@@ -56,10 +57,9 @@
                 <i class="fas fa-search search_click px-2"></i>
              
                 <?php global $woocommerce ; ?>
-              <a class= "" href= "<?php echo $woocommerce-> cart-> get_cart_url ();?> "
-              title = "<?php _e ('Cart View', 'woothemes');?>" > <i class="fas fa-shopping-cart"></i></a>
+              <a class="panier"> <i class="fas fa-shopping-cart"></i></a>
               <span class="navbar_cart_total">
-              <?php echo sprintf ( _n ( '% d item' , '% d ' , $woocommerce-> cart-> cart_contents_count, 'woothemes' ) ,
+              <?php echo sprintf ( _n ( '% d ' , '% d ' , $woocommerce-> cart-> cart_contents_count, 'woothemes' ) ,
               $woocommerce-> cart-> cart_contents_count ) ;?>
               </span>
             </p>
@@ -68,6 +68,19 @@
    
     </div> <!-- fin row -->
   </div><!-- fin container -->
+
+  <div class="panier_sidebar"> <!-- panier -->
+		<div class="panier_close">
+			<i class="fas fa-times"></i>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player
+    src="https://assets5.lottiefiles.com/datafiles/cOXmnq9aSqiXLCu/data.json" mode="bounce" background="transparent"  speed="1"  style="width: 100px; height: 100px;"  autoplay >
+</lottie-player>
+    <h4>Votre Panier</h4>
+    <span class="ligne"></span>
+	    <?php echo get_sidebar('panier');  ?>
+	</div>
 
   <!-- search container-->
   <div class="container search_container" style="display:none;">
@@ -108,4 +121,4 @@
   
 <div class="clear"></div>
 <div id="top_from_page"></div>
-<main role="main">
+<main role="main" id="main">

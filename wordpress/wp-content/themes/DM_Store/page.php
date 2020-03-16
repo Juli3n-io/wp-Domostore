@@ -15,31 +15,41 @@ if ( is_product_category() ){ global $wp_query; $cat = $wp_query->get_queried_ob
 	// if ( $image ) {
 	// 	echo '<img class="classtopright" src="' . $image . '" alt="" width="280"/>';
 	// }
+	
 }
 
 
 ?>
 
-<?php 
-	
-	
-	?>
 
-
-
-<div class="container">
+<div class="container-fluid">
 <!-- Example row of columns -->
-	<div class="title_page" style="background: url(<?php echo $image;?>) no-repeat; 
+	<div class="title_page_bg" style="background: url(<?php echo $image;?>) center center no-repeat; 
 	background-size: cover;
-	background-position: center">
-
-		<h2>
-			<?php the_title(); ?>
-		</h2>
-						
+	background-position: fixed;
+	align-content:center;
+	margin-left: -5rem;
+    margin-right: -5rem;">
+		<div class="title_page">
+			<h2>
+				<?php the_title(); ?>
+			
+			</h2>
+		</div>
+		
+			
 	</div> <!-- fin div title_page-->
 
+	<div class="menu_filter_open">
+	<p class="filter"><i class="fas fa-arrow-circle-right"></i> Filtres</p>
+    </div>
 	
+	<div class="responsive_sidebar">
+		<div class="responsive_close">
+			<i class="fas fa-times"></i>
+        </div>
+	<?php echo get_sidebar('responsive');  ?>
+	</div>
 	
 
 

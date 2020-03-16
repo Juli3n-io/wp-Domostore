@@ -1,4 +1,4 @@
-/*! elementor - v2.9.1 - 13-02-2020 */
+/*! elementor - v2.9.4 - 04-03-2020 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -82,7 +82,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 610);
+/******/ 	return __webpack_require__(__webpack_require__.s = 613);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1416,7 +1416,7 @@ module.exports = _inherits;
 
 /***/ }),
 
-/***/ 610:
+/***/ 613:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1434,7 +1434,7 @@ var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(4));
 
 var _inherits2 = _interopRequireDefault(__webpack_require__(6));
 
-var _layout = _interopRequireDefault(__webpack_require__(611));
+var _layout = _interopRequireDefault(__webpack_require__(614));
 
 var BetaTesterModule =
 /*#__PURE__*/
@@ -1497,7 +1497,7 @@ jQuery(function () {
 
 /***/ }),
 
-/***/ 611:
+/***/ 614:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1523,7 +1523,7 @@ var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(4));
 
 var _inherits2 = _interopRequireDefault(__webpack_require__(6));
 
-var _view = _interopRequireDefault(__webpack_require__(612));
+var _view = _interopRequireDefault(__webpack_require__(615));
 
 var BetaTesterLayout =
 /*#__PURE__*/
@@ -1607,7 +1607,7 @@ exports.default = BetaTesterLayout;
 
 /***/ }),
 
-/***/ 612:
+/***/ 615:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

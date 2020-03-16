@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Sriracha&display=swap');
 
 :root{
---primary-color:#ffc270;
---light-gray:#eee;
---light-black:rgba(0,0,0,.7);
---roboto:"Roboto",sans-serif;
---oswald:"Oswald",sans-serif;
---sriracha:"Sriracha",sans-serif;
+    --primary-color:#FFC270;
+    --light-gray:#eee;
+    --light-black:rgba(0,0,0,.7);
+    --light-white:rgba(255,255,255,.7);
+    --roboto:"Roboto",sans-serif;
+    --oswald:"Oswald",sans-serif;
+    --sriracha:"Sriracha",sans-serif;
 }
 
 /* ********** Front page *********** */
@@ -31,6 +32,11 @@
     margin: 20px auto;
     }
 
+/* **** Img content **** */
+#description img{
+    display: none;
+}
+
 /* **** bouton achat **** */
 .wp-block-button__link {
     background-color: #32373c !important;
@@ -46,6 +52,22 @@
     text-align: center;
     text-decoration: none;
     overflow-wrap: break-word;  
+}
+.woocommerce a.button{
+    color: #fff !important;
+}
+.woocommerce-mini-cart-item a,.woocommerce ul.product_list_widget li a{
+    color: var(--primary-color) !important;
+}
+.woocommerce ul.product_list_widget li a:hover{
+    text-decoration: none;
+    color: var(--light-black);
+}
+.woocommerce button.button, .woocommerce.widget_shopping_cart .buttons a{
+    color: #FFF !important;
+}
+.woocommerce.widget_shopping_cart .buttons a:hover{
+    background-color: var(--primary-color);
 }
 .wp-block-button__link:hover{
     background-color: var(--primary-color) !important;
@@ -97,6 +119,18 @@
     max-width: none !important;
 }
 
+/* ****  page boutique **** */
+
+.woocommerce ul.products li.product a img {
+    width: 100%;
+    max-width: 14rem;
+    height: auto;
+    max-height: 22rem;
+    display: block;
+    margin: 0 0 1em;
+    box-shadow: none;
+}
+
 /* ****  Images de produit **** */
 
 .wc-block-grid__product-image {
@@ -128,6 +162,13 @@
     background-color: var(--primary-color) !important;
     text-decoration: none !important;
 }
+
+/* **** woocommerce notification  **** */
+
+.woocommerce-store-notice{
+    background-color: var(--primary-color)!important;
+}
+
 
 /* **********  *********** */
 /* ***** Responsive ****** */

@@ -31,6 +31,16 @@
 				'id'            => 'colonne-gauche',
 				'description'   => __( 'Add widgets here to appear in your colonne gauche region.', 'DM_Store' )
 			) );
+			register_sidebar( array(
+				'name'          => __( 'responsive', 'DM_Store' ),
+				'id'            => 'responsive',
+				'description'   => __( 'Add widgets here to appear in your colonne responsive.', 'DM_Store' )
+			) );
+			register_sidebar( array(
+				'name'          => __( 'panier', 'DM_Store' ),
+				'id'            => 'panier',
+				'description'   => __( 'Add widgets here to appear in your colonne panier.', 'DM_Store' )
+			) );
 		}
 	}
 
@@ -207,4 +217,32 @@ function woo_related_products_limit() {
 }
 add_action('init', 'update_woocommerce_version');
 
+
+// custom admin -  back-end
+
+// function remove_menus() {
+// 	remove_menu_page( 'index.php' );                  //Dashboard
+// 	remove_menu_page( 'jetpack' );                    //Jetpack* 
+// 	remove_menu_page( 'edit.php' );                   //Posts
+// 	remove_menu_page( 'upload.php' );                 //Media
+// 	remove_menu_page( 'edit.php?post_type=page' );    //Pages
+// 	remove_menu_page( 'edit-comments.php' );          //Comments
+// 	remove_menu_page( 'themes.php' );                 //Appearance
+// 	remove_menu_page( 'plugins.php' );                //Plugins
+// 	remove_menu_page( 'users.php' );                  //Users
+// 	remove_menu_page( 'tools.php' );                  //Tools
+// 	remove_menu_page( 'options-general.php' );        //Settings
+// 	remove_menu_page( 'wpcf7' );  					//contact form	
+// 	remove_menu_page( 'edit.php?post_type=elementor_library' ); // Elementor Templates
+// 	remove_menu_page('elementor');
+// 	remove_menu_page( 'heateor-sss-options' ); 
+// 	remove_menu_page( 'sip' ); 
+// 	remove_menu_page('xoo_cp');    				
+
+
+// }
+// if( ! current_user_can( 'administrator' )){
+// 	add_action( 'admin_menu', 'remove_menus' );
+// 	}
+	
 ?>

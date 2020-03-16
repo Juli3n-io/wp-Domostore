@@ -60,7 +60,14 @@ $id= $product->get_id()
 
 <section id="description">
   <div class="container">
+  <?php    
+    $gallery = get_post_gallery_images( $post );
+    ?>  
+
+<img src=<?php  echo wp_get_attachment_image($gallery[0]);?>               
+  
   <p><?php echo $product->get_description();?></p>
+  
   </div>
 </section>
 
@@ -102,6 +109,15 @@ $attachment_ids =$product->get_gallery_image_ids();
           <br>
           <h4>Partager:</h4>
     <?php echo do_shortcode("[Sassy_Social_Share]");?>
+
+    <?php 
+    $handle=new WC_Product_Variable($id);
+        $variations1=$handle->get_children();
+        foreach ($variations1 as $value) {
+        $single_variation=new WC_Product_Variation($value);
+            echo '<option  value="'.$value.'">'.implode(" / ", $single_variation->get_variation_attributes()).'-'.get_woocommerce_currency_symbol().$single_variation->price.'</option>';
+}
+    ?>
         </div>
         
       </div>
@@ -246,7 +262,7 @@ $attachment_ids =$product->get_gallery_image_ids();
         </h6>
 
         <p class="related_price">
-          <?php echo $product_1->get_regular_price();?> €
+          <?php echo $product_1->get_price();?> €
         </p>
         <p class="related_regular_price">
           <?php if ( $product_1->is_on_sale() ) : ?>
@@ -279,7 +295,7 @@ $attachment_ids =$product->get_gallery_image_ids();
         </h6>
 
         <p class="related_price">
-          <?php echo $product_2->get_regular_price();?> €
+          <?php echo $product_2->get_price();?> €
         </p>
         <p class="related_regular_price">
           <?php if ( $product_2->is_on_sale() ) : ?>

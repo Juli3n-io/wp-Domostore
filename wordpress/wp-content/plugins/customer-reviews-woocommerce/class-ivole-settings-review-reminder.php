@@ -188,6 +188,7 @@ class Ivole_Review_Reminder_Settings {
             'NO'  => __( 'Norwegian', IVOLE_TEXT_DOMAIN ),
             'PL'  => __( 'Polish', IVOLE_TEXT_DOMAIN ),
             'PT'  => __( 'Portuguese', IVOLE_TEXT_DOMAIN ),
+            'BR'  => __( 'Portuguese (Brazil)', IVOLE_TEXT_DOMAIN ),
             'RO'  => __( 'Romanian', IVOLE_TEXT_DOMAIN ),
             'RU'  => __( 'Russian', IVOLE_TEXT_DOMAIN ),
             'SR'  => __( 'Serbian', IVOLE_TEXT_DOMAIN ),

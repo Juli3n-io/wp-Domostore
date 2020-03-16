@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo( 'charset' ); //charset du site ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title><?php bloginfo( 'name' ); wp_title('-', true, 'right'); ?></title>
+    <title><?php bloginfo( 'name' ); wp_title('-', true, 'left'); ?></title>
 
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap-grid.min.css" rel="stylesheet">
@@ -53,16 +53,19 @@
               <i class="fas fa-search search_click px-2"></i>
            
               <?php global $woocommerce ; ?>
-            <a class= "" href= "<?php echo $woocommerce-> cart-> get_cart_url ();?> "
-            title = "<?php _e ('Cart View', 'woothemes');?>" > <i class="fas fa-shopping-cart"></i></a>
-            <span class="navbar_cart_total">
-            <?php echo sprintf ( _n ( '% d item' , '% d ' , $woocommerce-> cart-> cart_contents_count, 'woothemes' ) ,
-            $woocommerce-> cart-> cart_contents_count ) ;?>
-            </span>
-          </p>
-        </div>
-      </div> <!-- fin div partie droite -->
- 
+              <a class="panier"> <i class="fas fa-shopping-cart"></i></a>
+              <span class="navbar_cart_total">
+              <?php echo sprintf ( _n ( '% d ' , '% d ' , $woocommerce-> cart-> cart_contents_count, 'woothemes' ) ,
+              $woocommerce-> cart-> cart_contents_count ) ;?>
+              </span>
+            </p>
+          </div>
+        </div> <!-- fin div partie droite -->
+   
+    </div> <!-- fin row -->
+  </div><!-- fin container -->
+
+  
   </div> <!-- fin row -->
 </div><!-- fin container -->
 
@@ -103,4 +106,4 @@
   
 <div class="clear"></div>
 <div id="top_from_page"></div>
-<main role="main">
+<main role="main" id="main">

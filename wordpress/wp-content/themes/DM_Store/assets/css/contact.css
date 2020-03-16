@@ -1,0 +1,34 @@
+:root{
+    --primary-color:#FFC270;
+    --light-gray:#eee;
+    --light-black:rgba(0,0,0,.7);
+    --light-white:rgba(255,255,255,.7);
+    --roboto:"Roboto",sans-serif;
+    --oswald:"Oswald",sans-serif;
+    --sriracha:"Sriracha",sans-serif;
+    }
+.contact_main{
+    margin-top: -5rem;
+}
+.contact_titre{
+    padding-top: 14rem;
+    margin-bottom: 4rem;
+}
+.contact_titre h2{
+    color: #fff;
+    font-family: var(--sriracha);
+    font-size: 4rem;
+}
+.contact_titre h2:after{
+    background-color: #fff;
+}
+.contact_container{
+    text-align: center;
+}
+
+.wpcf7-submit{
+    background-color: var(--primary-color);
+    padding: 7px 14px! important;
+    color: var(--light-white);
+    border: none;
+}

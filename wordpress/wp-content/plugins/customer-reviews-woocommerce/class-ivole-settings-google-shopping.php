@@ -44,7 +44,9 @@ class Ivole_Google_Shopping_Settings {
 		add_action( 'ivole_save_settings_' . $this->tab, array( $this, 'save' ) );
 
 		add_action( 'woocommerce_admin_field_ivole_field_map', array( $this, 'display_field_map' ) );
+		add_action( 'woocommerce_admin_field_feed_file_url', array( $this, 'display_feed_file_url' ) );
 		add_filter( 'woocommerce_admin_settings_sanitize_option_ivole_google_field_map', array( $this, 'sanitize_field_map' ) );
+		add_filter( 'woocommerce_admin_settings_sanitize_option_feed_file_url', array( $this, 'sanitize_feed_file_url' ) );
 	}
 
 	/**
@@ -106,8 +108,6 @@ class Ivole_Google_Shopping_Settings {
 			'brand' => ''
 		) );
 
-		$upload_url = wp_upload_dir();
-
 		$this->settings = array(
 			array(
 				'title' => __( 'Integration with Google Services', IVOLE_TEXT_DOMAIN ),
@@ -144,16 +144,12 @@ class Ivole_Google_Shopping_Settings {
 			),
 
 			array(
-				'id'                => 'ivole_feed_file_url',
-				'title'             => __( 'File URL', IVOLE_TEXT_DOMAIN ),
-				'type'              => 'text',
+				'id'       => 'ivole_feed_file_url',
+				'title'    => __( 'File URL', IVOLE_TEXT_DOMAIN ),
+				'type'     => 'feed_file_url',
 				'desc'     => __( 'URL of the file with the feed that should be maintained in Google Merchant Center.', IVOLE_TEXT_DOMAIN ),
 				'desc_tip' => true,
-				'default'           => $upload_url['baseurl'] . '/cr/product_reviews.xml',
-				'css'               => 'width: 500px;',
-				'custom_attributes' => array(
-					'readonly' => 'readonly'
-				)
+				'css'      => 'width: 500px;max-width:100%;'
 			),
 
 			array(
@@ -172,7 +168,7 @@ class Ivole_Google_Shopping_Settings {
 				'desc'     => __( 'Specify a default brand for all products in your store. If this field is non-empty, the plugin will use this brand for all products in XML Product Review Feed for Google Shopping.', IVOLE_TEXT_DOMAIN ),
 				'desc_tip' => true,
 				'default'           => '',
-				'css'               => 'width: 500px;'
+				'css'               => 'width: 500px;max-width:100%;'
 			),
 
 			array(
@@ -223,7 +219,7 @@ class Ivole_Google_Shopping_Settings {
 						<tr>
 							<td><?php _e( 'GTIN', IVOLE_TEXT_DOMAIN ); ?></td>
 							<td>
-								<select name="ivole_field_wc_target_gtin">
+								<select name="ivole_field_wc_target_gtin" style="width:270px;">
 									<option value=""></option>
 									<?php foreach ( $this->get_product_attributes() as $attribute_value => $attribute_name ): ?>
 										<option value="<?php echo $attribute_value; ?>" <?php if ( $attribute_value == $options['field_map']['gtin'] ) echo "selected"; ?>><?php echo $attribute_name; ?></option>
@@ -234,7 +230,7 @@ class Ivole_Google_Shopping_Settings {
 						<tr>
 							<td><?php _e( 'MPN', IVOLE_TEXT_DOMAIN ); ?></td>
 							<td>
-								<select name="ivole_field_wc_target_mpn">
+								<select name="ivole_field_wc_target_mpn" style="width:270px;">
 									<option value=""></option>
 									<?php foreach ( $this->get_product_attributes() as $attribute_value => $attribute_name ): ?>
 										<option value="<?php echo $attribute_value; ?>" <?php if ( $attribute_value == $options['field_map']['mpn'] ) echo "selected"; ?>><?php echo $attribute_name; ?></option>
@@ -245,7 +241,7 @@ class Ivole_Google_Shopping_Settings {
 						<tr>
 							<td><?php _e( 'SKU', IVOLE_TEXT_DOMAIN ); ?></td>
 							<td>
-								<select name="ivole_field_wc_target_sku">
+								<select name="ivole_field_wc_target_sku" style="width:270px;">
 									<option value=""></option>
 									<?php foreach ( $this->get_product_attributes() as $attribute_value => $attribute_name ): ?>
 										<option value="<?php echo $attribute_value; ?>" <?php if ( $attribute_value == $options['field_map']['sku'] ) echo "selected"; ?>><?php echo $attribute_name; ?></option>
@@ -256,7 +252,7 @@ class Ivole_Google_Shopping_Settings {
 						<tr>
 							<td><?php _e( 'Brand', IVOLE_TEXT_DOMAIN ); ?></td>
 							<td>
-								<select name="ivole_field_wc_target_brand">
+								<select name="ivole_field_wc_target_brand" style="width:270px;">
 									<option value=""></option>
 									<?php foreach ( $this->get_product_attributes() as $attribute_value => $attribute_name ): ?>
 										<option value="<?php echo $attribute_value; ?>" <?php if ( $attribute_value == $options['field_map']['brand'] ) echo "selected"; ?>><?php echo $attribute_name; ?></option>
@@ -267,6 +263,31 @@ class Ivole_Google_Shopping_Settings {
 					</tbody>
 				</table>
             </td>
+		</tr>
+		<?php
+	}
+
+	public function display_feed_file_url( $value ) {
+		$tmp = Ivole_Admin::ivole_get_field_description( $value );
+		$tooltip_html = $tmp['tooltip_html'];
+		$upload_url = wp_upload_dir();
+    ?>
+    <tr valign="top">
+			<th scope="row" class="titledesc">
+				<label for="<?php echo esc_attr( $value['id'] ); ?>"><?php echo esc_html( $value['title'] ); ?></label>
+				<?php echo $tooltip_html; ?>
+			</th>
+			<td class="forminp forminp-<?php echo sanitize_title( $value['type'] ) ?>">
+				<input
+					name="<?php echo esc_attr( $value['id'] ); ?>"
+					id="<?php echo esc_attr( $value['id'] ); ?>"
+					type="text"
+					style="<?php echo esc_attr( $value['css'] ); ?>"
+					class="<?php echo esc_attr( $value['class'] ); ?>"
+					readonly
+					value="<?php echo $upload_url['baseurl'] . '/cr/product_reviews.xml'; ?>"
+					/>
+			</td>
 		</tr>
 		<?php
 	}
@@ -291,6 +312,14 @@ class Ivole_Google_Shopping_Settings {
 				'sku'   => sanitize_key( $_POST['ivole_field_wc_target_sku'] ),
 				'brand' => sanitize_key( $_POST['ivole_field_wc_target_brand'] )
 			);
+		}
+
+		return $value;
+	}
+
+	public function sanitize_feed_file_url( $value ) {
+		if ( isset( $_POST['ivole_feed_file_url'] ) ) {
+			$value = sanitize_key( $_POST['ivole_feed_file_url'] );
 		}
 
 		return $value;
@@ -327,6 +356,7 @@ class Ivole_Google_Shopping_Settings {
 			WHERE meta.post_id = posts.ID AND posts.post_type LIKE '%product%' AND (
 				meta.meta_key NOT LIKE '\_%'
 				OR meta.meta_key LIKE '\_woosea%'
+				OR meta.meta_key LIKE '\_wpm%'
 				OR meta.meta_key LIKE '\_yoast%'
 				OR meta.meta_key = '_product_attributes'
 			)
